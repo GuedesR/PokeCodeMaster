@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.Game.Pokemons;
+package org.academiadecodigo.bootcamp.Game;
 
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
@@ -7,7 +7,7 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
  */
 public class PokePlacement {
 
-    private Picture pika;
+    private Picture pokemon;
     private int x=220; //poke on the middle
     private int y;
     private int catchRate=7;
@@ -19,17 +19,17 @@ public class PokePlacement {
 
         switch (upDown){
             case 1: y=320;
-                pika= new Picture(x,y,"pika.png");
-                pika.grow(-20,-20);
+                pokemon = new Picture(x,y,"pika.png");
+                pokemon.grow(-20,-20);
                 y = 3;
                 break;
             case 2: y=420;
-                pika= new Picture(x,y,"pika.png");
-                pika.grow(-10,-10);
+                pokemon = new Picture(x,y,"pika.png");
+                pokemon.grow(-10,-10);
                 y = 2;
                 break;
             default:y=520;
-                pika= new Picture(x,y,"pika.png");
+                pokemon = new Picture(x,y,"pika.png");
                 y = 1;
                 break;
         }
@@ -38,26 +38,26 @@ public class PokePlacement {
 
         switch (leftRight){
             case 1: x=110;
-                pika.translate(-110,0);
+                pokemon.translate(-110,0);
                 x=1;
                 break;
             case 2: x=220;
                 x=2;
                 break;
             default: x=330;
-                pika.translate(110,0);
+                pokemon.translate(110,0);
                 x=3;
                 break;
         }
 
 
 
-        pika.draw();
+        pokemon.draw();
         return upDown;
     }
 
     public void caught(){
-        pika.delete();
+        pokemon.delete();
     }
 
     public int getY(){
@@ -73,10 +73,10 @@ public class PokePlacement {
     }
 
     public void hidePokemon(){
-        pika.delete();
+        pokemon.delete();
     }
 
     public void showPokemon(){
-        pika.draw();
+        pokemon.draw();
     }
 }

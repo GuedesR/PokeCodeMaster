@@ -29,7 +29,7 @@ public class Corridor implements KeyboardHandler {
     private Utilities pingPong = new PingPong();
     private Utilities copa = new Copa();
     private Utilities varanda = new Varanda();
-    CatchScreen catchScreen;
+    PlayerScreen playerScreen;
     private GameScreens stages;
 
 
@@ -85,8 +85,8 @@ public class Corridor implements KeyboardHandler {
             if (stageIsOngoing) {
                 if(stages instanceof Stages) {
                     stages.drawStage();
-                    catchScreen = new CatchScreen();
-                    bool = catchScreen.init();
+                    playerScreen = new PlayerScreen();
+                    bool = playerScreen.init();
                     if (bool) {
                         stages.hideStage();
                     }

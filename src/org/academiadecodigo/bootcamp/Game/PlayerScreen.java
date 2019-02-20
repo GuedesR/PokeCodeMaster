@@ -1,16 +1,19 @@
 package org.academiadecodigo.bootcamp.Game;
 
-import org.academiadecodigo.bootcamp.Game.Pokemons.PokePlacement;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
+
 /**
- * Created by codecadet on 16/02/2019.
+ * --Player Screen--
+ *
+ * Novo nome de CatchScreen
+ * Uma vez que este vai ser onde se vai colocar todas as opções do Jogador não só apanhar.
  */
-public class CatchScreen implements KeyboardHandler{
+public class PlayerScreen implements KeyboardHandler{
 
     private Picture backGround;
     private Background bG;
