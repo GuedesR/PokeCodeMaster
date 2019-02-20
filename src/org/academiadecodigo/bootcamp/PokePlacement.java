@@ -22,12 +22,12 @@ public class PokePlacement {
                 pika= new Picture(x,y,"pika.png");
                 pika.grow(-20,-20);
                 y = 3;
-            break;
+                break;
             case 2: y=420;
                 pika= new Picture(x,y,"pika.png");
                 pika.grow(-10,-10);
                 y = 2;
-            break;
+                break;
             default:y=520;
                 pika= new Picture(x,y,"pika.png");
                 y = 1;

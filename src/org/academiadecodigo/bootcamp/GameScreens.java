@@ -5,6 +5,8 @@ package org.academiadecodigo.bootcamp;
  */
 public abstract class GameScreens {
 
+    public abstract boolean action();
+
     public abstract boolean isUnlocked();
 
     public abstract void setUnlocked();

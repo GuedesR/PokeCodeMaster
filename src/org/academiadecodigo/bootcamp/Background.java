@@ -23,14 +23,14 @@ public class Background {
         switch (stage){
             //Base
             case 0: background= new Picture(10,10,"bg.jpg");
-            break;
+                break;
             case 1: background= new Picture(10,10,"bg2.jpg");
-            break;
+                break;
             case 2: background= new Picture(10,10,"bg3.jpg");
-            break;
+                break;
             default: // Victory Screen
         }
-         background.draw();
+        background.draw();
 
     }
 

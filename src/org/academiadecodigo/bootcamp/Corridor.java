@@ -4,8 +4,10 @@ import org.academiadecodigo.bootcamp.StagesPack.Attic;
 import org.academiadecodigo.bootcamp.StagesPack.Base;
 import org.academiadecodigo.bootcamp.StagesPack.Stages;
 import org.academiadecodigo.bootcamp.StagesPack.Unicornios;
+import org.academiadecodigo.bootcamp.UtilitiesPack.Copa;
 import org.academiadecodigo.bootcamp.UtilitiesPack.PingPong;
 import org.academiadecodigo.bootcamp.UtilitiesPack.Utilities;
+import org.academiadecodigo.bootcamp.UtilitiesPack.Varanda;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
@@ -26,6 +28,8 @@ public class Corridor implements KeyboardHandler {
     private Stages base = new Base();
     private Stages unicornios = new Unicornios();
     private Utilities pingPong = new PingPong();
+    private Utilities copa = new Copa();
+    private Utilities varanda = new Varanda();
     CatchScreen catchScreen;
     private GameScreens stages;
 
@@ -61,6 +65,16 @@ public class Corridor implements KeyboardHandler {
         threePressed.setKey(KeyboardEvent.KEY_3);
         threePressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
         keyboard.addEventListener(threePressed);
+
+        KeyboardEvent fourPressed = new KeyboardEvent();
+        fourPressed.setKey(KeyboardEvent.KEY_4);
+        fourPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
+        keyboard.addEventListener(fourPressed);
+
+        KeyboardEvent fivePressed = new KeyboardEvent();
+        fivePressed.setKey(KeyboardEvent.KEY_5);
+        fivePressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
+        keyboard.addEventListener(fivePressed);
 
         KeyboardEvent sixPressed = new KeyboardEvent();
         sixPressed.setKey(KeyboardEvent.KEY_6);
@@ -113,6 +127,18 @@ public class Corridor implements KeyboardHandler {
             stageIsOngoing=true;
 
         }
+        if (keyboardEvent.getKey() == KeyboardEvent.KEY_4 && copa.isUnlocked()) {
+            //Go to attic
+            stages=copa;
+            stageIsOngoing=true;
+
+        }
+        if (keyboardEvent.getKey() == KeyboardEvent.KEY_5 && varanda.isUnlocked()) {
+            //Go to attic
+            stages=varanda;
+            stageIsOngoing=true;
+
+        }
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_6 && unicornios.isUnlocked()) {
             //Go to attic
             stages=unicornios;
@@ -125,4 +151,3 @@ public class Corridor implements KeyboardHandler {
 
     }
 }
-

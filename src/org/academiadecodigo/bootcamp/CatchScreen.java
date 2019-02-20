@@ -80,7 +80,7 @@ public class CatchScreen implements KeyboardHandler{
                 int pos = p.throwP(tN);
 
 
-                /*if (tN == 3) {
+                 /*if (tN == 3) {
                     tN = 1;
                 } else if (tN == 2) {
                     tN = 2;
@@ -102,8 +102,7 @@ public class CatchScreen implements KeyboardHandler{
                         while (!isChangeScreen){
                             System.out.println();
                             keyboard.addEventListener(wPressed);
-
-                        }*/
+                         }*/
                         //Changing Screen
                         //bG.stageInc();
                         return true;
@@ -130,22 +129,22 @@ public class CatchScreen implements KeyboardHandler{
     @Override
     public void keyPressed(KeyboardEvent keyboardEvent) {
 
-            if (keyboardEvent.getKey() == KeyboardEvent.KEY_W) {
-               // bG.stageInc();
-                System.out.println("W pressed ");
-                isChangeScreen=true;
+        if (keyboardEvent.getKey() == KeyboardEvent.KEY_W) {
+            // bG.stageInc();
+            System.out.println("W pressed ");
+            isChangeScreen=true;
 
-            }
+        }
 
-            if(keyboardEvent.getKey() == keyboardEvent.KEY_LEFT){
-                p.moveBallLeft();
-                System.out.println("Left pressed");
-            }
+        if(keyboardEvent.getKey() == keyboardEvent.KEY_LEFT){
+            p.moveBallLeft();
+            System.out.println("Left pressed");
+        }
 
-            if(keyboardEvent.getKey() == keyboardEvent.KEY_RIGHT){
-                p.moveBallRight();
-                System.out.println("Right pressed");
-            }
+        if(keyboardEvent.getKey() == keyboardEvent.KEY_RIGHT){
+            p.moveBallRight();
+            System.out.println("Right pressed");
+        }
 
     }
 
