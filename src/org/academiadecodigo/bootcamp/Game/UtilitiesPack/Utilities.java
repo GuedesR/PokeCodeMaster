@@ -1,6 +1,6 @@
-package org.academiadecodigo.bootcamp.UtilitiesPack;
+package org.academiadecodigo.bootcamp.Game.UtilitiesPack;
 
-import org.academiadecodigo.bootcamp.GameScreens;
+import org.academiadecodigo.bootcamp.Game.GameScreens;
 
 /**
  * Created by codecadet on 20/02/2019.

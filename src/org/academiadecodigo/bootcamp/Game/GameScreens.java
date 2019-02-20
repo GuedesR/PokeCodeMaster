@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp;
+package org.academiadecodigo.bootcamp.Game;
 
 /**
  * Created by codecadet on 20/02/2019.

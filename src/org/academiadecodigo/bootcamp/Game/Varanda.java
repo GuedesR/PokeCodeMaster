@@ -1,9 +1,13 @@
-package org.academiadecodigo.bootcamp.UtilitiesPack;
+package org.academiadecodigo.bootcamp.Game;
+
+import org.academiadecodigo.bootcamp.Game.UtilitiesPack.Utilities;
 
 /**
  * Created by codecadet on 20/02/2019.
  */
-public class Copa extends Utilities {
+public class Varanda extends Utilities {
+
+
     @Override
     public void drawStage() {
 

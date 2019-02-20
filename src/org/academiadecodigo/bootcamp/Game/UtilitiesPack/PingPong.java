@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.UtilitiesPack;
+package org.academiadecodigo.bootcamp.Game.UtilitiesPack;
 
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 

@@ -1,6 +1,6 @@
-package org.academiadecodigo.bootcamp.StagesPack;
+package org.academiadecodigo.bootcamp.Game.StagesPack;
 
-import org.academiadecodigo.bootcamp.GameScreens;
+import org.academiadecodigo.bootcamp.Game.GameScreens;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 /**

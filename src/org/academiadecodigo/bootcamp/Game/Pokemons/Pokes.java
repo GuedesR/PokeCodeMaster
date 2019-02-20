@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.Pokemons;
+package org.academiadecodigo.bootcamp.Game.Pokemons;
 
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 

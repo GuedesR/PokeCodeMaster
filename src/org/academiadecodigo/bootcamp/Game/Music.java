@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp;
+package org.academiadecodigo.bootcamp.Game;
 
 import sun.audio.AudioData;
 import sun.audio.AudioPlayer;

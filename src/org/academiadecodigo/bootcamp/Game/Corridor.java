@@ -1,13 +1,12 @@
-package org.academiadecodigo.bootcamp;
+package org.academiadecodigo.bootcamp.Game;
 
-import org.academiadecodigo.bootcamp.StagesPack.Attic;
-import org.academiadecodigo.bootcamp.StagesPack.Base;
-import org.academiadecodigo.bootcamp.StagesPack.Stages;
-import org.academiadecodigo.bootcamp.StagesPack.Unicornios;
-import org.academiadecodigo.bootcamp.UtilitiesPack.Copa;
-import org.academiadecodigo.bootcamp.UtilitiesPack.PingPong;
-import org.academiadecodigo.bootcamp.UtilitiesPack.Utilities;
-import org.academiadecodigo.bootcamp.UtilitiesPack.Varanda;
+import org.academiadecodigo.bootcamp.Game.StagesPack.Attic;
+import org.academiadecodigo.bootcamp.Game.StagesPack.Base;
+import org.academiadecodigo.bootcamp.Game.StagesPack.Stages;
+import org.academiadecodigo.bootcamp.Game.StagesPack.Unicornios;
+import org.academiadecodigo.bootcamp.Game.UtilitiesPack.Copa;
+import org.academiadecodigo.bootcamp.Game.UtilitiesPack.PingPong;
+import org.academiadecodigo.bootcamp.Game.UtilitiesPack.Utilities;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
