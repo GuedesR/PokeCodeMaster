@@ -19,7 +19,7 @@ public class PlayerScreen implements KeyboardHandler{
     private Background bG;
     private boolean isChangeScreen=false;
     private boolean caught=false;
-    private Pokeball p;
+    private Pokeball ball;
 
 
     public boolean init()  throws InterruptedException {
@@ -52,8 +52,8 @@ public class PlayerScreen implements KeyboardHandler{
             }
             while (!caught) {
 
-                p = new Pokeball();
-                p.init();
+                ball = new Pokeball();
+                ball.init();
 
                 KeyboardEvent leftPressed = new KeyboardEvent();
                 leftPressed.setKey(KeyboardEvent.KEY_LEFT);
@@ -66,57 +66,54 @@ public class PlayerScreen implements KeyboardHandler{
                 keyboard.addEventListener(rightPressed);
 
 
-                ThrowingBar t = new ThrowingBar();
-                int tN = t.init();
-                System.out.println("  -  " + tN + "    ..   ");
+                ThrowingBar throwingBar = new ThrowingBar();
+                int barStrength = throwingBar.init();
+                System.out.println("  -  " + barStrength + "    ..   ");
 
-                if (tN > 6) {
-                    tN = 1;//closer
-                } else if (tN > 3) {
-                    tN = 2;
+                if (barStrength > 6) {
+                    barStrength = 1;//closer
+                } else if (barStrength > 3) {
+                    barStrength = 2;
                 } else {
-                    tN = 3;//farthest
+                    barStrength = 3;//farthest
                 }
 
-                System.out.println(tN);
-                int pos = p.throwP(tN);
+                System.out.println(barStrength);
+                int pos = ball.throwP(barStrength);
 
 
-                 /*if (tN == 3) {
-                    tN = 1;
-                } else if (tN == 2) {
-                    tN = 2;
+                 /*if (barStrength == 3) {
+                    barStrength = 1;
+                } else if (barStrength == 2) {
+                    barStrength = 2;
                 } else {
-                    tN = 3;
+                    barStrength = 3;
                 }*/
 
-                System.out.println(tN + "  -  " + poke1.getY());
+                System.out.println(barStrength + "  -  " + poke1.getY());
                 System.out.println(pos + "  _  " + poke1.getX());
 
-                if (tN == poke1.getY() && pos == poke1.getX()) {
+                if (barStrength == poke1.getY() && pos == poke1.getX()) {
                     System.out.println("----__---HIT---__----");
                     poke1.hidePokemon();
                     if(((int)(Math.random()*10)+1)<poke1.getCatchRate()) {
-                        p.catchSuccess();
+                        ball.hit(3);                                //---Se conseguir apanhar, vai repetir o movimento 3x
+                        ball.catchSuccess();
                         poke1.caught();//deletes pokemon
                         caught = true;
-                        /*
-                        while (!isChangeScreen){
-                            System.out.println();
-                            keyboard.addEventListener(wPressed);
-                         }*/
                         //Changing Screen
                         //bG.stageInc();
                         return true;
                         //isChangeScreen = true;
                     } else {
-                        poke1.hidePokemon();
-                        p.catchFail();
+                        //poke1.hidePokemon();
+                        ball.hit(2);                                //---Se o pokemon resistir só repete o movimento 2x
+                        ball.catchFail();
                         poke1.showPokemon();
                     }
                 } else {
                     System.out.println("____--__FAIL___--____");
-                    p.hidePokeball();
+                    ball.hidePokeball();
                     caught = false;
                 }
 
@@ -135,16 +132,15 @@ public class PlayerScreen implements KeyboardHandler{
             // bG.stageInc();
             System.out.println("W pressed ");
             isChangeScreen=true;
-
         }
 
         if(keyboardEvent.getKey() == keyboardEvent.KEY_LEFT){
-            p.moveBallLeft();
+            ball.moveBallLeft();
             System.out.println("Left pressed");
         }
 
         if(keyboardEvent.getKey() == keyboardEvent.KEY_RIGHT){
-            p.moveBallRight();
+            ball.moveBallRight();
             System.out.println("Right pressed");
         }
 

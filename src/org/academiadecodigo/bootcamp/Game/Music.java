@@ -10,15 +10,12 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
-/**
- * Created by codecadet on 18/02/2019.
- */
 public class Music {
 
     //Menu song path
-    private String menu= "/Users/codecadet/Dev/barraTent/res/themesong.wav";
+    private String menu= "res/themesong.wav";
     //Pokeball throw sound path from ThrowingBar (When spacebar is pressed)
-    private String ball="/Users/codecadet/Dev/barraTent/res/pokeball.wav";
+    private String ball="res/pokeball.wav";
     //Variable to switch songs
     String playNow;
 

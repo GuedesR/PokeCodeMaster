@@ -18,17 +18,19 @@ public class PokePlacement {
         int upDown=((int)(Math.random()*3)+1);
 
         switch (upDown){
-            case 1: y=320;
+            case 1: y=265;
                 pokemon = new Picture(x,y,"pika.png");
                 pokemon.grow(-20,-20);
+                pokemon.translate(10,10);
                 y = 3;
                 break;
-            case 2: y=420;
+            case 2: y=400;
                 pokemon = new Picture(x,y,"pika.png");
                 pokemon.grow(-10,-10);
+                pokemon.translate(5,5);
                 y = 2;
                 break;
-            default:y=520;
+            default:y=505;
                 pokemon = new Picture(x,y,"pika.png");
                 y = 1;
                 break;

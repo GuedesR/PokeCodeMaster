@@ -31,15 +31,15 @@ public class Pokeball {
             x = 8;
             for (int i = 0; i < frames ; i++){
                 if(i < frames/2){
-                    Thread.sleep(ballThrowAnimationDelay);
                     pokeball.translate(x , -12);
                     pokeball.grow(-4,-4);
                     x-= 0.4;
-                } else {
                     Thread.sleep(ballThrowAnimationDelay);
+                } else {
                     pokeball.translate(-x , -12);
                     pokeball.grow(-4,-4);
                     x+= 1;
+                    Thread.sleep(ballThrowAnimationDelay);
                 }
             }
 
@@ -48,15 +48,15 @@ public class Pokeball {
             x=10;
             for (int i = 0; i < frames ; i++){
                 if(i < frames/2){
-                    Thread.sleep(ballThrowAnimationDelay);
                     pokeball.translate(x , -15);
                     pokeball.grow(-3,-3);
                     x-= 1;
-                } else {
                     Thread.sleep(ballThrowAnimationDelay);
+                } else {
                     pokeball.translate(-x , -15);
                     pokeball.grow(-3,-3);
                     x+= 2;
+                    Thread.sleep(ballThrowAnimationDelay);
                 }
             }
 
@@ -65,15 +65,15 @@ public class Pokeball {
             x = 15;
             for (int i = 0; i < frames ; i++){
                 if(i < frames/2){
-                    Thread.sleep(ballThrowAnimationDelay);
                     pokeball.translate(x , -18);
-                    pokeball.grow(-2.3,-2.3);
-                    x-= 1.5;
-                } else {
+                    pokeball.grow(-2,-2);
+                    x-= 1;
                     Thread.sleep(ballThrowAnimationDelay);
+                } else {
                     pokeball.translate(-x , -18);
-                    pokeball.grow(-2.3,-2.3);
+                    pokeball.grow(-2,-2);
                     x+= 2;
+                    Thread.sleep(ballThrowAnimationDelay);
                 }
             }
 
@@ -88,7 +88,7 @@ public class Pokeball {
         if(pos == 3){
             return;
         }
-        pokeball.translate(120,0);
+        pokeball.translate(110,0);
         pos++;
 
     }
@@ -97,27 +97,55 @@ public class Pokeball {
         if(pos == 1){
             return;
         }
-        pokeball.translate(-120,0);
+        pokeball.translate(-110,0);
         pos--;
     }
 
-    public void catchSuccess() throws InterruptedException{
+    /**
+     *  Coloquei a animação de tilt á parte para que corra em separado do catch.
+     *  Assim podemos rapidamente repetir as vezes que quisermos mudando a variavel repetition na implementação do method.
+     *  Nomeadamente, se o pokemon resiste ou não.
+     */
+
+    public void hit(int repetition) throws InterruptedException{
         pokeball.grow(10,10);
-        pokeball.translate(-5,0);
+        pokeball.translate(-5,-5);
         Thread.sleep(ballCatchAnimationDelay);
-        pokeball.translate(10,0);
-        Thread.sleep(ballCatchAnimationDelay+20);
-        pokeball.translate(-10,0);
-        Thread.sleep(ballCatchAnimationDelay);
-        pokeball.translate(10,0);
-        Thread.sleep(ballCatchAnimationDelay+20);
-        pokeball.translate(-10,0);
-        Thread.sleep(ballCatchAnimationDelay);
-        pokeball.translate(10,0);
-        Thread.sleep(ballCatchAnimationDelay+20);
+
+        int repeat = 0;
+
+        while(repeat < repetition){
+            pokeball.translate(10,0);
+            pokeball.load("Pokeball2.png");
+            pokeball.draw();
+            Thread.sleep(ballCatchAnimationDelay+100);
+
+            pokeball.translate(-10,0);
+            pokeball.load("Pokeball1.png");
+            pokeball.draw();
+            Thread.sleep(ballCatchAnimationDelay);
+
+            pokeball.translate(-10,0);
+            pokeball.load("Pokeball3.png");
+            pokeball.draw();
+            Thread.sleep(ballCatchAnimationDelay+100);
+
+            pokeball.translate(10,0);
+            pokeball.load("Pokeball1.png");
+            pokeball.draw();
+            Thread.sleep(ballCatchAnimationDelay);
+
+            repeat ++;
+        }
+
+    }
+
+    public void catchSuccess() throws InterruptedException{
+
         Picture gotcha = new Picture(65,320,"gotcha.png");
         gotcha.draw();
         Thread.sleep(ballCatchAnimationDelay+20);
+
         pokeball.delete();
         Thread.sleep(ballCatchAnimationDelay+20);
         gotcha.delete();
@@ -125,20 +153,12 @@ public class Pokeball {
     }
 
     public void catchFail() throws InterruptedException{
-        pokeball.grow(10,10);
-        pokeball.translate(-5,0);
-        Thread.sleep(ballCatchAnimationDelay);
-        pokeball.translate(10,0);
-        Thread.sleep(ballCatchAnimationDelay+20);
-        pokeball.translate(-10,0);
-        Thread.sleep(ballCatchAnimationDelay);
-        pokeball.translate(10,0);
-        Thread.sleep(ballCatchAnimationDelay+20);
         Picture fail = new Picture(65,320,"fail.png");
         pokeball.delete();
         fail.draw();
         Thread.sleep(ballCatchAnimationDelay+20);
         fail.delete();
+        pos = 2;
     }
 
     public void hidePokeball(){
