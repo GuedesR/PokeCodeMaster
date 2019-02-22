@@ -9,19 +9,21 @@ public class PingPong extends Utilities {
 
     private Picture background = new Picture(10,10,"bg.jpg");
 
-    private boolean isUnlocked=true;
+    private boolean unlocked=true;
 
     public boolean isUnlocked() {
-        return isUnlocked;
+        return unlocked;
     }
 
     @Override
     public boolean action() { //give pokeballs
+
+
         return true;
     }
 
     public void setUnlocked() {
-        isUnlocked = true;
+        unlocked = true;
     }
 
     @Override
@@ -32,6 +34,6 @@ public class PingPong extends Utilities {
 
     @Override
     public void hideStage() {
-
+        background.delete();
     }
 }
