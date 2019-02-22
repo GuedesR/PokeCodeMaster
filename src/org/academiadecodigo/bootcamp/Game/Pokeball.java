@@ -145,6 +145,7 @@ public class Pokeball {
             Thread.sleep(ballCatchAnimationDelay);
 
 
+
             repeat ++;
         }
 
