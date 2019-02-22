@@ -1,7 +1,6 @@
 package org.academiadecodigo.bootcamp.Game;
 
 import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
-import org.academiadecodigo.bootcamp.Game.StagesPack.Stages;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 /**
@@ -9,36 +8,32 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
  */
 public class PokePlacement {
 
-    private Pokes masterCoder;
-
-    private Picture pokemon;
+    private Picture pokemonPicture;
     private int x=220; //poke on the middle
     private int y;
     private int catchRate=7;
 
 
-    public int init(){
-
-
+    public int init(Pokes pokemon){
 
 
         int upDown=((int)(Math.random()*3)+1);
 
         switch (upDown){
             case 1: y=265;
-                pokemon = new Picture(x,y,masterCoder.getName() + ".jpg");
-                pokemon.grow(-20,-20);
-                pokemon.translate(10,10);
+                pokemonPicture = new Picture (x, y, pokemon.getImageName());
+                pokemonPicture.grow(-20,-20);
+                pokemonPicture.translate(10,10);
                 y = 3;
                 break;
             case 2: y=400;
-                pokemon = new Picture(x,y,"pika.png");
-                pokemon.grow(-10,-10);
-                pokemon.translate(5,5);
+                pokemonPicture = new Picture(x, y, pokemon.getImageName());
+                pokemonPicture.grow(-10,-10);
+                pokemonPicture.translate(5,5);
                 y = 2;
                 break;
             default:y=505;
-                pokemon = new Picture(x,y,"pika.png");
+                pokemonPicture = new Picture(x, y, pokemon.getImageName());
                 y = 1;
                 break;
         }
@@ -47,26 +42,26 @@ public class PokePlacement {
 
         switch (leftRight){
             case 1: x=110;
-                pokemon.translate(-110,0);
+                pokemonPicture.translate(-110,0);
                 x=1;
                 break;
             case 2: x=220;
                 x=2;
                 break;
             default: x=330;
-                pokemon.translate(110,0);
+                pokemonPicture.translate(110,0);
                 x=3;
                 break;
         }
 
 
 
-        pokemon.draw();
+        pokemonPicture.draw();
         return upDown;
     }
 
     public void caught(){
-        pokemon.delete();
+        pokemonPicture.delete();
     }
 
     public int getY(){
@@ -82,10 +77,10 @@ public class PokePlacement {
     }
 
     public void hidePokemon(){
-        pokemon.delete();
+        pokemonPicture.delete();
     }
 
     public void showPokemon(){
-        pokemon.draw();
+        pokemonPicture.draw();
     }
 }

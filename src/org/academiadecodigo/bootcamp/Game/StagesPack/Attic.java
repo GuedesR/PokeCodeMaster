@@ -1,5 +1,7 @@
 package org.academiadecodigo.bootcamp.Game.StagesPack;
 
+import org.academiadecodigo.bootcamp.Game.Pokemons.PokeList;
+import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 /**
@@ -9,6 +11,8 @@ public class Attic extends Stages {
 
     private Picture background = new Picture(10,10,"bg2.jpg");
     private boolean isUnlocked=true;
+    private PokeList pokeList = new PokeList();
+    private Pokes[] pokes;
 
 
     @Override
@@ -41,8 +45,15 @@ public class Attic extends Stages {
     }
 
     @Override
-    public void startPokemon() {
+    public Pokes startPokemon() {
+        int random = (int) Math.floor(Math.random() * 3) + 4;
 
+        if(!pokes[random].isCaptured()){
+            Pokes poke = pokes[random];
+            return poke;
+        }
+        else
+            return null;
     }
 
     @Override

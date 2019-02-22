@@ -1,5 +1,6 @@
 package org.academiadecodigo.bootcamp.Game;
 
+import org.academiadecodigo.bootcamp.Game.StagesPack.Stages;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
@@ -20,7 +21,7 @@ public class Menu implements KeyboardHandler {
     private boolean notexit=false;
 
 
-    public void init() throws InterruptedException{
+    public  void init() throws InterruptedException{
 
         backgroung = new Rectangle(10,10,465,730);
         backgroung.setColor(Color.CYAN);

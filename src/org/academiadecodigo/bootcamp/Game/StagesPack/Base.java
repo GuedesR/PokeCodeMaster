@@ -1,6 +1,7 @@
 package org.academiadecodigo.bootcamp.Game.StagesPack;
 
 import org.academiadecodigo.bootcamp.Game.Corridor;
+import org.academiadecodigo.bootcamp.Game.Menu;
 import org.academiadecodigo.bootcamp.Game.Pokemons.PokeList;
 import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
@@ -10,13 +11,17 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
  */
 public class Base extends Stages {
 
-    private Corridor corridor = new Corridor();
+    private Corridor corridor;
 
     private Picture background = new Picture(10,10,"bg.jpg");
     private boolean isUnlocked=true;
-    private Pokes[] pokeList = corridor.getList();
+    private PokeList pokeList = new PokeList();
+    private Pokes[] pokes;
 
-    public Base() throws InterruptedException {
+    public Base() {
+        pokes = new Pokes[4];
+        for(int i = 0; i < 4; i++)
+            pokes[i] = pokeList.getElement(i);
     }
 
 
@@ -53,8 +58,8 @@ public class Base extends Stages {
     public Pokes startPokemon() {
         int random = (int) Math.floor(Math.random() * 4);
 
-        if(!pokeList[random].isCaptured()){
-            Pokes poke = pokeList[random];
+        if(!pokes[random].isCaptured()){
+            Pokes poke = pokes[random];
             return poke;
         }
         else

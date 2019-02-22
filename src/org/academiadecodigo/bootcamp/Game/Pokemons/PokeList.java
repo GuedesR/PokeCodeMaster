@@ -24,7 +24,7 @@ public class PokeList {
 
     public void addToList(names name){
         int catchR = names.catchRate(name);
-        Picture foto = names.imagem(name);
+        String foto = names.imageName(name);
         int i = names.number(name);
         pokelist[i] = new Pokes(name, catchR, foto);
     }
@@ -35,7 +35,7 @@ public class PokeList {
             return;
         }
         int catchR = names.catchRate(names.values()[i]);
-        Picture foto = names.imagem(names.values()[i]);
+        String foto = names.imageName(names.values()[i]);
         pokelist[i] = new Pokes(names.values()[i], catchR, foto);
 
     }
@@ -86,30 +86,30 @@ public class PokeList {
             }
         }
 
-        public static Picture imagem(names name) {
+        public static String imageName(names name) {
             switch (name) {
                 case SERGIO:
-                    return new Picture(10, 10, "sergio.jpg");
+                    return "pika.png" /*"sergio.jpg"*/;
                 case MARIANA:
-                    return new Picture(10, 10, "mariana.jpg");
+                    return "pika2.png"/*"mariana.jpg"*/;
                 case CHRISTINA:
-                    return new Picture(10, 10, "christina.jpg");
+                    return "pika3.png"/*"christina.jpg"*/;
                 case BENNY:
-                    return new Picture(10, 10, "benny.jpg");
+                    return "pika4.png"/*"benny.jpg"*/;
 
                 case ROLO:
-                    return new Picture(10, 10, "rolo.jpg");
+                    return "rolo.jpg";
                 case SARA:
-                    return new Picture(10, 10, "sara.jpg");
+                    return "sara.jpg";
                 case AUDREY:
-                    return new Picture(10, 10, "audrey.jpg");
+                    return "audrey.jpg";
 
                 case CATARINA:
-                    return new Picture(10, 10, "catarina.jpg");
+                    return "catarina.jpg";
                 case FERRAO:
-                    return new Picture(10, 10, "ferrao.jpg");
+                    return "ferrao.jpg";
                 default:
-                    return null;
+                    return "pika.png";
             }
 
         }

@@ -7,16 +7,15 @@ public class Pokes {
     private String name;
     private int catchRate;
     private boolean captured;
-    private Picture image;
+    private String imageName;
     private boolean isDrunk;
     private boolean isUnlocked;
 
-
-    public Pokes(Enum name, int catchRate, Picture image){
+    public Pokes(Enum name, int catchRate, String imageName){
         this.name = name.toString();
         this.catchRate = catchRate;
         captured = false;
-        this.image = image;
+        this.imageName = imageName;
         isDrunk = false;
         isUnlocked = false;
     }
@@ -25,8 +24,8 @@ public class Pokes {
         isUnlocked = true;
     }
 
-    public Picture image(){
-
+    public String getImageName(){
+        return imageName;
     }
 
     public boolean giveBeer(){

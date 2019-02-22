@@ -1,5 +1,6 @@
 package org.academiadecodigo.bootcamp.Game;
 
+import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
@@ -22,7 +23,7 @@ public class PlayerScreen implements KeyboardHandler{
     private Pokeball ball;
 
 
-    public boolean init()  throws InterruptedException {
+    public boolean init(Pokes pokemon)  throws InterruptedException {
 
         int yPokeCoord=100;
         PokePlacement poke1= null;
@@ -43,7 +44,7 @@ public class PlayerScreen implements KeyboardHandler{
             isChangeScreen=false;
             if(!caught) {
                 poke1 = new PokePlacement();
-                yPokeCoord = poke1.init();
+                yPokeCoord = poke1.init(pokemon);
 
             }else{
 

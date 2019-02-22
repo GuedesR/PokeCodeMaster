@@ -70,7 +70,7 @@ public class Corridor implements MouseHandler {
                 if(stages instanceof Stages) {
                     stages.drawStage();
                     playerScreen = new PlayerScreen();
-                    bool = playerScreen.init();
+                    bool = playerScreen.init(base.startPokemon());
                     if (bool) {
                         stages.hideStage();
                     }
@@ -89,14 +89,10 @@ public class Corridor implements MouseHandler {
     public Pokes[] getList(){
         Pokes[] list;
         if (stages == base){
-            list = new Pokes[4];
-            for(int i = 0; i < 4; i++)
-                list[i] = pokeList.getElement(i);
+
         }
         if (stages == attic){
-            list = new Pokes[3];
-            for (int i = 4; i < 7; i++)
-                list[i] = pokeList.getElement(i);
+
         }
         if (stages == unicornios){
             list = new Pokes[2];

@@ -1,5 +1,7 @@
 package org.academiadecodigo.bootcamp.Game.StagesPack;
 
+import org.academiadecodigo.bootcamp.Game.Pokemons.PokeList;
+import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 /**
@@ -9,6 +11,8 @@ public class Unicornios extends Stages {
 
     private Picture background = new Picture(10, 10, "bg3.jpg");
     private boolean isUnlocked = false;
+    private PokeList pokeList = new PokeList();
+    private Pokes[] pokes;
 
 
     @Override
@@ -41,9 +45,15 @@ public class Unicornios extends Stages {
     }
 
     @Override
-    public void startPokemon() {
+    public Pokes startPokemon() {
+        int random = (int) Math.floor(Math.random() * 2) + 7;
 
-
+        if(!pokes[random].isCaptured()){
+            Pokes poke = pokes[random];
+            return poke;
+        }
+        else
+            return null;
     }
 
     public void setUnlocked(){
