@@ -51,8 +51,7 @@ public class ThrowingBar implements KeyboardHandler{
     }
 
     public void moveSquare() throws InterruptedException{
-        //System.out.println(pos + " ============");
-        //Thread.sleep(200);
+
         if(isGoingDown){
             goDown();
 

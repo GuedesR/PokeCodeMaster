@@ -23,12 +23,7 @@ public class PlayerScreen implements KeyboardHandler{
 
 
     public boolean init()  throws InterruptedException {
-/*
-        backGround = new Picture(10,10,"bg.jpg");
-        backGround.draw();
-*/
-        ///////bG = new Background();
-        ///////bG.init();
+
         int yPokeCoord=100;
         PokePlacement poke1= null;
 
