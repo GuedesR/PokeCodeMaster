@@ -17,6 +17,7 @@ public class Pokeball {
     private int frames;
     private int x;
     private int pos = 2;
+    public static int currentAmount = 5;
 
     public void init(){
 
@@ -28,13 +29,14 @@ public class Pokeball {
         pokeball.draw();
     }
 
-    public int throwP(int ammount) throws InterruptedException{
-
-        if(ammount == 1){
+    public int throwP(int barStrength) throws InterruptedException{
+        currentAmount--;
+        if(barStrength == 1){
             frames = 10;
             x = 8;
             for (int i = 0; i < frames ; i++){
                 if(i < frames/2){
+
                     pokeball.translate(x , -12);
                     pokeball.grow(-4,-4);
                     x-= 0.4;
@@ -47,7 +49,7 @@ public class Pokeball {
                 }
             }
 
-        } else if( ammount == 2){
+        } else if( barStrength == 2){
             frames = 14;
             x=10;
             for (int i = 0; i < frames ; i++){
@@ -185,5 +187,15 @@ public class Pokeball {
         this.pos= pos;
     }
 
+    public static int getCurrentAmount() {
+        return currentAmount;
+    }
 
+    public static void removeBall(){
+        currentAmount--;
+    }
+
+    public void addCurrentAmount(int currentAmount) {
+        this.currentAmount += currentAmount;
+    }
 }

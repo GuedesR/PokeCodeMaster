@@ -68,7 +68,7 @@ public class Corridor implements MouseHandler {
         while (true) {
             System.out.print("");
             if (stageIsOngoing) {
-                if(stages instanceof Stages) {
+                if(stages instanceof Stages  && Pokeball.getCurrentAmount()>0) {
                     stages.drawStage();
                     playerScreen = new PlayerScreen();
                     bool = playerScreen.init(base.startPokemon());

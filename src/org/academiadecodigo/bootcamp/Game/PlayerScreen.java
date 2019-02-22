@@ -11,7 +11,6 @@ import org.academiadecodigo.simplegraphics.mouse.Mouse;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 import org.academiadecodigo.simplegraphics.mouse.MouseEventType;
 import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
-import org.academiadecodigo.simplegraphics.pictures.Picture;
 import org.academiadecodigo.simplegraphics.graphics.Ellipse;
 
 
@@ -23,25 +22,22 @@ import org.academiadecodigo.simplegraphics.graphics.Ellipse;
  */
 public class PlayerScreen implements KeyboardHandler, MouseHandler {
 
-    private Picture backGround;
-    private Background bG;
     private boolean isChangeScreen=false;
     private boolean caught=false;
     private Pokeball ball;
-    private Ellipse pokedex;
-    private Ellipse remainingBalls;
+    private Ellipse pokedexBtn;
+    private String remainingBalls = Integer.toString(Pokeball.getCurrentAmount());
+    private Ellipse remainingBallsBtn;
     private Text remainingBallsNum;
-    private Ellipse beer;
+    private Ellipse beerBtn;
     private Text remainingBeersNum;
-    private Ellipse escape;
+    private Ellipse escapeBtn;
 
 
     public boolean init(Pokes pokemon)  throws InterruptedException {
 
         int yPokeCoord=100;
         PokePlacement poke1= null;
-
-
 
         Keyboard keyboard = new Keyboard(this);
 
@@ -60,33 +56,33 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
             isChangeScreen=false;
 
 
-            pokedex = new Ellipse(30, 290, 40,40);
-            pokedex.setColor(Color.LIGHT_GRAY);
-            pokedex.fill();
+            pokedexBtn = new Ellipse(30, 290, 40,40);
+            pokedexBtn.setColor(Color.LIGHT_GRAY);
+            pokedexBtn.fill();
 
-            remainingBalls = new Ellipse(30, 340, 40,40);
-            remainingBalls.setColor(Color.LIGHT_GRAY);
-            remainingBalls.fill();
+            remainingBallsBtn = new Ellipse(30, 340, 40,40);
+            remainingBallsBtn.setColor(Color.LIGHT_GRAY);
+            remainingBallsBtn.fill();
 
-            remainingBallsNum = new Text(60, 375, "1");
+            remainingBallsNum = new Text(60, 375, Integer.toString(Pokeball.getCurrentAmount()));
             remainingBallsNum.setColor(Color.BLACK);
             remainingBallsNum.grow(5,5);
             remainingBallsNum.draw();
 
-            beer = new Ellipse(30, 390, 40,40);
-            beer.setColor(Color.LIGHT_GRAY);
-            beer.fill();
+            beerBtn = new Ellipse(30, 390, 40,40);
+            beerBtn.setColor(Color.LIGHT_GRAY);
+            beerBtn.fill();
 
             remainingBeersNum = new Text(60, 425, "1");
             remainingBeersNum.setColor(Color.BLACK);
             remainingBeersNum.grow(5,5);
             remainingBeersNum.draw();
 
-            escape = new Ellipse(30, 440, 40,40);
-            escape.setColor(Color.LIGHT_GRAY);
-            escape.fill();
+            escapeBtn = new Ellipse(30, 440, 40,40);
+            escapeBtn.setColor(Color.LIGHT_GRAY);
+            escapeBtn.fill();
 
-            if(!caught) {
+            if(!caught && Pokeball.getCurrentAmount() > 0) {
                 poke1 = new PokePlacement();
                 yPokeCoord = poke1.init(pokemon);
 
@@ -97,8 +93,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
             //ball = new Pokeball();
             //ball.show();
 
-            while (!caught) {
-
+            while (!caught && Pokeball.getCurrentAmount() > 0) {
                 ball = new Pokeball();
                 ball.init();
                 ball.setPos(2);
@@ -137,8 +132,10 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
 
                 if (barStrength == poke1.getY() && pos == poke1.getX()) {
                     System.out.println("----__---HIT---__----");
+
                     poke1.hidePokemon();
                     if(((int)(Math.random()*10)+1)<poke1.getCatchRate()) {
+                        remainingBallsNum.setText(Integer.toString(Pokeball.getCurrentAmount()));
                         ball.hit(3);                                //---Se conseguir apanhar, vai repetir o movimento 3x
                         ball.catchSuccess();
                         poke1.caught();                                       //deletes pokemon
@@ -146,6 +143,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                         caught = true;
                         return true;
                     } else {
+                        remainingBallsNum.setText(Integer.toString(Pokeball.getCurrentAmount()));
                         poke1.hidePokemon();
                         ball.hit(2);                                //---Se o pokemon resistir só repete o movimento 2x
                         ball.catchFail();
@@ -156,6 +154,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
 
                     }
                 } else {
+                    remainingBallsNum.setText(Integer.toString(Pokeball.getCurrentAmount()));
                     System.out.println("____--__FAIL___--____");
                     ball.hidePokeball();
                     caught = false;
@@ -164,20 +163,26 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
 
                 }
 
+                if(Pokeball.getCurrentAmount() == 0){
+                    poke1.hidePokemon();
+                    caught=true;
+                    hideUI();
+                    return true;
+                }
+
             }
         }
         System.out.println("Something went terribly wrong");
-
         return false;
     }
 
     public void hideUI(){
-        pokedex.delete();
-        remainingBalls.delete();
+        pokedexBtn.delete();
+        remainingBallsBtn.delete();
         remainingBallsNum.delete();
-        beer.delete();
+        beerBtn.delete();
         remainingBeersNum.delete();
-        escape.delete();
+        escapeBtn.delete();
     }
 
 
@@ -201,7 +206,6 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
             ball.moveBallRight();
             System.out.println("Right pressed");
         }
-
 
     }
 
