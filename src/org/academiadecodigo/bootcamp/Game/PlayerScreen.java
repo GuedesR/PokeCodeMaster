@@ -44,6 +44,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
 
 
 
+
         Keyboard keyboard = new Keyboard(this);
 
         KeyboardEvent wPressed = new KeyboardEvent();
@@ -139,19 +140,14 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                     System.out.println("----__---HIT---__----");
                     pokePlacement.hidePokemon();
                     if(((int)(Math.random()*10)+1)<pokePlacement.getCatchRate()) {
-
-                    pokePlacement.hidePokemon();
-                    if(((int)(Math.random()*10)+1)<pokePlacement.getCatchRate()) {
-                        remainingBallsNum.setText(Integer.toString(Pokeball.getCurrentAmount()));
                         ball.hit(3);                                //---Se conseguir apanhar, vai repetir o movimento 3x
                         ball.catchSuccess();
-                        pokePlacement.caught();//deletes pokemon
+                        pokePlacement.caught();                                       //deletes pokemon
                         hideUI();
                         caught = true;
                         return true;
                     } else {
                         pokePlacement.hidePokemon();
-                        remainingBallsNum.setText(Integer.toString(Pokeball.getCurrentAmount()));
                         ball.hit(2);                                //---Se o pokemon resistir só repete o movimento 2x
                         ball.catchFail();
                         pokePlacement.showPokemon();
@@ -179,15 +175,11 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
 
             }
         }
-
         System.out.println("Something went terribly wrong");
+
         return false;
     }
 
-    private void beerThrow(Pokes pokemon){
-        if (!pokemon.isDrunk())
-            pokemon.giveBeer();
-    }
     public void hideUI(){
         pokedexBtn.delete();
         remainingBallsBtn.delete();
