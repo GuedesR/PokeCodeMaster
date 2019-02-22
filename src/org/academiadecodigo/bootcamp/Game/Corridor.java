@@ -7,10 +7,15 @@ import org.academiadecodigo.bootcamp.Game.StagesPack.Unicornios;
 import org.academiadecodigo.bootcamp.Game.UtilitiesPack.Copa;
 import org.academiadecodigo.bootcamp.Game.UtilitiesPack.PingPong;
 import org.academiadecodigo.bootcamp.Game.UtilitiesPack.Utilities;
+import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
+import org.academiadecodigo.simplegraphics.mouse.Mouse;
+import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
+import org.academiadecodigo.simplegraphics.mouse.MouseEventType;
+import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 /**
@@ -20,7 +25,7 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
  *
  *
  */
-public class Corridor implements KeyboardHandler {
+public class Corridor implements MouseHandler {
 
     //Instantiate backgrounds
     private Stages attic = new Attic();
@@ -31,6 +36,7 @@ public class Corridor implements KeyboardHandler {
     private Utilities varanda = new Varanda();
     PlayerScreen playerScreen;
     private GameScreens stages;
+    Rectangle highligth = new Rectangle(40,180,100,100);;
 
 
     private Picture corridor1 = new Picture(10,10,"corr1.jpg");
@@ -44,41 +50,16 @@ public class Corridor implements KeyboardHandler {
     public Corridor() throws InterruptedException{
 
 
-        corridor1.draw();
+        corridor3.draw();
         boolean bool;
 
 
-        Keyboard keyboard = new Keyboard(this);
 
-        KeyboardEvent onePressed = new KeyboardEvent();
-        onePressed.setKey(KeyboardEvent.KEY_1);
-        onePressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
-        keyboard.addEventListener(onePressed);
+        Mouse m = new Mouse(this);
+        m.addEventListener(MouseEventType.MOUSE_CLICKED);
 
-        KeyboardEvent twoPressed = new KeyboardEvent();
-        twoPressed.setKey(KeyboardEvent.KEY_2);
-        twoPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
-        keyboard.addEventListener(twoPressed);
+        m.addEventListener(MouseEventType.MOUSE_MOVED);
 
-        KeyboardEvent threePressed = new KeyboardEvent();
-        threePressed.setKey(KeyboardEvent.KEY_3);
-        threePressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
-        keyboard.addEventListener(threePressed);
-
-        KeyboardEvent fourPressed = new KeyboardEvent();
-        fourPressed.setKey(KeyboardEvent.KEY_4);
-        fourPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
-        keyboard.addEventListener(fourPressed);
-
-        KeyboardEvent fivePressed = new KeyboardEvent();
-        fivePressed.setKey(KeyboardEvent.KEY_5);
-        fivePressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
-        keyboard.addEventListener(fivePressed);
-
-        KeyboardEvent sixPressed = new KeyboardEvent();
-        sixPressed.setKey(KeyboardEvent.KEY_6);
-        sixPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
-        keyboard.addEventListener(sixPressed);
 
         while (true) {
             System.out.print("");
@@ -105,48 +86,49 @@ public class Corridor implements KeyboardHandler {
 
     }
 
-
     @Override
-    public void keyPressed(KeyboardEvent keyboardEvent) {
-        if (keyboardEvent.getKey() == KeyboardEvent.KEY_1) {
+    public void mouseClicked(MouseEvent mouseEvent) {
+        System.out.println(mouseEvent.getY());
+
+        if(mouseEvent.getY()>190 && mouseEvent.getY()<270){
             //Go to base
             stages=base;
             stageIsOngoing=true;
-
         }
-        if (keyboardEvent.getKey() == KeyboardEvent.KEY_2) {
+        if(mouseEvent.getY()>270 && mouseEvent.getY()<350){
             //Go to attic
             stages=attic;
             stageIsOngoing=true;
-
         }
-        if (keyboardEvent.getKey() == KeyboardEvent.KEY_3 && pingPong.isUnlocked()) {
-            //Go to attic
+        if((mouseEvent.getY()>350 && mouseEvent.getY()<420)&& pingPong.isUnlocked()){
+            //Go to pingpong
             stages=pingPong;
             stageIsOngoing=true;
-
         }
-        if (keyboardEvent.getKey() == KeyboardEvent.KEY_4 && copa.isUnlocked()) {
-            //Go to attic
+        if(mouseEvent.getY()>420 && mouseEvent.getY()<490 && copa.isUnlocked()){
+            //Go to copa
             stages=copa;
             stageIsOngoing=true;
-
         }
-        if (keyboardEvent.getKey() == KeyboardEvent.KEY_5 && varanda.isUnlocked()) {
-            //Go to attic
+        if(mouseEvent.getY()>490 && mouseEvent.getY()<560 && varanda.isUnlocked()){
+            //Go to varanda
             stages=varanda;
             stageIsOngoing=true;
-
         }
-        if (keyboardEvent.getKey() == KeyboardEvent.KEY_6 && unicornios.isUnlocked()) {
-            //Go to attic
+        if(mouseEvent.getY()>560 && mouseEvent.getY()<624 && unicornios.isUnlocked()){
+            //Go to unicornios
             stages=unicornios;
             stageIsOngoing=true;
-
         }
     }
+
     @Override
-    public void keyReleased(KeyboardEvent keyboardEvent) {
+    public void mouseMoved(MouseEvent mouseEvent) {
+        if(mouseEvent.getY()>190 && mouseEvent.getY()<270){
+            highligth.draw();
+        }else{
+            highligth.delete();
+        }
 
     }
 }
