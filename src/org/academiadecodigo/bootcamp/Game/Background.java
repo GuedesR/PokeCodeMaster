@@ -18,7 +18,7 @@ public class Background {
 
     public void init(){
 
-        System.out.println(" Background init");
+        System.out.println(" Background show");
 
         switch (stage){
             //Base

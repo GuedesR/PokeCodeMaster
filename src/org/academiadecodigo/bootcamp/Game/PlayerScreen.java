@@ -1,11 +1,18 @@
 package org.academiadecodigo.bootcamp.Game;
 
+import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
+import org.academiadecodigo.simplegraphics.graphics.Text;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
+import org.academiadecodigo.simplegraphics.mouse.Mouse;
+import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
+import org.academiadecodigo.simplegraphics.mouse.MouseEventType;
+import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
+import org.academiadecodigo.simplegraphics.graphics.Ellipse;
 
 
 /**
@@ -14,13 +21,19 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
  * Novo nome de CatchScreen
  * Uma vez que este vai ser onde se vai colocar todas as opções do Jogador não só apanhar.
  */
-public class PlayerScreen implements KeyboardHandler{
+public class PlayerScreen implements KeyboardHandler, MouseHandler {
 
     private Picture backGround;
     private Background bG;
     private boolean isChangeScreen=false;
     private boolean caught=false;
     private Pokeball ball;
+    private Ellipse pokedex;
+    private Ellipse remainingBalls;
+    private Text remainingBallsNum;
+    private Ellipse beer;
+    private Text remainingBeersNum;
+    private Ellipse escape;
 
 
     public boolean init(Pokes pokemon)  throws InterruptedException {
@@ -37,22 +50,52 @@ public class PlayerScreen implements KeyboardHandler{
         wPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
         keyboard.addEventListener(wPressed);
 
-        //ball = new Pokeball();
-        //ball.init();
+        Mouse mouse = new Mouse(this);
+
+        mouse.addEventListener(MouseEventType.MOUSE_MOVED);
+        mouse.addEventListener(MouseEventType.MOUSE_CLICKED);
+
 
         while (!isChangeScreen) {
             isChangeScreen=false;
+
+
+            pokedex = new Ellipse(30, 290, 40,40);
+            pokedex.setColor(Color.LIGHT_GRAY);
+            pokedex.fill();
+
+            remainingBalls = new Ellipse(30, 340, 40,40);
+            remainingBalls.setColor(Color.LIGHT_GRAY);
+            remainingBalls.fill();
+
+            remainingBallsNum = new Text(60, 375, "1");
+            remainingBallsNum.setColor(Color.BLACK);
+            remainingBallsNum.grow(5,5);
+            remainingBallsNum.draw();
+
+            beer = new Ellipse(30, 390, 40,40);
+            beer.setColor(Color.LIGHT_GRAY);
+            beer.fill();
+
+            remainingBeersNum = new Text(60, 425, "1");
+            remainingBeersNum.setColor(Color.BLACK);
+            remainingBeersNum.grow(5,5);
+            remainingBeersNum.draw();
+
+            escape = new Ellipse(30, 440, 40,40);
+            escape.setColor(Color.LIGHT_GRAY);
+            escape.fill();
+
             if(!caught) {
                 poke1 = new PokePlacement();
                 yPokeCoord = poke1.init(pokemon);
 
-            }else{
-
             }
 
 
+
             //ball = new Pokeball();
-            //ball.init();
+            //ball.show();
 
             while (!caught) {
 
@@ -98,7 +141,8 @@ public class PlayerScreen implements KeyboardHandler{
                     if(((int)(Math.random()*10)+1)<poke1.getCatchRate()) {
                         ball.hit(3);                                //---Se conseguir apanhar, vai repetir o movimento 3x
                         ball.catchSuccess();
-                        poke1.caught();//deletes pokemon
+                        poke1.caught();                                       //deletes pokemon
+                        hideUI();
                         caught = true;
                         return true;
                     } else {
@@ -125,6 +169,15 @@ public class PlayerScreen implements KeyboardHandler{
         System.out.println("Something went terribly wrong");
 
         return false;
+    }
+
+    public void hideUI(){
+        pokedex.delete();
+        remainingBalls.delete();
+        remainingBallsNum.delete();
+        beer.delete();
+        remainingBeersNum.delete();
+        escape.delete();
     }
 
 
@@ -154,6 +207,29 @@ public class PlayerScreen implements KeyboardHandler{
 
     @Override
     public void keyReleased(KeyboardEvent keyboardEvent) {
+
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent mouseEvent) {
+        Double mouseX = mouseEvent.getX();
+        Double mouseY = mouseEvent.getY();
+
+        System.out.println("Mouse X: " + mouseX);
+        System.out.println("Mouse Y: " + mouseY);
+
+
+        if(mouseX > 30 && mouseX < 70 && mouseY > 320 && mouseY < 360){
+            if(!Pokedex.isOpened()){
+                Pokedex.show();
+            }else {
+                Pokedex.hide();
+            }
+        }
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent mouseEvent) {
 
     }
 }

@@ -46,7 +46,7 @@ public class Menu implements KeyboardHandler {
         keyboard.addEventListener(downPressed);
 
 
-        //menu song init
+        //menu song show
 /*
         Music music = new Music();
         music.musicplay("menu");

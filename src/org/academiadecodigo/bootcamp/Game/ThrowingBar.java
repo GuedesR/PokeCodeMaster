@@ -18,7 +18,7 @@ public class ThrowingBar implements KeyboardHandler{
     boolean stop=false;
     private int throwNumber;
     private int barX=30;
-    private int barY=70;
+    private int barY=50;
     private int pos=0;
 
     public int init() throws InterruptedException{
@@ -27,7 +27,7 @@ public class ThrowingBar implements KeyboardHandler{
         background.setColor(Color.WHITE);
         background.fill();
 
-        square = new Rectangle(barX+10,barY+10,20,20);
+        square = new Rectangle(barX+10,barY-10,20,20);
         square.setColor(Color.BLUE);
         square.fill();
 
@@ -46,8 +46,6 @@ public class ThrowingBar implements KeyboardHandler{
         square.delete();
 
         return pos;
-
-
     }
 
     public void moveSquare() throws InterruptedException{
