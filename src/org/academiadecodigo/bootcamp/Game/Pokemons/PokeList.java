@@ -15,6 +15,13 @@ public class PokeList {
         return pokelist[i];
     }
 
+    public PokeList(){
+
+        for(int i = 0; i < pokelist.length; i++){
+            addToList(i);
+        }
+    }
+
     public void addToList(names name){
         int catchR = names.catchRate(name);
         Picture foto = names.imagem(name);
@@ -82,7 +89,7 @@ public class PokeList {
         public static Picture imagem(names name) {
             switch (name) {
                 case SERGIO:
-                    return null; //new Picture(10, 10, "sergio.jpg");
+                    return new Picture(10, 10, "sergio.jpg");
                 case MARIANA:
                     return new Picture(10, 10, "mariana.jpg");
                 case CHRISTINA:

@@ -1,6 +1,7 @@
 package org.academiadecodigo.bootcamp.Game.StagesPack;
 
 import org.academiadecodigo.bootcamp.Game.GameScreens;
+import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 /**
@@ -27,7 +28,7 @@ public abstract class Stages extends GameScreens{
 
     public abstract void hideStage();
 
-    public abstract void startPokemon();
+    public abstract Pokes startPokemon();
 
 
 

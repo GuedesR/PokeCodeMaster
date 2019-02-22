@@ -1,5 +1,7 @@
 package org.academiadecodigo.bootcamp.Game;
 
+import org.academiadecodigo.bootcamp.Game.Pokemons.PokeList;
+import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
 import org.academiadecodigo.bootcamp.Game.StagesPack.Attic;
 import org.academiadecodigo.bootcamp.Game.StagesPack.Base;
 import org.academiadecodigo.bootcamp.Game.StagesPack.Stages;
@@ -37,6 +39,7 @@ public class Corridor implements MouseHandler {
     PlayerScreen playerScreen;
     private GameScreens stages;
     Rectangle highligth = new Rectangle(40,180,100,100);;
+    private PokeList pokeList = new PokeList();
 
 
     private Picture corridor1 = new Picture(10,10,"corr1.jpg");
@@ -85,6 +88,32 @@ public class Corridor implements MouseHandler {
         }
 
     }
+
+    public Pokes[] getList(){
+        Pokes[] list;
+        if (stages == base){
+            list = new Pokes[4];
+            for(int i = 0; i < 4; i++)
+                list[i] = pokeList.getElement(i);
+        }
+        if (stages == attic){
+            list = new Pokes[3];
+            for (int i = 4; i < 7; i++)
+                list[i] = pokeList.getElement(i);
+        }
+        if (stages == unicornios){
+            list = new Pokes[2];
+            for (int i = 7; i < 9; i++)
+                list[i] = pokeList.getElement(i);
+        }
+        else{
+            System.out.println("Something wrong on list.");
+            list = new Pokes[0];
+        }
+        return list;
+    }
+
+    public GameScreens getStages(){return stages;}
 
     @Override
     public void mouseClicked(MouseEvent mouseEvent) {

@@ -1,5 +1,8 @@
 package org.academiadecodigo.bootcamp.Game.StagesPack;
 
+import org.academiadecodigo.bootcamp.Game.Corridor;
+import org.academiadecodigo.bootcamp.Game.Pokemons.PokeList;
+import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 /**
@@ -7,9 +10,14 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
  */
 public class Base extends Stages {
 
+    private Corridor corridor = new Corridor();
 
     private Picture background = new Picture(10,10,"bg.jpg");
     private boolean isUnlocked=true;
+    private Pokes[] pokeList = corridor.getList();
+
+    public Base() throws InterruptedException {
+    }
 
 
     @Override
@@ -42,8 +50,15 @@ public class Base extends Stages {
     }
 
     @Override
-    public void startPokemon() {
+    public Pokes startPokemon() {
+        int random = (int) Math.floor(Math.random() * 4);
 
+        if(!pokeList[random].isCaptured()){
+            Pokes poke = pokeList[random];
+            return poke;
+        }
+        else
+            return null;
     }
     @Override
     public void setUnlocked(){

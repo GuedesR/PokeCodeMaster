@@ -1,5 +1,7 @@
 package org.academiadecodigo.bootcamp.Game;
 
+import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
+import org.academiadecodigo.bootcamp.Game.StagesPack.Stages;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 /**
@@ -7,19 +9,24 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
  */
 public class PokePlacement {
 
+    private Pokes masterCoder;
+
     private Picture pokemon;
     private int x=220; //poke on the middle
     private int y;
     private int catchRate=7;
 
+
     public int init(){
+
+
 
 
         int upDown=((int)(Math.random()*3)+1);
 
         switch (upDown){
             case 1: y=265;
-                pokemon = new Picture(x,y,"pika.png");
+                pokemon = new Picture(x,y,masterCoder.getName() + ".jpg");
                 pokemon.grow(-20,-20);
                 pokemon.translate(10,10);
                 y = 3;

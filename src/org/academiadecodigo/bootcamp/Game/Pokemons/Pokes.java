@@ -25,6 +25,10 @@ public class Pokes {
         isUnlocked = true;
     }
 
+    public Picture image(){
+
+    }
+
     public boolean giveBeer(){
         if(!isDrunk){
             isDrunk = true;
