@@ -53,6 +53,8 @@ public class Menu implements KeyboardHandler {
             if (up) {
                 Corridor corridor = new Corridor();
                 up=false;
+                keyboard.removeEventListener(upPressed);
+                keyboard.removeEventListener(downPressed);
             }
 
         }while (!stop);
@@ -67,6 +69,7 @@ public class Menu implements KeyboardHandler {
             //Corridor corridor= new Corridor();
             System.out.println("start key");
             up=true;
+
             notexit=true;
         }if(keyboardEvent.getKey()==KeyboardEvent.KEY_DOWN && !notexit){
             System.out.println("down key");

@@ -24,6 +24,10 @@ public class Pokeball {
         pokeball.draw();
     }
 
+    public void reset(){
+        pokeball.draw();
+    }
+
     public int throwP(int ammount) throws InterruptedException{
 
         if(ammount == 1){
@@ -89,7 +93,9 @@ public class Pokeball {
             return;
         }
         pokeball.translate(110,0);
+        System.out.println("----" + pokeball.getX() + " pos: " + pos);
         pos++;
+        System.out.println("After pos: " + pos);
 
     }
 
@@ -98,7 +104,10 @@ public class Pokeball {
             return;
         }
         pokeball.translate(-110,0);
+        System.out.println("----" + pokeball.getX() + " pos " + pos);
         pos--;
+
+        System.out.println("After pos: " + pos);
     }
 
     /**
@@ -135,6 +144,7 @@ public class Pokeball {
             pokeball.draw();
             Thread.sleep(ballCatchAnimationDelay);
 
+
             repeat ++;
         }
 
@@ -163,6 +173,15 @@ public class Pokeball {
 
     public void hidePokeball(){
         pokeball.delete();
+    }
+
+
+    public int getX(){
+        return pokeball.getX();
+    }
+
+    public void setPos(int pos){
+        this.pos= pos;
     }
 
 

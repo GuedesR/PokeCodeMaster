@@ -41,6 +41,9 @@ public class PlayerScreen implements KeyboardHandler{
         wPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
         keyboard.addEventListener(wPressed);
 
+        //ball = new Pokeball();
+        //ball.init();
+
         while (!isChangeScreen) {
             isChangeScreen=false;
             if(!caught) {
@@ -50,10 +53,18 @@ public class PlayerScreen implements KeyboardHandler{
             }else{
 
             }
+
+
+            //ball = new Pokeball();
+            //ball.init();
+
             while (!caught) {
 
                 ball = new Pokeball();
                 ball.init();
+                ball.setPos(2);
+                System.out.println(" CENAS");
+                //ball.reset();
 
                 KeyboardEvent leftPressed = new KeyboardEvent();
                 leftPressed.setKey(KeyboardEvent.KEY_LEFT);
@@ -82,14 +93,6 @@ public class PlayerScreen implements KeyboardHandler{
                 int pos = ball.throwP(barStrength);
 
 
-                 /*if (barStrength == 3) {
-                    barStrength = 1;
-                } else if (barStrength == 2) {
-                    barStrength = 2;
-                } else {
-                    barStrength = 3;
-                }*/
-
                 System.out.println(barStrength + "  -  " + poke1.getY());
                 System.out.println(pos + "  _  " + poke1.getX());
 
@@ -101,20 +104,24 @@ public class PlayerScreen implements KeyboardHandler{
                         ball.catchSuccess();
                         poke1.caught();//deletes pokemon
                         caught = true;
-                        //Changing Screen
-                        //bG.stageInc();
                         return true;
-                        //isChangeScreen = true;
                     } else {
-                        //poke1.hidePokemon();
+                        poke1.hidePokemon();
                         ball.hit(2);                                //---Se o pokemon resistir só repete o movimento 2x
                         ball.catchFail();
                         poke1.showPokemon();
+                        ball.hidePokeball();
+                        keyboard.removeEventListener(leftPressed);
+                        keyboard.removeEventListener(rightPressed);
+
                     }
                 } else {
                     System.out.println("____--__FAIL___--____");
                     ball.hidePokeball();
                     caught = false;
+                    keyboard.removeEventListener(leftPressed);
+                    keyboard.removeEventListener(rightPressed);
+
                 }
 
             }
@@ -134,12 +141,14 @@ public class PlayerScreen implements KeyboardHandler{
             isChangeScreen=true;
         }
 
-        if(keyboardEvent.getKey() == keyboardEvent.KEY_LEFT){
+        if(keyboardEvent.getKey() == KeyboardEvent.KEY_LEFT){
+            //System.out.println("LEFT POKE X: " + ball.getX());
             ball.moveBallLeft();
             System.out.println("Left pressed");
         }
 
-        if(keyboardEvent.getKey() == keyboardEvent.KEY_RIGHT){
+        if(keyboardEvent.getKey() == KeyboardEvent.KEY_RIGHT){
+            //System.out.println("RIGHT POKE X: " + ball.getX());
             ball.moveBallRight();
             System.out.println("Right pressed");
         }
