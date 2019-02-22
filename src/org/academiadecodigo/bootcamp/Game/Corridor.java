@@ -30,6 +30,7 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 public class Corridor implements MouseHandler {
 
     //Instantiate backgrounds
+    private Stages currentStage;
     private Stages attic = new Attic();
     private Stages base = new Base();
     private Stages unicornios = new Unicornios();
@@ -71,7 +72,7 @@ public class Corridor implements MouseHandler {
                 if(stages instanceof Stages) {
                     stages.drawStage();
                     playerScreen = new PlayerScreen();
-                    bool = playerScreen.init(base.startPokemon());
+                    bool = playerScreen.init(currentStage.startPokemon());
                     if (bool) {
                         stages.hideStage();
                     }
@@ -88,26 +89,6 @@ public class Corridor implements MouseHandler {
 
     }
 
-    public Pokes[] getList(){
-        Pokes[] list;
-        if (stages == base){
-
-        }
-        if (stages == attic){
-
-        }
-        if (stages == unicornios){
-            list = new Pokes[2];
-            for (int i = 7; i < 9; i++)
-                list[i] = pokeList.getElement(i);
-        }
-        else{
-            System.out.println("Something wrong on list.");
-            list = new Pokes[0];
-        }
-        return list;
-    }
-
     public GameScreens getStages(){return stages;}
 
     @Override
@@ -118,11 +99,13 @@ public class Corridor implements MouseHandler {
         if(mouseEvent.getY()>190 && mouseEvent.getY()<270){
             //Go to base
             stages=base;
+            currentStage = base;
             stageIsOngoing=true;
         }
         if(mouseEvent.getY()>270 && mouseEvent.getY()<350){
             //Go to attic
             stages=attic;
+            currentStage = attic;
             stageIsOngoing=true;
 
         }
@@ -144,6 +127,7 @@ public class Corridor implements MouseHandler {
         if(mouseEvent.getY()>560 && mouseEvent.getY()<624 && unicornios.isUnlocked()){
             //Go to unicornios
             stages=unicornios;
+            currentStage = unicornios;
             stageIsOngoing=true;
         }
     }

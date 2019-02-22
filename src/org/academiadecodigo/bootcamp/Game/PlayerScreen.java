@@ -39,7 +39,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
     public boolean init(Pokes pokemon)  throws InterruptedException {
 
         int yPokeCoord=100;
-        PokePlacement poke1= null;
+        PokePlacement pokePlacement= null;
 
 
 
@@ -87,11 +87,12 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
             escape.fill();
 
             if(!caught) {
-                poke1 = new PokePlacement();
-                yPokeCoord = poke1.init(pokemon);
+                pokePlacement = new PokePlacement();
+                yPokeCoord = pokePlacement.init(pokemon);
+
+            }else{
 
             }
-
 
 
             //ball = new Pokeball();
@@ -132,24 +133,24 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                 int pos = ball.throwP(barStrength);
 
 
-                System.out.println(barStrength + "  -  " + poke1.getY());
-                System.out.println(pos + "  _  " + poke1.getX());
+                System.out.println(barStrength + "  -  " + pokePlacement.getY());
+                System.out.println(pos + "  _  " + pokePlacement.getX());
 
-                if (barStrength == poke1.getY() && pos == poke1.getX()) {
+                if (barStrength == pokePlacement.getY() && pos == pokePlacement.getX()) {
                     System.out.println("----__---HIT---__----");
-                    poke1.hidePokemon();
-                    if(((int)(Math.random()*10)+1)<poke1.getCatchRate()) {
+                    pokePlacement.hidePokemon();
+                    if(((int)(Math.random()*10)+1)<pokePlacement.getCatchRate()) {
                         ball.hit(3);                                //---Se conseguir apanhar, vai repetir o movimento 3x
                         ball.catchSuccess();
-                        poke1.caught();                                       //deletes pokemon
+                        pokePlacement.caught();//deletes pokemon
                         hideUI();
                         caught = true;
                         return true;
                     } else {
-                        poke1.hidePokemon();
+                        pokePlacement.hidePokemon();
                         ball.hit(2);                                //---Se o pokemon resistir só repete o movimento 2x
                         ball.catchFail();
-                        poke1.showPokemon();
+                        pokePlacement.showPokemon();
                         ball.hidePokeball();
                         keyboard.removeEventListener(leftPressed);
                         keyboard.removeEventListener(rightPressed);
@@ -171,6 +172,10 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
         return false;
     }
 
+    private void beerThrow(Pokes pokemon){
+        if (!pokemon.isDrunk())
+            pokemon.giveBeer();
+    }
     public void hideUI(){
         pokedex.delete();
         remainingBalls.delete();
@@ -201,7 +206,6 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
             ball.moveBallRight();
             System.out.println("Right pressed");
         }
-
 
     }
 
