@@ -202,6 +202,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
             System.out.println("Right pressed");
         }
 
+
     }
 
 
