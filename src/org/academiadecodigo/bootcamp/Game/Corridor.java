@@ -76,10 +76,7 @@ public class Corridor implements MouseHandler {
                     stages.drawStage();
                     stages.hideStage();
                     stageIsOngoing = false;
-                    /*
-                    if (bool) {
-                        stages.hideStage();
-                    }*/
+
                 }
             }
         }
@@ -99,6 +96,7 @@ public class Corridor implements MouseHandler {
             //Go to attic
             stages=attic;
             stageIsOngoing=true;
+
         }
         if((mouseEvent.getY()>350 && mouseEvent.getY()<420)&& pingPong.isUnlocked()){
             //Go to pingpong
@@ -124,7 +122,7 @@ public class Corridor implements MouseHandler {
 
     @Override
     public void mouseMoved(MouseEvent mouseEvent) {
-        if(mouseEvent.getY()>190 && mouseEvent.getY()<270){
+        if(mouseEvent.getY()>190 && mouseEvent.getY()<270 && !stageIsOngoing){
             highligth.draw();
         }else{
             highligth.delete();
