@@ -11,6 +11,7 @@ import org.academiadecodigo.simplegraphics.mouse.Mouse;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 import org.academiadecodigo.simplegraphics.mouse.MouseEventType;
 import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
+import org.academiadecodigo.simplegraphics.pictures.Picture;
 import org.academiadecodigo.simplegraphics.graphics.Ellipse;
 
 
@@ -22,6 +23,8 @@ import org.academiadecodigo.simplegraphics.graphics.Ellipse;
  */
 public class PlayerScreen implements KeyboardHandler, MouseHandler {
 
+    private Picture backGround;
+    private Background bG;
     private boolean isChangeScreen=false;
     private boolean caught=false;
     private Pokeball ball;
@@ -37,7 +40,9 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
     public boolean init(Pokes pokemon)  throws InterruptedException {
 
         int yPokeCoord=100;
-        PokePlacement poke1= null;
+        PokePlacement pokePlacement= null;
+
+
 
         Keyboard keyboard = new Keyboard(this);
 
@@ -82,9 +87,9 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
             escapeBtn.setColor(Color.LIGHT_GRAY);
             escapeBtn.fill();
 
-            if(!caught && Pokeball.getCurrentAmount() > 0) {
-                poke1 = new PokePlacement();
-                yPokeCoord = poke1.init(pokemon);
+            if(!caught) {
+                pokePlacement = new PokePlacement();
+                yPokeCoord = pokePlacement.init(pokemon);
 
             }
 
@@ -127,27 +132,29 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                 int pos = ball.throwP(barStrength);
 
 
-                System.out.println(barStrength + "  -  " + poke1.getY());
-                System.out.println(pos + "  _  " + poke1.getX());
+                System.out.println(barStrength + "  -  " + pokePlacement.getY());
+                System.out.println(pos + "  _  " + pokePlacement.getX());
 
-                if (barStrength == poke1.getY() && pos == poke1.getX()) {
+                if (barStrength == pokePlacement.getY() && pos == pokePlacement.getX()) {
                     System.out.println("----__---HIT---__----");
+                    pokePlacement.hidePokemon();
+                    if(((int)(Math.random()*10)+1)<pokePlacement.getCatchRate()) {
 
-                    poke1.hidePokemon();
-                    if(((int)(Math.random()*10)+1)<poke1.getCatchRate()) {
+                    pokePlacement.hidePokemon();
+                    if(((int)(Math.random()*10)+1)<pokePlacement.getCatchRate()) {
                         remainingBallsNum.setText(Integer.toString(Pokeball.getCurrentAmount()));
                         ball.hit(3);                                //---Se conseguir apanhar, vai repetir o movimento 3x
                         ball.catchSuccess();
-                        poke1.caught();                                       //deletes pokemon
+                        pokePlacement.caught();//deletes pokemon
                         hideUI();
                         caught = true;
                         return true;
                     } else {
+                        pokePlacement.hidePokemon();
                         remainingBallsNum.setText(Integer.toString(Pokeball.getCurrentAmount()));
-                        poke1.hidePokemon();
                         ball.hit(2);                                //---Se o pokemon resistir só repete o movimento 2x
                         ball.catchFail();
-                        poke1.showPokemon();
+                        pokePlacement.showPokemon();
                         ball.hidePokeball();
                         keyboard.removeEventListener(leftPressed);
                         keyboard.removeEventListener(rightPressed);
@@ -164,7 +171,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                 }
 
                 if(Pokeball.getCurrentAmount() == 0){
-                    poke1.hidePokemon();
+                    pokePlacement.hidePokemon();
                     caught=true;
                     hideUI();
                     return true;
@@ -172,10 +179,15 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
 
             }
         }
+
         System.out.println("Something went terribly wrong");
         return false;
     }
 
+    private void beerThrow(Pokes pokemon){
+        if (!pokemon.isDrunk())
+            pokemon.giveBeer();
+    }
     public void hideUI(){
         pokedexBtn.delete();
         remainingBallsBtn.delete();
@@ -206,6 +218,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
             ball.moveBallRight();
             System.out.println("Right pressed");
         }
+
 
     }
 

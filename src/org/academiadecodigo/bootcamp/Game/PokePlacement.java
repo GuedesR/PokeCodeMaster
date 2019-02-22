@@ -11,12 +11,12 @@ public class PokePlacement {
     private Picture pokemonPicture;
     private int x=220; //poke on the middle
     private int y;
-    private int catchRate=7;
+    private Pokes pokemon;
 
 
     public int init(Pokes pokemon){
 
-
+        this.pokemon = pokemon;
         int upDown=((int)(Math.random()*3)+1);
 
         switch (upDown){
@@ -73,7 +73,7 @@ public class PokePlacement {
     }
 
     public int getCatchRate(){
-        return catchRate;
+        return pokemon.getCatchRate();
     }
 
     public void hidePokemon(){

@@ -19,7 +19,11 @@ public class PokeList {
 
         for(int i = 0; i < pokelist.length; i++){
             addToList(i);
+            pokelist[i].lock();
         }
+        pokelist[names.AUDREY.i].unlock();
+        pokelist[names.CHRISTINA.i].unlock();
+        pokelist[names.MARIANA.i].unlock();
     }
 
     public void addToList(names name){
@@ -126,7 +130,7 @@ public class PokeList {
                     return 80;
                 case CATARINA:
                 case FERRAO:
-                    return 20;
+                    return 40;
                 default:
                     return 100;
             }

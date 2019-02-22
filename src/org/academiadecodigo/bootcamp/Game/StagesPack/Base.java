@@ -56,14 +56,20 @@ public class Base extends Stages {
 
     @Override
     public Pokes startPokemon() {
-        int random = (int) Math.floor(Math.random() * 4);
+        int count = 0;
+        if (count < 4){
+            while(true) {
+                int random = (int) Math.floor(Math.random() * 4);
+                System.out.println(random);
 
-        if(!pokes[random].isCaptured()){
-            Pokes poke = pokes[random];
-            return poke;
+                if (!pokes[random].isCaptured()) {
+                    Pokes poke = pokes[random];
+                    count++;
+                    return poke;
+                }
+            }
         }
-        else
-            return null;
+        return null;
     }
     @Override
     public void setUnlocked(){

@@ -1,7 +1,5 @@
 package org.academiadecodigo.bootcamp.Game.Pokemons;
 
-import org.academiadecodigo.simplegraphics.pictures.Picture;
-
 public class Pokes {
 
     private String name;
@@ -20,6 +18,7 @@ public class Pokes {
         isUnlocked = false;
     }
 
+    public  void lock(){ isUnlocked = false;}
     public void unlock(){
         isUnlocked = true;
     }
@@ -38,14 +37,17 @@ public class Pokes {
             return false;
         }
     }
+    public void undrunk(){isDrunk = false;}
 
     public String getName(){return name;}
     public int getCatchRate(){return catchRate;}
+
     public boolean isCaptured(){
         return captured;
     }
     public void captured(){
         captured = true;
     }
+
     public boolean isDrunk() { return isDrunk; }
 }

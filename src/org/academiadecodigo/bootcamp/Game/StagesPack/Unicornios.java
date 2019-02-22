@@ -46,14 +46,18 @@ public class Unicornios extends Stages {
 
     @Override
     public Pokes startPokemon() {
-        int random = (int) Math.floor(Math.random() * 2) + 7;
+        int count = 0;
+        if (count < 2) {
+            while (true) {
+                int random = (int) Math.floor(Math.random() * 2) + 7;
 
-        if(!pokes[random].isCaptured()){
-            Pokes poke = pokes[random];
-            return poke;
+                if (!pokes[random].isCaptured()) {
+                    Pokes poke = pokes[random];
+                    return poke;
+                }
+            }
         }
-        else
-            return null;
+        return null;
     }
 
     public void setUnlocked(){
