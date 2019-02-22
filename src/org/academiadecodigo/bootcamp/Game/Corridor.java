@@ -54,6 +54,7 @@ public class Corridor implements MouseHandler {
 
 
         corridor3.draw();
+        System.out.println("Corredor woop woop!");
         boolean bool;
 
 
@@ -110,7 +111,8 @@ public class Corridor implements MouseHandler {
 
     @Override
     public void mouseClicked(MouseEvent mouseEvent) {
-        System.out.println(mouseEvent.getY());
+        System.out.println(mouseEvent.getY() + " : Y");
+        System.out.println(mouseEvent.getX() + " : X");
 
         if(mouseEvent.getY()>190 && mouseEvent.getY()<270){
             //Go to base
@@ -123,7 +125,7 @@ public class Corridor implements MouseHandler {
             stageIsOngoing=true;
 
         }
-        if((mouseEvent.getY()>350 && mouseEvent.getY()<420)&& pingPong.isUnlocked()){
+        if((mouseEvent.getY()>350 && mouseEvent.getY()<420) && pingPong.isUnlocked()){
             //Go to pingpong
             stages=pingPong;
             stageIsOngoing=true;
