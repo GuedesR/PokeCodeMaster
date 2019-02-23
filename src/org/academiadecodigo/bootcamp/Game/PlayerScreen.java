@@ -4,6 +4,7 @@ import org.academiadecodigo.bootcamp.Game.Items.Beer;
 import org.academiadecodigo.bootcamp.Game.Items.Pokeball;
 import org.academiadecodigo.bootcamp.Game.Items.Pokedex;
 import org.academiadecodigo.bootcamp.Game.Items.ThrowingBar;
+import org.academiadecodigo.bootcamp.Game.Pokemons.PokePlacement;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
 import org.academiadecodigo.simplegraphics.graphics.Text;
@@ -44,13 +45,12 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
 
     PokePlacement pokePlacement;
     private Pokes currentPokemon= null;
-    private boolean escape = false;
+    private boolean playing = true;
 
     public boolean init(Pokes pokemon)  throws InterruptedException {
 
         int yPokeCoord=100;
 
-        escape=false;
 
         this.currentPokemon = pokemon;
         pokePlacement=null;
@@ -67,15 +67,8 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
         mouse.addEventListener(MouseEventType.MOUSE_MOVED);
         mouse.addEventListener(MouseEventType.MOUSE_CLICKED);
 
-        if (escape){
-            pokePlacement.hidePokemon();
-            caught=true;
-            hideUI();
-            return true;
-        }
-
-        while (!escape) {
-            System.out.println(escape);
+        if (playing) {
+            System.out.println(playing);
 
 
             /*
@@ -118,6 +111,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
             }
 
 
+            System.out.println(Pokeball.getCurrentAmount());
             /*
              * Creation of the Items
              */
@@ -205,6 +199,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                 if(Pokeball.getCurrentAmount() == 0){
                     pokePlacement.hidePokemon();
                     caught=true;
+                    playing = false;
                     hideUI();
                     return true;
                 }
@@ -279,13 +274,8 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                 Beer.removeBeer();
                 pokePlacement.drunkImage();
             }
+        }
 
-
-        } /*else if (mouseX > 30 && mouseX < 70 && mouseY > 465 && mouseY < 505){
-            setEscape(true);
-            System.out.println("Escape Button");
-            System.out.println(escape);
-        }*/
     }
 
     @Override

@@ -8,12 +8,10 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 public class Pokeball {
 
     private Picture pokeball;
-    private final int ballThrowAnimationDelay=50;
+    private final int ballThrowAnimationDelay=30;
     private final int ballCatchAnimationDelay=200;
-    private int frames;
-    private int x;
     private int pos = 2;
-    public static int currentAmount = 5;
+    private static int currentAmount = 5;
 
     public void init(){
 
@@ -27,54 +25,56 @@ public class Pokeball {
 
     public int throwP(int barStrength) throws InterruptedException{
         currentAmount--;
+        int frames;
+        int x;
         if(barStrength == 1){
             frames = 10;
             x = 8;
-            for (int i = 0; i < frames ; i++){
-                if(i < frames/2){
+            for (int i = 0; i < frames; i++){
+                if(i < frames /2){
 
-                    pokeball.translate(x , -12);
+                    pokeball.translate(x, -12);
                     pokeball.grow(-4,-4);
-                    x-= 0.4;
+                    x -= 0.5;
                     Thread.sleep(ballThrowAnimationDelay);
                 } else {
-                    pokeball.translate(-x , -12);
+                    pokeball.translate(-x, -12);
                     pokeball.grow(-4,-4);
-                    x+= 1;
+                    x += 0.9;
                     Thread.sleep(ballThrowAnimationDelay);
                 }
             }
 
         } else if( barStrength == 2){
             frames = 14;
-            x=10;
-            for (int i = 0; i < frames ; i++){
-                if(i < frames/2){
-                    pokeball.translate(x , -15);
+            x =10;
+            for (int i = 0; i < frames; i++){
+                if(i < frames /2){
+                    pokeball.translate(x, -15);
                     pokeball.grow(-3,-3);
-                    x-= 1;
+                    x -= 1;
                     Thread.sleep(ballThrowAnimationDelay);
                 } else {
-                    pokeball.translate(-x , -15);
+                    pokeball.translate(-x, -15);
                     pokeball.grow(-3,-3);
-                    x+= 2;
+                    x += 1.8;
                     Thread.sleep(ballThrowAnimationDelay);
                 }
             }
 
         } else {
             frames = 20;
-            x = 15;
-            for (int i = 0; i < frames ; i++){
-                if(i < frames/2){
-                    pokeball.translate(x , -18);
+            x = 10;
+            for (int i = 0; i < frames; i++){
+                if(i < frames /2){
+                    pokeball.translate(x, -18);
                     pokeball.grow(-2,-2);
-                    x-= 1;
+                    x -= 1;
                     Thread.sleep(ballThrowAnimationDelay);
                 } else {
-                    pokeball.translate(-x , -18);
+                    pokeball.translate(-x, -18);
                     pokeball.grow(-2,-2);
-                    x+= 2;
+                    x += 1.8;
                     Thread.sleep(ballThrowAnimationDelay);
                 }
             }
