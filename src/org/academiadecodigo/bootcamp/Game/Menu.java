@@ -18,6 +18,7 @@ public class Menu implements KeyboardHandler {
     private boolean notExit = false;
     private boolean rKey = false;
     private Rules menuRules;
+    private Music music = new Music();
 
     public void init() throws InterruptedException {
 
@@ -49,10 +50,10 @@ public class Menu implements KeyboardHandler {
         keyboard.addEventListener(rPressed);
 
         //menu song show
-/*
-        Music music = new Music();
+
+
         music.musicplay("menu");
-*/
+
         do {
             System.out.print("");
             if (up) {
@@ -76,6 +77,7 @@ public class Menu implements KeyboardHandler {
             System.out.println("start key");
             up = true;
             notExit = true;
+            music.stop();
         }
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_DOWN && !notExit) {
             System.out.println("down key");

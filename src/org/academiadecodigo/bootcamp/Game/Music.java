@@ -13,11 +13,24 @@ import java.io.InputStream;
 public class Music {
 
     //Menu song path
-    private String menu= "res/themesong.wav";
+    private String menu= "res/menu.wav";
     //Pokeball throw sound path from ThrowingBar (When spacebar is pressed)
-    private String ball="res/pokeball.wav";
+    private String ball="res/ballthrow.wav";
+    private String caught= "res/success.wav";
+    private String fail="res/fail.wav";
+    private String music="res/sound.wav";
     //Variable to switch songs
     String playNow;
+
+    AudioStream BGM;
+
+
+    public void stop() {
+        if (BGM != null) {
+            AudioPlayer.player.stop(BGM);
+        }
+    }
+
 
     public void musicplay(String song) {
 
@@ -27,9 +40,18 @@ public class Music {
         if(song=="ball"){
             playNow = ball;
         }
+        if(song=="s"){
+            playNow = caught;
+        }
+        if(song=="fail"){
+            playNow = fail;
+        }
+        if(song=="music"){
+            playNow = music;
+        }
 
         AudioPlayer MGP = AudioPlayer.player;
-        AudioStream BGM;
+        //AudioStream BGM;
         AudioData MD;
 
         ContinuousAudioDataStream loop = null;

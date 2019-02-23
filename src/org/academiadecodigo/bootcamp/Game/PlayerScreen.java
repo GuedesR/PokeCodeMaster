@@ -1,6 +1,5 @@
 package org.academiadecodigo.bootcamp.Game;
 
-import com.sun.org.apache.regexp.internal.RE;
 import org.academiadecodigo.bootcamp.Game.Items.Beer;
 import org.academiadecodigo.bootcamp.Game.Items.Pokeball;
 import org.academiadecodigo.bootcamp.Game.Items.Pokedex;
@@ -8,7 +7,6 @@ import org.academiadecodigo.bootcamp.Game.Items.ThrowingBar;
 import org.academiadecodigo.bootcamp.Game.Pokemons.PokePlacement;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
-import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.graphics.Text;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
@@ -73,6 +71,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
             /*
              * Layout buttons
              */
+
             pokedexBtn = new Ellipse(30, 290, 40,40);
             pokedexBtn.setColor(Color.LIGHT_GRAY);
             pokedexBtn.fill();
@@ -190,6 +189,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                     caught = false;
                     keyboard.removeEventListener(leftPressed);
                     keyboard.removeEventListener(rightPressed);
+
                 }
 
                 if(Pokeball.getCurrentAmount() == 0){

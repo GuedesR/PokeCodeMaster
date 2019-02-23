@@ -50,6 +50,8 @@ public class Corridor implements MouseHandler {
     //chooses witch corridor to show
 
     public Corridor() throws InterruptedException {
+        Music music = new Music();
+        music.musicplay("music");
 
 
         corridor3.draw();
