@@ -1,5 +1,9 @@
 package org.academiadecodigo.bootcamp.Game;
 
+import org.academiadecodigo.bootcamp.Game.Items.Beer;
+import org.academiadecodigo.bootcamp.Game.Items.Pokeball;
+import org.academiadecodigo.bootcamp.Game.Items.Pokedex;
+import org.academiadecodigo.bootcamp.Game.Items.ThrowingBar;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
 import org.academiadecodigo.simplegraphics.graphics.Text;
@@ -28,6 +32,8 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
     private boolean isChangeScreen=false;
     private boolean caught=false;
     private Pokeball ball;
+
+
     private Ellipse pokedexBtn;
     private String remainingBalls = Integer.toString(Pokeball.getCurrentAmount());
     private Ellipse remainingBallsBtn;
@@ -36,14 +42,18 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
     private Text remainingBeersNum;
     private Ellipse escapeBtn;
 
+    PokePlacement pokePlacement;
+    private Pokes currentPokemon= null;
+    private boolean escape = false;
 
     public boolean init(Pokes pokemon)  throws InterruptedException {
 
         int yPokeCoord=100;
-        PokePlacement pokePlacement= null;
 
+        escape=false;
 
-
+        this.currentPokemon = pokemon;
+        pokePlacement=null;
 
         Keyboard keyboard = new Keyboard(this);
 
@@ -57,10 +67,20 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
         mouse.addEventListener(MouseEventType.MOUSE_MOVED);
         mouse.addEventListener(MouseEventType.MOUSE_CLICKED);
 
+        if (escape){
+            pokePlacement.hidePokemon();
+            caught=true;
+            hideUI();
+            return true;
+        }
 
-        while (!isChangeScreen) {
-            isChangeScreen=false;
+        while (!escape) {
+            System.out.println(escape);
 
+
+            /*
+             * Layout buttons
+             */
 
             pokedexBtn = new Ellipse(30, 290, 40,40);
             pokedexBtn.setColor(Color.LIGHT_GRAY);
@@ -79,26 +99,28 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
             beerBtn.setColor(Color.LIGHT_GRAY);
             beerBtn.fill();
 
-            remainingBeersNum = new Text(60, 425, "1");
+            remainingBeersNum = new Text(60, 425, Integer.toString(Beer.getCurrentAmount()));
             remainingBeersNum.setColor(Color.BLACK);
             remainingBeersNum.grow(5,5);
             remainingBeersNum.draw();
 
-            escapeBtn = new Ellipse(30, 440, 40,40);
-            escapeBtn.setColor(Color.LIGHT_GRAY);
-            escapeBtn.fill();
+            //escapeBtn = new Ellipse(30, 440, 40,40);
+            //escapeBtn.setColor(Color.LIGHT_GRAY);
+            //escapeBtn.fill();
 
+
+            /*
+             * Pokemon creation
+             */
             if(!caught) {
                 pokePlacement = new PokePlacement();
                 yPokeCoord = pokePlacement.init(pokemon);
-
             }
 
 
-
-            //ball = new Pokeball();
-            //ball.show();
-
+            /*
+             * Creation of the Items
+             */
             while (!caught && Pokeball.getCurrentAmount() > 0) {
                 ball = new Pokeball();
                 ball.init();
@@ -121,6 +143,10 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                 int barStrength = throwingBar.init();
                 System.out.println("  -  " + barStrength + "    ..   ");
 
+
+                /*
+                 * Setting of the bar strength
+                 */
                 if (barStrength > 6) {
                     barStrength = 1;//closer
                 } else if (barStrength > 3) {
@@ -129,27 +155,36 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                     barStrength = 3;//farthest
                 }
 
+
+                /*
+                 * Initialize Ball throw animation based on the bar strength
+                 */
                 System.out.println(barStrength);
                 int pos = ball.throwP(barStrength);
+
 
 
                 System.out.println(barStrength + "  -  " + pokePlacement.getY());
                 System.out.println(pos + "  _  " + pokePlacement.getX());
 
+
+                /*
+                 *
+                 */
                 if (barStrength == pokePlacement.getY() && pos == pokePlacement.getX()) {
                     System.out.println("----__---HIT---__----");
                     pokePlacement.hidePokemon();
                     if(((int)(Math.random()*10)+1)<pokePlacement.getCatchRate()) {
-                        ball.hit(3);                                //---Se conseguir apanhar, vai repetir o movimento 3x
+                        ball.hit(3);                                //---Se conseguir apanhar, vai repetir o movimento tilt 3x
                         ball.catchSuccess();
-                        pokePlacement.caught();                                       //deletes pokemon
+                        pokePlacement.caught();
                         hideUI();
                         pokemon.captured();//acptures the pokemon
                         caught = true;
                         return true;
                     } else {
                         pokePlacement.hidePokemon();
-                        ball.hit(2);                                //---Se o pokemon resistir só repete o movimento 2x
+                        ball.hit(2);                                //---Se o pokemon resistir só repete o movimento tilt 2x
                         ball.catchFail();
                         pokePlacement.showPokemon();
                         ball.hidePokeball();
@@ -174,6 +209,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                     return true;
                 }
 
+
             }
         }
         System.out.println("Something went terribly wrong");
@@ -181,24 +217,25 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
         return false;
     }
 
+
+    /*
+     * Hides the options
+     */
     public void hideUI(){
         pokedexBtn.delete();
         remainingBallsBtn.delete();
         remainingBallsNum.delete();
         beerBtn.delete();
         remainingBeersNum.delete();
-        escapeBtn.delete();
     }
 
 
+    /*
+     * Keyboard and mouse configurations
+     */
+
     @Override
     public void keyPressed(KeyboardEvent keyboardEvent) {
-
-        if (keyboardEvent.getKey() == KeyboardEvent.KEY_W) {
-            // bG.stageInc();
-            System.out.println("W pressed ");
-            isChangeScreen=true;
-        }
 
         if(keyboardEvent.getKey() == KeyboardEvent.KEY_LEFT){
             //System.out.println("LEFT POKE X: " + ball.getX());
@@ -211,9 +248,8 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
             ball.moveBallRight();
             System.out.println("Right pressed");
         }
-
-
     }
+
 
 
     @Override
@@ -236,7 +272,20 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
             }else {
                 Pokedex.hide();
             }
-        }
+
+        } else if (mouseX > 30 && mouseX < 70 && mouseY > 415 && mouseY < 455){
+            if(Beer.getCurrentAmount() > 0){
+                Beer.show();
+                Beer.removeBeer();
+                pokePlacement.drunkImage();
+            }
+
+
+        } /*else if (mouseX > 30 && mouseX < 70 && mouseY > 465 && mouseY < 505){
+            setEscape(true);
+            System.out.println("Escape Button");
+            System.out.println(escape);
+        }*/
     }
 
     @Override

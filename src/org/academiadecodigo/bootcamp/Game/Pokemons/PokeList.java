@@ -140,14 +140,7 @@ public class PokeList {
                     return 100;
             }
         }
+
     }
 
-     /*
-    // Tester
-    public static void main(String[] args) {
-        PokeList testList = new PokeList();
-         testList.addToList(names.SERGIO);
-        System.out.println(testList.getList()[0].getName());
-    }
-    */
 }

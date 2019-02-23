@@ -1,5 +1,6 @@
-package org.academiadecodigo.bootcamp.Game;
+package org.academiadecodigo.bootcamp.Game.Items;
 
+import org.academiadecodigo.bootcamp.Game.Music;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;

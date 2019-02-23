@@ -1,5 +1,6 @@
 package org.academiadecodigo.bootcamp.Game.UtilitiesPack;
 
+import org.academiadecodigo.bootcamp.Game.Items.Beer;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
@@ -55,6 +56,7 @@ public class Copa extends Utilities implements KeyboardHandler {
         }
 
         copaVazia.draw();
+        Beer.addBeer(5);
 
         try {
             Thread.sleep(200);

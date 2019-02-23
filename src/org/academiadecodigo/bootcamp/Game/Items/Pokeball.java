@@ -1,10 +1,6 @@
-package org.academiadecodigo.bootcamp.Game;
+package org.academiadecodigo.bootcamp.Game.Items;
 
 import org.academiadecodigo.simplegraphics.pictures.Picture;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.PriorityQueue;
 
 /**
  * Created by codecadet on 16/02/2019.
@@ -112,8 +108,8 @@ public class Pokeball {
         System.out.println("After pos: " + pos);
     }
 
-    /**
-     *  Coloquei a animação de tilt á parte para que corra em separado do catch.
+    /*
+     *  A animação de tilt deve ficar à parte para que corra em separado do catch.
      *  Assim podemos rapidamente repetir as vezes que quisermos mudando a variavel repetition na implementação do method.
      *  Nomeadamente, se o pokemon resiste ou não.
      */
@@ -145,8 +141,6 @@ public class Pokeball {
             pokeball.load("Pokeball1.png");
             pokeball.draw();
             Thread.sleep(ballCatchAnimationDelay);
-
-
 
             repeat ++;
         }

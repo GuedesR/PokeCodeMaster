@@ -6,9 +6,7 @@ import org.academiadecodigo.bootcamp.Game.Pokemons.PokeList;
 import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
-/**
- * Created by codecadet on 20/02/2019.
- */
+
 public class Base extends Stages {
 
     private Corridor corridor;
@@ -24,6 +22,8 @@ public class Base extends Stages {
             pokes[i] = pokeList.getElement(i);
         }
     }
+
+
 
     @Override
     public boolean isDevoidOfPPokemon() {

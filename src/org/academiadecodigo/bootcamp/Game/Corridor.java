@@ -1,7 +1,7 @@
 package org.academiadecodigo.bootcamp.Game;
 
+import org.academiadecodigo.bootcamp.Game.Items.Pokeball;
 import org.academiadecodigo.bootcamp.Game.Pokemons.PokeList;
-import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
 import org.academiadecodigo.bootcamp.Game.StagesPack.Attic;
 import org.academiadecodigo.bootcamp.Game.StagesPack.Base;
 import org.academiadecodigo.bootcamp.Game.StagesPack.Stages;
@@ -11,10 +11,6 @@ import org.academiadecodigo.bootcamp.Game.UtilitiesPack.NoPokemonScreen;
 import org.academiadecodigo.bootcamp.Game.UtilitiesPack.PingPong;
 import org.academiadecodigo.bootcamp.Game.UtilitiesPack.Utilities;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
-import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
-import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
-import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
-import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
 import org.academiadecodigo.simplegraphics.mouse.Mouse;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 import org.academiadecodigo.simplegraphics.mouse.MouseEventType;
@@ -97,6 +93,10 @@ public class Corridor implements MouseHandler {
 
     }
 
+    public Stages getBase(){
+        return base;
+    }
+
     public GameScreens getStages() {
         return stages;
     }
@@ -149,7 +149,6 @@ public class Corridor implements MouseHandler {
         if (mouseEvent.getY() > 420 && mouseEvent.getY() < 490 && copa.isUnlocked()) {
             //Go to copa
             stages = copa;
-            Pokeball.addCurrentAmount(5);
             stageIsOngoing = true;
             m.removeEventListener(MouseEventType.MOUSE_CLICKED);
             m.removeEventListener(MouseEventType.MOUSE_MOVED);

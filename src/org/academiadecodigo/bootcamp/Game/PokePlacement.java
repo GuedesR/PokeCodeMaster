@@ -12,12 +12,20 @@ public class PokePlacement {
     private int x=220; //poke on the middle
     private int y;
     private Pokes pokemon;
+    private String [] imageNameWithExt;
+    private String imageName;
+
 
 
     public int init(Pokes pokemon){
 
         this.pokemon = pokemon;
         int upDown=((int)(Math.random()*3)+1);
+
+        imageNameWithExt = pokemon.getImageName().split("\\.");
+        imageName = imageNameWithExt[0];
+
+        System.out.println(imageName);
 
         switch (upDown){
             case 1: y=265;
@@ -58,6 +66,11 @@ public class PokePlacement {
 
         pokemonPicture.draw();
         return upDown;
+    }
+
+    public void drunkImage(){
+        pokemonPicture.load(imageName+"D.png");
+        pokemonPicture.draw();
     }
 
     public void caught(){
