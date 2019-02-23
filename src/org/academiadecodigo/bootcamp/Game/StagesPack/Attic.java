@@ -68,7 +68,7 @@ public class Attic extends Stages {
                 int random = (int) Math.floor(Math.random() * 3) + 4;
                 System.out.println(random);
 
-                if (!pokes[random].isCaptured()) {
+                if (!pokes[random].isCaptured() && pokes[random].isUnlocked()) {
                     Pokes poke = pokes[random];
                     return poke;
                 }

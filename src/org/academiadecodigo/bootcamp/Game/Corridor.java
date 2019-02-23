@@ -45,6 +45,7 @@ public class Corridor implements MouseHandler {
     private Picture corridor1 = new Picture(10, 10, "corr1.jpg");
     private Picture corridor2 = new Picture(10, 10, "corr2.jpg");
     private Picture corridor3 = new Picture(10, 10, "corr3.jpg");
+    Mouse m = new Mouse(this);
 
     private boolean stageIsOngoing = false;
 
@@ -58,10 +59,11 @@ public class Corridor implements MouseHandler {
         boolean bool;
 
 
-        Mouse m = new Mouse(this);
+
         m.addEventListener(MouseEventType.MOUSE_CLICKED);
 
         m.addEventListener(MouseEventType.MOUSE_MOVED);
+
 
 
         while (true) {
@@ -73,6 +75,8 @@ public class Corridor implements MouseHandler {
                     bool = playerScreen.init(currentStage.startPokemon());
                     if (bool) {
                         stages.hideStage();
+                        m.addEventListener(MouseEventType.MOUSE_CLICKED);
+                        m.addEventListener(MouseEventType.MOUSE_MOVED);
                     }
                     stageIsOngoing = false;
                 } else {
@@ -80,6 +84,8 @@ public class Corridor implements MouseHandler {
                     bool = stages.action();
                     if (bool) {
                         stages.hideStage();
+                        m.addEventListener(MouseEventType.MOUSE_CLICKED);
+                        m.addEventListener(MouseEventType.MOUSE_MOVED);
                     }
                     stageIsOngoing = false;
                 }
@@ -103,12 +109,17 @@ public class Corridor implements MouseHandler {
             stages=base;
             currentStage = base;
             stageIsOngoing=true;
+            m.removeEventListener(MouseEventType.MOUSE_CLICKED);
+            m.removeEventListener(MouseEventType.MOUSE_MOVED);
+
         }
         if (mouseEvent.getY() > 270 && mouseEvent.getY() < 350) {
             //Go to attic
             stages=attic;
             currentStage = attic;
             stageIsOngoing=true;
+            m.removeEventListener(MouseEventType.MOUSE_CLICKED);
+            m.removeEventListener(MouseEventType.MOUSE_MOVED);
 
         }
         if ((mouseEvent.getY() > 350 && mouseEvent.getY() < 420) && pingPong.isUnlocked()) {
@@ -116,24 +127,32 @@ public class Corridor implements MouseHandler {
             stages = pingPong;
             Pokeball.addCurrentAmount(5);
             stageIsOngoing = true;
+            m.removeEventListener(MouseEventType.MOUSE_CLICKED);
+            m.removeEventListener(MouseEventType.MOUSE_MOVED);
         }
         if (mouseEvent.getY() > 420 && mouseEvent.getY() < 490 && copa.isUnlocked()) {
             //Go to copa
             stages = copa;
             Pokeball.addCurrentAmount(5);
             stageIsOngoing = true;
+            m.removeEventListener(MouseEventType.MOUSE_CLICKED);
+            m.removeEventListener(MouseEventType.MOUSE_MOVED);
         }
         if (mouseEvent.getY() > 490 && mouseEvent.getY() < 560 && varanda.isUnlocked()) {
             //Go to varanda
             stages = varanda;
             base.unlockPokemons();
             stageIsOngoing = true;
+            m.removeEventListener(MouseEventType.MOUSE_CLICKED);
+            m.removeEventListener(MouseEventType.MOUSE_MOVED);
         }
         if (mouseEvent.getY() > 560 && mouseEvent.getY() < 624 && unicornios.isUnlocked()) {
             //Go to unicornios
             stages=unicornios;
             currentStage = unicornios;
             stageIsOngoing=true;
+            m.removeEventListener(MouseEventType.MOUSE_CLICKED);
+            m.removeEventListener(MouseEventType.MOUSE_MOVED);
         }
     }
 

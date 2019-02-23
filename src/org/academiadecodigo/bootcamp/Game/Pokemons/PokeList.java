@@ -57,7 +57,8 @@ public class PokeList {
 
         // FinalBosses
         CATARINA (7),
-        FERRAO (8);
+        FERRAO (8),
+        UNKNOWN(9);
 
         int i;
         names(int i){
@@ -85,6 +86,8 @@ public class PokeList {
                     return 7;
                 case FERRAO:
                     return 8;
+                case UNKNOWN:
+                    return 9;
                 default:
                     return -1;
             }
@@ -102,16 +105,18 @@ public class PokeList {
                     return "pika4.png"/*"benny.jpg"*/;
 
                 case ROLO:
-                    return "rolo.jpg";
+                    return "pika.png";
                 case SARA:
-                    return "sara.jpg";
+                    return "pika2.png";
                 case AUDREY:
-                    return "audrey.jpg";
+                    return "pika3.png";
 
                 case CATARINA:
                     return "catarina.jpg";
                 case FERRAO:
                     return "ferrao.jpg";
+                case UNKNOWN:
+                    return "pika4.png";// empty picture
                 default:
                     return "pika.png";
             }

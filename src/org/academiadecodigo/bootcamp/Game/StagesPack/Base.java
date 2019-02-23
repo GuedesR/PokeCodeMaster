@@ -74,6 +74,11 @@ public class Base extends Stages {
                     count++;
                     return poke;
                 }
+                if((pokes[0].isCaptured() || !pokes[0].isUnlocked()) && (pokes[1].isCaptured() || !pokes[1].isUnlocked()) &&
+                        (pokes[2].isCaptured()|| !pokes[2].isUnlocked()) && (pokes[3].isCaptured()|| !pokes[3].isUnlocked())){
+                    Pokes poke = pokeList.getElement(9);//invisible pokemon
+                    return poke;
+                }
             }
         }
         return null;
