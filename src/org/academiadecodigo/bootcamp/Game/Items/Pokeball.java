@@ -14,7 +14,6 @@ public class Pokeball {
     private static int currentAmount = 5;
 
     public void init(){
-
         pokeball = new Picture(192,625,"Pokeball1.png");
         pokeball.draw();
     }
@@ -171,7 +170,6 @@ public class Pokeball {
     public void hidePokeball(){
         pokeball.delete();
     }
-
 
     public int getX(){
         return pokeball.getX();

@@ -1,9 +1,6 @@
 package org.academiadecodigo.bootcamp.Game.Pokemons;
 
 //import com.sun.org.apache.xpath.internal.operations.String;
-import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
-import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
-import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class PokeList {
 
@@ -52,7 +49,7 @@ public class PokeList {
         CHRISTINA (2),
         BENNY (3),
 
-        ROLO (4),
+        ROLO(4),
         SARA (5),
         AUDREY (6),
 

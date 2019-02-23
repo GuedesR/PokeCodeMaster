@@ -20,14 +20,14 @@ public class PokePlacement {
     public int init(Pokes pokemon){
 
         this.pokemon = pokemon;
-        int upDown=((int)(Math.random()*3)+1);
+        int verticalPlacement=((int)(Math.random()*3)+1);
 
         imageNameWithExt = pokemon.getImageName().split("\\.");
         imageName = imageNameWithExt[0];
 
         System.out.println(imageName);
 
-        switch (upDown){
+        switch (verticalPlacement){
             case 1: y=265;
                 pokemonPicture = new Picture (x, y, pokemon.getImageName());
                 pokemonPicture.grow(-20,-20);
@@ -46,9 +46,9 @@ public class PokePlacement {
                 break;
         }
 
-        int leftRight=((int)(Math.random()*3)+1);
+        int horizontalPlacement=((int)(Math.random()*3)+1);
 
-        switch (leftRight){
+        switch (horizontalPlacement){
             case 1: x=110;
                 pokemonPicture.translate(-110,0);
                 x=1;
@@ -61,16 +61,17 @@ public class PokePlacement {
                 x=3;
                 break;
         }
-
-
-
         pokemonPicture.draw();
-        return upDown;
+        return verticalPlacement;
     }
 
-    public void drunkImage(){
-        pokemonPicture.load(imageName+"D.png");
-        pokemonPicture.draw();
+    public Picture getPokemonPicture() {
+        return pokemonPicture;
+    }
+
+    public void drunkImage(Picture currentPokemon){
+        currentPokemon.load(imageName+"D.png");
+        currentPokemon.draw();
     }
 
     public void caught(){

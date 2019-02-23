@@ -1,5 +1,6 @@
 package org.academiadecodigo.bootcamp.Game;
 
+import com.sun.org.apache.regexp.internal.RE;
 import org.academiadecodigo.bootcamp.Game.Items.Beer;
 import org.academiadecodigo.bootcamp.Game.Items.Pokeball;
 import org.academiadecodigo.bootcamp.Game.Items.Pokedex;
@@ -7,6 +8,7 @@ import org.academiadecodigo.bootcamp.Game.Items.ThrowingBar;
 import org.academiadecodigo.bootcamp.Game.Pokemons.PokePlacement;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
+import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.graphics.Text;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
@@ -28,29 +30,25 @@ import org.academiadecodigo.simplegraphics.graphics.Ellipse;
  */
 public class PlayerScreen implements KeyboardHandler, MouseHandler {
 
-    private Picture backGround;
-    private Background bG;
-    private boolean isChangeScreen=false;
     private boolean caught=false;
     private Pokeball ball;
     private Corridor corridor;
 
 
     private Ellipse pokedexBtn;
-    private String remainingBalls = Integer.toString(Pokeball.getCurrentAmount());
     private Ellipse remainingBallsBtn;
     private Text remainingBallsNum;
     private Ellipse beerBtn;
     private Text remainingBeersNum;
-    private Ellipse escapeBtn;
 
-    PokePlacement pokePlacement;
+    private PokePlacement pokePlacement;
     private Pokes currentPokemon= null;
     private boolean playing = true;
 
     public boolean init(Pokes pokemon, Corridor corridor)  throws InterruptedException {
         this.corridor=corridor;
         int yPokeCoord=100;
+        currentPokemon = pokemon;
 
 
         this.currentPokemon = pokemon;
@@ -75,7 +73,6 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
             /*
              * Layout buttons
              */
-
             pokedexBtn = new Ellipse(30, 290, 40,40);
             pokedexBtn.setColor(Color.LIGHT_GRAY);
             pokedexBtn.fill();
@@ -98,9 +95,6 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
             remainingBeersNum.grow(5,5);
             remainingBeersNum.draw();
 
-            //escapeBtn = new Ellipse(30, 440, 40,40);
-            //escapeBtn.setColor(Color.LIGHT_GRAY);
-            //escapeBtn.fill();
 
 
             /*
@@ -111,8 +105,9 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                 yPokeCoord = pokePlacement.init(pokemon);
             }
 
-
             System.out.println(Pokeball.getCurrentAmount());
+
+
             /*
              * Creation of the Items
              */
@@ -121,7 +116,8 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                 ball.init();
                 ball.setPos(2);
                 System.out.println(" CENAS");
-                //ball.reset();
+
+                remainingBallsNum.setText(Integer.toString(Pokeball.getCurrentAmount()));
 
                 KeyboardEvent leftPressed = new KeyboardEvent();
                 leftPressed.setKey(KeyboardEvent.KEY_LEFT);
@@ -174,8 +170,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                         ball.catchSuccess();
                         pokePlacement.caught();
                         hideUI();
-                        pokemon.captured();//acptures the pokemon
-
+                        pokemon.captured();//captures the pokemon
                         caught = true;
                         return true;
                     } else {
@@ -189,13 +184,12 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
 
                     }
                 } else {
-                    remainingBallsNum.setText(Integer.toString(Pokeball.getCurrentAmount()));
+
                     System.out.println("____--__FAIL___--____");
                     ball.hidePokeball();
                     caught = false;
                     keyboard.removeEventListener(leftPressed);
                     keyboard.removeEventListener(rightPressed);
-
                 }
 
                 if(Pokeball.getCurrentAmount() == 0){
@@ -274,8 +268,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
         } else if (mouseX > 30 && mouseX < 70 && mouseY > 415 && mouseY < 455){
             if(Beer.getCurrentAmount() > 0){
                 Beer.show();
-                Beer.removeBeer();
-                pokePlacement.drunkImage();
+                remainingBeersNum.setText(Integer.toString(Beer.getCurrentAmount()));
             }
         }
 

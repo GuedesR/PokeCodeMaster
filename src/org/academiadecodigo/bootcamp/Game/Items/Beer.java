@@ -8,17 +8,18 @@ import org.academiadecodigo.simplegraphics.graphics.Rectangle;
  */
 public class Beer {
     private static Rectangle beer;
-    private static int currentAmount = 0;
+    private static int currentAmount = 5;
 
     public static void show(){
-        beer = new Rectangle(85,100,100,200);
-        beer.setColor(Color.WHITE);
+        beer = new Rectangle(300,300,100,200);
+        beer.setColor(Color.DARK_GRAY);
         beer.fill();
+        currentAmount--;
 
         try {
-            Thread.sleep(1000);
+            Thread.sleep(100);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.out.println("só que não");
         }
 
         hide();
