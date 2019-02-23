@@ -15,12 +15,22 @@ public class Base extends Stages {
     private boolean isUnlocked=true;
     private PokeList pokeList = new PokeList();
     private Pokes[] pokes;
+    private boolean[] baseDex = new boolean[4];
 
     public Base() {
         pokes = new Pokes[4];
         for(int i = 0; i < 4; i++) {
             pokes[i] = pokeList.getElement(i);
         }
+    }
+
+    @Override
+    public boolean[] dex(){
+        baseDex[0]=pokes[0].isCaptured();
+        baseDex[1]=pokes[1].isCaptured();
+        baseDex[2]=pokes[2].isCaptured();
+        baseDex[3]=pokes[3].isCaptured();
+        return baseDex;
     }
 
 

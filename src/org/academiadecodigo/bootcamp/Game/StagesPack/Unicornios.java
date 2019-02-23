@@ -13,6 +13,17 @@ public class Unicornios extends Stages {
     private boolean isUnlocked = false;
     private PokeList pokeList = new PokeList();
     private Pokes[] pokes;
+    private boolean[] uniDex = new boolean[2];
+
+
+
+    @Override
+    public boolean[] dex(){
+        //:TODO:CENAS
+        uniDex[0]=true;//pokes[0].isCaptured();
+        uniDex[1]=true;//pokes[1].isCaptured();
+        return uniDex;
+    }
 
 
     @Override

@@ -1,5 +1,6 @@
 package org.academiadecodigo.bootcamp.Game.Pokemons;
 
+//import com.sun.org.apache.xpath.internal.operations.String;
 import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
 import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
 import org.academiadecodigo.simplegraphics.pictures.Picture;

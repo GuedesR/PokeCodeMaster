@@ -33,6 +33,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
     private boolean isChangeScreen=false;
     private boolean caught=false;
     private Pokeball ball;
+    private Corridor corridor;
 
 
     private Ellipse pokedexBtn;
@@ -47,8 +48,8 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
     private Pokes currentPokemon= null;
     private boolean playing = true;
 
-    public boolean init(Pokes pokemon)  throws InterruptedException {
-
+    public boolean init(Pokes pokemon, Corridor corridor)  throws InterruptedException {
+        this.corridor=corridor;
         int yPokeCoord=100;
 
 
@@ -174,6 +175,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                         pokePlacement.caught();
                         hideUI();
                         pokemon.captured();//acptures the pokemon
+
                         caught = true;
                         return true;
                     } else {
@@ -263,6 +265,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
 
         if(mouseX > 30 && mouseX < 70 && mouseY > 320 && mouseY < 360){
             if(!Pokedex.isOpened()){
+                Pokedex.refreshDex(corridor);
                 Pokedex.show();
             }else {
                 Pokedex.hide();

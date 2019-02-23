@@ -13,6 +13,7 @@ public class Attic extends Stages {
     private boolean isUnlocked=true;
     private PokeList pokeList = new PokeList();
     private Pokes[] pokes;
+    private boolean[] atticDex = new boolean[3];
 
     public Attic(){
         pokes = new Pokes[3];
@@ -23,6 +24,13 @@ public class Attic extends Stages {
         }
     }
 
+    @Override
+    public boolean[] dex(){
+        atticDex[0]=pokes[0].isCaptured();
+        atticDex[1]=pokes[1].isCaptured();
+        atticDex[2]=pokes[2].isCaptured();
+        return atticDex;
+    }
 
     @Override
     public boolean isDevoidOfPPokemon() {

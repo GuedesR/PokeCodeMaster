@@ -7,6 +7,7 @@ public class Pokes {
     private boolean captured;
     private String imageName;
     private boolean isDrunk;
+    private int number;
 
     public boolean isUnlocked() {
         return isUnlocked;
