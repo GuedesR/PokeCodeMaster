@@ -72,6 +72,12 @@ public class Attic extends Stages {
                     Pokes poke = pokes[random];
                     return poke;
                 }
+                if((pokes[4].isCaptured() || !pokes[4].isUnlocked()) && (pokes[5].isCaptured() || !pokes[5].isUnlocked()) &&
+                        (pokes[6].isCaptured()|| !pokes[6].isUnlocked())){
+                    Pokes poke = pokeList.getElement(9);//invisible pokemon
+                    return poke;
+                }
+
             }
         }
         return null;

@@ -35,6 +35,7 @@ public class Pokes {
     public boolean giveBeer(){
         if(!isDrunk){
             isDrunk = true;
+            catchRate += 30;
             return true;
         }
         else{
