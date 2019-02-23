@@ -21,7 +21,7 @@ public class Copa extends Utilities implements KeyboardHandler {
 
     private boolean unlocked = true;
 
-    private boolean actionComplete =false;
+    private boolean actionComplete = false;
 
     @Override
     public void drawStage() {
@@ -49,7 +49,8 @@ public class Copa extends Utilities implements KeyboardHandler {
 
         try {
             Thread.sleep(200);
-        }catch (Exception e){
+
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
 
@@ -57,15 +58,17 @@ public class Copa extends Utilities implements KeyboardHandler {
 
         try {
             Thread.sleep(200);
-        }catch (Exception e){
+
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+
         return true;
     }
 
     @Override
     public void keyPressed(KeyboardEvent keyboardEvent) {
-        if(keyboardEvent.getKey() == KeyboardEvent.KEY_X) {
+        if (keyboardEvent.getKey() == KeyboardEvent.KEY_X) {
             actionComplete = true;
         }
     }

@@ -1,14 +1,11 @@
 package org.academiadecodigo.bootcamp.Game;
 
-import org.academiadecodigo.bootcamp.Game.StagesPack.Stages;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
-import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
-import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Menu implements KeyboardHandler {
@@ -16,51 +13,57 @@ public class Menu implements KeyboardHandler {
     private Rectangle backgroung;
     private Picture start;
     private Picture rules;
-    private boolean up=false;
-    private boolean stop=false;
-    private boolean notexit=false;
+    private boolean up = false;
+    private boolean stop = false;
+    private boolean notExit = false;
+    private boolean rKey = false;
+    private Rules menuRules;
 
+    public void init() throws InterruptedException {
 
-    public  void init() throws InterruptedException{
-
-        backgroung = new Rectangle(10,10,465,730);
+        backgroung = new Rectangle(10, 10, 465, 730);
         backgroung.setColor(Color.CYAN);
         backgroung.fill();
 
-        start = new Picture(30,270,"start.jpg");
+        start = new Picture(30, 270, "start.jpg");
         start.draw();
 
-        rules = new Picture(30,470,"rules.jpg");
+        rules = new Picture(30, 470, "rules.jpg");
         rules.draw();
 
         Keyboard keyboard = new Keyboard(this);
 
-        KeyboardEvent upPressed = new KeyboardEvent();
-        upPressed.setKey(KeyboardEvent.KEY_UP);
-        upPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
-        keyboard.addEventListener(upPressed);
+        KeyboardEvent sPressed = new KeyboardEvent();
+        sPressed.setKey(KeyboardEvent.KEY_S);
+        sPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
+        keyboard.addEventListener(sPressed);
 
         KeyboardEvent downPressed = new KeyboardEvent();
         downPressed.setKey(KeyboardEvent.KEY_DOWN);
         downPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
         keyboard.addEventListener(downPressed);
 
+        KeyboardEvent rPressed = new KeyboardEvent();
+        rPressed.setKey(KeyboardEvent.KEY_R);
+        rPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
+        keyboard.addEventListener(rPressed);
 
         //menu song show
 /*
         Music music = new Music();
         music.musicplay("menu");
 */
-        do{
+        do {
             System.out.print("");
             if (up) {
                 Corridor corridor = new Corridor();
-                up=false;
-                keyboard.removeEventListener(upPressed);
+                up = false;
+                keyboard.removeEventListener(sPressed);
                 keyboard.removeEventListener(downPressed);
+                keyboard.removeEventListener(sPressed);
             }
 
-        }while (!stop);
+        } while (!stop);
 
 
     }
@@ -68,18 +71,22 @@ public class Menu implements KeyboardHandler {
     @Override
     public void keyPressed(KeyboardEvent keyboardEvent) {
 
-        if(keyboardEvent.getKey()==KeyboardEvent.KEY_UP){
+        if (keyboardEvent.getKey() == KeyboardEvent.KEY_S) {
             //Corridor corridor= new Corridor();
             System.out.println("start key");
-            up=true;
-
-            notexit=true;
-        }if(keyboardEvent.getKey()==KeyboardEvent.KEY_DOWN && !notexit){
+            up = true;
+            notExit = true;
+        }
+        if (keyboardEvent.getKey() == KeyboardEvent.KEY_DOWN && !notExit) {
             System.out.println("down key");
             System.exit(1);
         }
-        if(keyboardEvent.getKey()==KeyboardEvent.KEY_SPACE){
-            stop=true;
+        if (keyboardEvent.getKey() == KeyboardEvent.KEY_SPACE) {
+            stop = true;
+        }
+        if (keyboardEvent.getKey() == KeyboardEvent.KEY_R) { // trocar para click do rato
+            menuRules = new Rules();
+            menuRules.showRules();
         }
 
     }
