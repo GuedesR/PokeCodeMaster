@@ -195,7 +195,7 @@ public class Pokeball {
         currentAmount--;
     }
 
-    public void addCurrentAmount(int currentAmount) {
-        this.currentAmount += currentAmount;
+    public static void addCurrentAmount(int amount) {
+        currentAmount += amount;
     }
 }

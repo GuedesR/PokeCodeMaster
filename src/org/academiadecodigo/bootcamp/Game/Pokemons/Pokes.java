@@ -7,6 +7,11 @@ public class Pokes {
     private boolean captured;
     private String imageName;
     private boolean isDrunk;
+
+    public boolean isUnlocked() {
+        return isUnlocked;
+    }
+
     private boolean isUnlocked;
 
     public Pokes(Enum name, int catchRate, String imageName){

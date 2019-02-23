@@ -114,16 +114,19 @@ public class Corridor implements MouseHandler {
         if ((mouseEvent.getY() > 350 && mouseEvent.getY() < 420) && pingPong.isUnlocked()) {
             //Go to pingpong
             stages = pingPong;
+            Pokeball.addCurrentAmount(5);
             stageIsOngoing = true;
         }
         if (mouseEvent.getY() > 420 && mouseEvent.getY() < 490 && copa.isUnlocked()) {
             //Go to copa
             stages = copa;
+            Pokeball.addCurrentAmount(5);
             stageIsOngoing = true;
         }
         if (mouseEvent.getY() > 490 && mouseEvent.getY() < 560 && varanda.isUnlocked()) {
             //Go to varanda
             stages = varanda;
+            base.unlockPokemons();
             stageIsOngoing = true;
         }
         if (mouseEvent.getY() > 560 && mouseEvent.getY() < 624 && unicornios.isUnlocked()) {

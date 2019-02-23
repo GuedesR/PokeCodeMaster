@@ -21,6 +21,11 @@ public class Unicornios extends Stages {
     }
 
     @Override
+    public void unlockPokemons() {
+        //TODO:CENAS
+    }
+
+    @Override
     public boolean isUnlocked() {
         return isUnlocked;
     }

@@ -20,8 +20,15 @@ public class Base extends Stages {
 
     public Base() {
         pokes = new Pokes[4];
-        for(int i = 0; i < 4; i++)
+        for(int i = 0; i < 4; i++) {
             pokes[i] = pokeList.getElement(i);
+        }
+    }
+    @Override
+    public void unlockPokemons(){
+        for(int i = 0; i < 4; i++) {
+            pokes[i].unlock();
+        }
     }
 
 
@@ -62,7 +69,7 @@ public class Base extends Stages {
                 int random = (int) Math.floor(Math.random() * 4);
                 System.out.println(random);
 
-                if (!pokes[random].isCaptured()) {
+                if (!pokes[random].isCaptured() && pokes[random].isUnlocked()) {
                     Pokes poke = pokes[random];
                     count++;
                     return poke;

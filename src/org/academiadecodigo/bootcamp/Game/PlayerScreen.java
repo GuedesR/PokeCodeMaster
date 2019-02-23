@@ -144,6 +144,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                         ball.catchSuccess();
                         pokePlacement.caught();                                       //deletes pokemon
                         hideUI();
+                        pokemon.captured();//acptures the pokemon
                         caught = true;
                         return true;
                     } else {

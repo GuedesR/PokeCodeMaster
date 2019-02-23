@@ -14,10 +14,26 @@ public class Attic extends Stages {
     private PokeList pokeList = new PokeList();
     private Pokes[] pokes;
 
+    public Attic(){
+        pokes = new Pokes[3];
+        for(int i = 4; i < 7; i++) {
+            for(int j=0;j<3;j++) {
+                pokes[j] = pokeList.getElement(i);
+            }
+        }
+    }
+
 
     @Override
     public boolean action() {
         return false;
+    }
+
+    @Override
+    public void unlockPokemons() {
+        for(int i = 4; i < 7; i++) {
+            pokes[i].unlock();
+        }
     }
 
     @Override
