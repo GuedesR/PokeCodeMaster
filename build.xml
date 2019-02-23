@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<project name="PokeCodeMaster" default="jarfile" basedir=".">
+
+    <!-- Initialize build properties  -->
+    <target name="init" description="Initializes properties">
+        <property name="project.name" value="PokeCodeMaster" />
+        <property name="res.dir" value="res" />
+        <property name="src.dir" value="src" />
+        <property name="main.pathway" value="org.academiadecodigo.bootcamp" />
+        <property name="build.dir" value="build" />
+        <property name="classes.dir" value="${build.dir}/classes" />
+        <property name="lib.dir" value="lib" />
+    </target>
+
+    <!-- Creates the build directories to hold JAR and Class files and creates the MANIFEST -->
+    <target name="prepare" description="Creates the build and classes directories and the MANIFEST file" depends="init">
+        <mkdir dir="${classes.dir}" />
+        <manifest file="${src.dir}/MANIFEST.MF">
+            <attribute name="Main-Class" value="${main.pathway}.Main" />
+        </manifest>
+    </target>
+
+    <!-- Compiles the source code -->
+    <target name="compile" description="Compiles the source code" depends="prepare">
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" >
+            <classpath>
+                <pathelement path="${lib.dir}/simplegraphics.jar" />
+            </classpath>
+        </javac>
+    </target>
+
+    <!-- Creates a JAR file -->
+    <target name="jarfile" description="Archives the code" depends="compile">
+        <jar destfile="${build.dir}/${project.name}.jar" basedir="${classes.dir}" manifest="${src.dir}/MANIFEST.MF">
+            <zipgroupfileset dir="lib" includes="simplegraphics.jar" />
+            <fileset dir="${res.dir}" />
+        </jar>
+    </target>
+
+    <!-- Removes the build directory -->
+    <target name="clean" description="Clean up project" depends="init">
+        <delete dir="${build.dir}" />
+    </target>
+</project>
