@@ -7,6 +7,7 @@ import org.academiadecodigo.bootcamp.Game.StagesPack.Base;
 import org.academiadecodigo.bootcamp.Game.StagesPack.Stages;
 import org.academiadecodigo.bootcamp.Game.StagesPack.Unicornios;
 import org.academiadecodigo.bootcamp.Game.UtilitiesPack.Copa;
+import org.academiadecodigo.bootcamp.Game.UtilitiesPack.NoPokemonScreen;
 import org.academiadecodigo.bootcamp.Game.UtilitiesPack.PingPong;
 import org.academiadecodigo.bootcamp.Game.UtilitiesPack.Utilities;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
@@ -29,6 +30,7 @@ public class Corridor implements MouseHandler {
 
     //Instantiate backgrounds
     private Stages currentStage;
+    private Utilities nopokemon = new NoPokemonScreen();
     private Stages attic = new Attic();
     private Stages base = new Base();
     private Stages unicornios = new Unicornios();
@@ -106,20 +108,34 @@ public class Corridor implements MouseHandler {
 
         if (mouseEvent.getY() > 190 && mouseEvent.getY() < 270) {
             //Go to base
-            stages=base;
-            currentStage = base;
-            stageIsOngoing=true;
-            m.removeEventListener(MouseEventType.MOUSE_CLICKED);
-            m.removeEventListener(MouseEventType.MOUSE_MOVED);
+            if(!base.isDevoidOfPPokemon()) {
+                stages = base;
+                currentStage = base;
+                stageIsOngoing = true;
+                m.removeEventListener(MouseEventType.MOUSE_CLICKED);
+                m.removeEventListener(MouseEventType.MOUSE_MOVED);
+            }else{
+                stages = nopokemon;
+                stageIsOngoing = true;
+                m.removeEventListener(MouseEventType.MOUSE_CLICKED);
+                m.removeEventListener(MouseEventType.MOUSE_MOVED);
+            }
 
         }
         if (mouseEvent.getY() > 270 && mouseEvent.getY() < 350) {
             //Go to attic
-            stages=attic;
-            currentStage = attic;
-            stageIsOngoing=true;
-            m.removeEventListener(MouseEventType.MOUSE_CLICKED);
-            m.removeEventListener(MouseEventType.MOUSE_MOVED);
+            if(!attic.isDevoidOfPPokemon()) {
+                stages = attic;
+                currentStage = attic;
+                stageIsOngoing = true;
+                m.removeEventListener(MouseEventType.MOUSE_CLICKED);
+                m.removeEventListener(MouseEventType.MOUSE_MOVED);
+            }else{
+                stages = nopokemon;
+                stageIsOngoing = true;
+                m.removeEventListener(MouseEventType.MOUSE_CLICKED);
+                m.removeEventListener(MouseEventType.MOUSE_MOVED);
+            }
 
         }
         if ((mouseEvent.getY() > 350 && mouseEvent.getY() < 420) && pingPong.isUnlocked()) {

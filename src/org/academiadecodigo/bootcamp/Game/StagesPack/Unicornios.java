@@ -16,6 +16,13 @@ public class Unicornios extends Stages {
 
 
     @Override
+    public boolean isDevoidOfPPokemon() {
+
+        //TODO:CENAS
+        return false;
+    }
+
+    @Override
     public boolean action() {
         return false;
     }

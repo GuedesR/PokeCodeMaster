@@ -25,13 +25,23 @@ public class Attic extends Stages {
 
 
     @Override
+    public boolean isDevoidOfPPokemon() {
+
+        if((pokes[0].isCaptured() || !pokes[0].isUnlocked()) && (pokes[1].isCaptured() || !pokes[1].isUnlocked()) &&
+                (pokes[2].isCaptured()|| !pokes[2].isUnlocked())){
+            return true;
+        }
+        return false;
+    }
+
+    @Override
     public boolean action() {
         return false;
     }
 
     @Override
     public void unlockPokemons() {
-        for(int i = 4; i < 7; i++) {
+        for(int i = 0; i < pokes.length; i++) {
             pokes[i].unlock();
         }
     }
@@ -65,16 +75,11 @@ public class Attic extends Stages {
         int count = 0;
         if(count < 3) {
             while(true) {
-                int random = (int) Math.floor(Math.random() * 3) + 4;
+                int random = (int) Math.floor(Math.random() * 3);
                 System.out.println(random);
 
                 if (!pokes[random].isCaptured() && pokes[random].isUnlocked()) {
                     Pokes poke = pokes[random];
-                    return poke;
-                }
-                if((pokes[4].isCaptured() || !pokes[4].isUnlocked()) && (pokes[5].isCaptured() || !pokes[5].isUnlocked()) &&
-                        (pokes[6].isCaptured()|| !pokes[6].isUnlocked())){
-                    Pokes poke = pokeList.getElement(9);//invisible pokemon
                     return poke;
                 }
 

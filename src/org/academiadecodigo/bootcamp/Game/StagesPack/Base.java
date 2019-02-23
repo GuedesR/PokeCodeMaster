@@ -24,6 +24,17 @@ public class Base extends Stages {
             pokes[i] = pokeList.getElement(i);
         }
     }
+
+    @Override
+    public boolean isDevoidOfPPokemon() {
+
+        if((pokes[0].isCaptured() || !pokes[0].isUnlocked()) && (pokes[1].isCaptured() || !pokes[1].isUnlocked()) &&
+                (pokes[2].isCaptured()|| !pokes[2].isUnlocked()) && (pokes[3].isCaptured()|| !pokes[3].isUnlocked())){
+            return true;
+        }
+        return false;
+    }
+
     @Override
     public void unlockPokemons(){
         for(int i = 0; i < 4; i++) {
@@ -60,6 +71,8 @@ public class Base extends Stages {
         background.delete();
 
     }
+
+
 
     @Override
     public Pokes startPokemon() {

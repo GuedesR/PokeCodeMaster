@@ -17,6 +17,8 @@ public abstract class Stages extends GameScreens{
         isUnlocked = unlocked;
     }
 
+    public abstract boolean isDevoidOfPPokemon();
+
     public abstract void unlockPokemons();
 
     public abstract boolean isUnlocked();
