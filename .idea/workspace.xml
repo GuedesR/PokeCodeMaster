@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6e6554a-9a73-49d4-a03b-5dc2c6def1a0" name="Default" comment="" />
+    <list default="true" id="a6e6554a-9a73-49d4-a03b-5dc2c6def1a0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,7 +41,7 @@
       <file leaf-file-name="Pokeball.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Items/Pokeball.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="487">
               <caret line="169" column="24" lean-forward="true" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="24" />
               <folding />
             </state>
@@ -137,8 +139,9 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#2216#2217#0" expanded="true" />
                 <element signature="e#2250#2251#0" expanded="true" />
-                <marker date="1551047586456" expanded="false" signature="3597:3608" ph=" { " />
-                <marker date="1551047586456" expanded="false" signature="3622:3628" ph=" }" />
+                <marker date="1551049763932" expanded="true" signature="3290:3550" ph="{...}" />
+                <marker date="1551049763932" expanded="false" signature="3588:3599" ph=" { " />
+                <marker date="1551049763932" expanded="false" signature="3613:3619" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -433,7 +436,15 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/PlayerScreen.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/audrey copy.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/benny copy.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/christina copy.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/ferrao copy.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/mariana copy.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/rolo copy.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/sara copy.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/sergio copy.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Items/Pokedex.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -974,7 +985,7 @@
       <workItem from="1550741425577" duration="5801000" />
       <workItem from="1550932435148" duration="64000" />
       <workItem from="1550932968282" duration="27298000" />
-      <workItem from="1551020029750" duration="14318000" />
+      <workItem from="1551020029750" duration="14971000" />
     </task>
     <task id="LOCAL-00001" summary="Bora lá">
       <created>1550695471078</created>
@@ -1085,11 +1096,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50817000" />
+    <option name="totallyTimeSpent" value="51470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="23" width="1920" height="1018" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1100,8 +1110,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1501,8 +1511,9 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2216#2217#0" expanded="true" />
             <element signature="e#2250#2251#0" expanded="true" />
-            <marker date="1551047586456" expanded="false" signature="3597:3608" ph=" { " />
-            <marker date="1551047586456" expanded="false" signature="3622:3628" ph=" }" />
+            <marker date="1551049763932" expanded="true" signature="3290:3550" ph="{...}" />
+            <marker date="1551049763932" expanded="false" signature="3588:3599" ph=" { " />
+            <marker date="1551049763932" expanded="false" signature="3613:3619" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -1548,7 +1559,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Items/Pokeball.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="487">
           <caret line="169" column="24" lean-forward="true" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="24" />
           <folding />
         </state>
