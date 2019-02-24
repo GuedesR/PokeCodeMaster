@@ -18,7 +18,6 @@ public class Pokedex {
     private static Picture rolo;
     private static Picture sara;
     private static Picture audrey;
-    private static Picture catarina;
     private static Picture ferrao;
     private static boolean[] dex = new boolean[9];
     private static boolean[] baseDex = new boolean[4];
@@ -31,23 +30,43 @@ public class Pokedex {
         unicorniosDex=corridor.getUnicornios().dex();
 
         if (baseDex[0]){
-            sergio.load("pokedexOcupado.png");
+            sergio.load("sergio.png");
             sergio.draw();
         }
 
         if (baseDex[1]){
-            mariana.load("pokedexOcupado.png");
+            mariana.load("mariana.png");
             mariana.draw();
         }
 
         if (baseDex[2]){
-            christina.load("pokedexOcupado.png");
+            christina.load("christina.png");
             christina.draw();
         }
 
         if (baseDex[3]){
             benny.load("pokedexOcupado.png");
             benny.draw();
+        }
+
+        if (atticDex[0]){
+            rolo.load("pokedexOcupado.png");
+            rolo.draw();
+        }
+
+        if (atticDex[1]){
+            sara.load("pokedexOcupado.png");
+            sara.draw();
+        }
+
+        if (atticDex[2]){
+            audrey.load("pokedexOcupado.png");
+            audrey.draw();
+        }
+
+        if (unicorniosDex[0]){
+            ferrao.load("pokedexOcupado.png");
+            ferrao.draw();
         }
 
     }
@@ -88,10 +107,7 @@ public class Pokedex {
         audrey = new Picture(110, 345, "pokedexVazio.png");
         audrey.draw();
 
-        catarina = new Picture(220, 345, "pokedexVazio.png");
-        catarina.draw();
-
-        ferrao = new Picture(330, 345, "pokedexVazio.png");
+        ferrao = new Picture(220, 345, "pokedexVazio.png");
         ferrao.draw();
 
         opened=true;
@@ -107,7 +123,6 @@ public class Pokedex {
         rolo.delete();
         sara.delete();
         audrey.delete();
-        catarina.delete();
         ferrao.delete();
 
         opened = false;

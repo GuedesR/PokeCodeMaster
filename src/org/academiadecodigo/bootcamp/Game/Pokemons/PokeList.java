@@ -53,10 +53,8 @@ public class PokeList {
         SARA (5),
         AUDREY (6),
 
-        // FinalBosses
-        CATARINA (7),
-        FERRAO (8),
-        UNKNOWN(9);
+        FERRAO (7),
+        UNKNOWN(8);
 
         int i;
         names(int i){
@@ -80,12 +78,10 @@ public class PokeList {
                     return 5;
                 case AUDREY:
                     return 6;
-                case CATARINA:
-                    return 7;
                 case FERRAO:
-                    return 8;
+                    return 7;
                 case UNKNOWN:
-                    return 9;
+                    return 8;
                 default:
                     return -1;
             }
@@ -94,23 +90,21 @@ public class PokeList {
         public static String imageName(names name) {
             switch (name) {
                 case SERGIO:
-                    return "pika.png" /*"sergio.jpg"*/;
+                    return "sergio.png" /*"sergio.jpg"*/;
                 case MARIANA:
-                    return "pika2.png"/*"mariana.jpg"*/;
+                    return "mariana.png"/*"mariana.jpg"*/;
                 case CHRISTINA:
-                    return "pika3.png"/*"christina.jpg"*/;
+                    return "christina.png"/*"christina.jpg"*/;
                 case BENNY:
-                    return "pika4.png"/*"benny.jpg"*/;
+                    return "benny.png"/*"benny.jpg"*/;
 
                 case ROLO:
-                    return "pika.png";
+                    return "rolo.png";
                 case SARA:
-                    return "pika2.png";
+                    return "sara.png";
                 case AUDREY:
-                    return "pika3.png";
+                    return "audrey.png";
 
-                case CATARINA:
-                    return "catarina.jpg";
                 case FERRAO:
                     return "ferrao.jpg";
                 case UNKNOWN:
@@ -124,16 +118,17 @@ public class PokeList {
         public static int catchRate(names name) {
             switch (name) {
                 case SERGIO:
+                case AUDREY:
+                    return 50;
                 case MARIANA:
                 case CHRISTINA:
+                    return 80;
                 case BENNY:
                 case ROLO:
                 case SARA:
-                case AUDREY:
-                    return 80;
-                case CATARINA:
+                    return 60;
                 case FERRAO:
-                    return 40;
+                    return 20;
                 default:
                     return 100;
             }

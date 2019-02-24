@@ -163,6 +163,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                 if (barStrength == pokePlacement.getY() && pos == pokePlacement.getX()) {
                     System.out.println("----__---HIT---__----");
                     pokePlacement.hidePokemon();
+                    hideUI();
                     if(((int)(Math.random()*10)+1)<pokePlacement.getCatchRate()) {
                         ball.hit(3);                                //---Se conseguir apanhar, vai repetir o movimento tilt 3x
                         ball.catchSuccess();
