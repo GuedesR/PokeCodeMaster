@@ -90,13 +90,13 @@ public class PokeList {
         public static String imageName(names name) {
             switch (name) {
                 case SERGIO:
-                    return "sergio.png" /*"sergio.jpg"*/;
+                    return "sergio.png";
                 case MARIANA:
-                    return "mariana.png"/*"mariana.jpg"*/;
+                    return "mariana.png";
                 case CHRISTINA:
-                    return "christina.png"/*"christina.jpg"*/;
+                    return "christina.png";
                 case BENNY:
-                    return "benny.png"/*"benny.jpg"*/;
+                    return "benny.png";
 
                 case ROLO:
                     return "rolo.png";

@@ -19,7 +19,7 @@ public class Attic extends Stages {
         pokes = new Pokes[3];
         for(int i = 4; i < 7; i++) {
             for(int j=0;j<3;j++) {
-                pokes[j] = pokeList.getElement(i);
+                pokes[j] = pokeList.getElement(i + j);
             }
         }
     }
@@ -35,8 +35,8 @@ public class Attic extends Stages {
     @Override
     public boolean isDevoidOfPPokemon() {
 
-        if((pokes[0].isCaptured() || !pokes[0].isUnlocked()) && (pokes[1].isCaptured() || !pokes[1].isUnlocked()) &&
-                (pokes[2].isCaptured()|| !pokes[2].isUnlocked())){
+         if((pokes[0].isCaptured() || !pokes[0].isUnlocked()) && (pokes[1].isCaptured() || !pokes[1].isUnlocked()) &&
+                (pokes[2].isCaptured() || !pokes[2].isUnlocked())){
             return true;
         }
         return false;
@@ -86,7 +86,7 @@ public class Attic extends Stages {
                 int random = (int) Math.floor(Math.random() * 3);
                 System.out.println(random);
 
-                if (!pokes[random].isCaptured() && pokes[random].isUnlocked()) {
+                if (!(pokes[random].isCaptured()) && pokes[random].isUnlocked()) {
                     Pokes poke = pokes[random];
                     return poke;
                 }

@@ -17,7 +17,7 @@ public class Varanda extends Utilities implements KeyboardHandler {
     Picture textOne = new Picture(10, 10, "bg2.jpg"); // mesma foto com o balão de fala
 
     private boolean unlocked = true;
-    private boolean spacePressed = false;
+    //private boolean spacePressed = false;
 
     @Override
     public void drawStage() {
@@ -77,7 +77,7 @@ public class Varanda extends Utilities implements KeyboardHandler {
 
     @Override
     public void keyPressed(KeyboardEvent keyboardEvent) {
-        spacePressed = true;
+        //spacePressed = true;
     }
 
     @Override
