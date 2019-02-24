@@ -2,10 +2,7 @@ package org.academiadecodigo.bootcamp.Game;
 
 import org.academiadecodigo.bootcamp.Game.Items.Pokeball;
 import org.academiadecodigo.bootcamp.Game.Pokemons.PokeList;
-import org.academiadecodigo.bootcamp.Game.StagesPack.Attic;
-import org.academiadecodigo.bootcamp.Game.StagesPack.Base;
-import org.academiadecodigo.bootcamp.Game.StagesPack.Stages;
-import org.academiadecodigo.bootcamp.Game.StagesPack.Unicornios;
+import org.academiadecodigo.bootcamp.Game.StagesPack.*;
 import org.academiadecodigo.bootcamp.Game.UtilitiesPack.Copa;
 import org.academiadecodigo.bootcamp.Game.UtilitiesPack.NoPokemonScreen;
 import org.academiadecodigo.bootcamp.Game.UtilitiesPack.PingPong;
@@ -33,6 +30,7 @@ public class Corridor implements MouseHandler {
     private Utilities pingPong = new PingPong();
     private Utilities copa = new Copa();
     private Utilities varanda = new Varanda();
+    private Stages easterEgg = new EasterEgg();
     PlayerScreen playerScreen;
     private GameScreens stages;
     Rectangle highligth = new Rectangle(40, 180, 100, 100);
@@ -183,6 +181,15 @@ public class Corridor implements MouseHandler {
             System.out.println("Unicornios");
             stages=unicornios;
             currentStage = unicornios;
+            stageIsOngoing=true;
+            m.removeEventListener(MouseEventType.MOUSE_CLICKED);
+            m.removeEventListener(MouseEventType.MOUSE_MOVED);
+        }
+        if(mouseEvent.getY() > 725 && base.allCaptured() && attic.allCaptured() && unicornios.allCaptured()){
+            //Go to easter egg
+            System.out.println("Easter Egg");
+            stages=easterEgg;
+            currentStage=easterEgg;
             stageIsOngoing=true;
             m.removeEventListener(MouseEventType.MOUSE_CLICKED);
             m.removeEventListener(MouseEventType.MOUSE_MOVED);
