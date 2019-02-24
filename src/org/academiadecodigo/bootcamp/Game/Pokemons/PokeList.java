@@ -54,7 +54,8 @@ public class PokeList {
         AUDREY (6),
 
         FERRAO (7),
-        UNKNOWN(8);
+        EASTEREGG(8),
+        UNKNOWN(9);
 
         int i;
         names(int i){
@@ -80,8 +81,10 @@ public class PokeList {
                     return 6;
                 case FERRAO:
                     return 7;
-                case UNKNOWN:
+                case EASTEREGG:
                     return 8;
+                case UNKNOWN:
+                    return 9;
                 default:
                     return -1;
             }
@@ -107,6 +110,8 @@ public class PokeList {
 
                 case FERRAO:
                     return "ferrao.jpg";
+                case EASTEREGG:
+                    return "pikaD.png";
                 case UNKNOWN:
                     return "pika4.png";// empty picture
                 default:
@@ -128,6 +133,7 @@ public class PokeList {
                 case SARA:
                     return 60;
                 case FERRAO:
+                case EASTEREGG:
                     return 20;
                 default:
                     return 100;

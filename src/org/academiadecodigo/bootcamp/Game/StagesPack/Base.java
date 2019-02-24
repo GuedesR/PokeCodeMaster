@@ -1,7 +1,5 @@
 package org.academiadecodigo.bootcamp.Game.StagesPack;
 
-import org.academiadecodigo.bootcamp.Game.Corridor;
-import org.academiadecodigo.bootcamp.Game.Menu;
 import org.academiadecodigo.bootcamp.Game.Pokemons.PokeList;
 import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
