@@ -171,6 +171,8 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                         hideUI();
                         pokemon.captured();//captures the pokemon
                         caught = true;
+                        mouse.removeEventListener(MouseEventType.MOUSE_MOVED);
+                        mouse.removeEventListener(MouseEventType.MOUSE_CLICKED);
                         return true;
                     } else {
                         pokePlacement.hidePokemon();
@@ -180,6 +182,8 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                         ball.hidePokeball();
                         keyboard.removeEventListener(leftPressed);
                         keyboard.removeEventListener(rightPressed);
+                        mouse.removeEventListener(MouseEventType.MOUSE_MOVED);
+                        mouse.removeEventListener(MouseEventType.MOUSE_CLICKED);
 
                     }
                 } else {
@@ -268,6 +272,9 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
         } else if (mouseX > 30 && mouseX < 70 && mouseY > 415 && mouseY < 455){
             if(Beer.getCurrentAmount() > 0){
                 Beer.show();
+                //currentPokemon.giveBeer();
+                //Beer.removeBeer();
+
                 remainingBeersNum.setText(Integer.toString(Beer.getCurrentAmount()));
             }
         }
