@@ -53,7 +53,6 @@ public class Corridor implements MouseHandler {
         Music music = new Music();
         //music.musicplay("music");
 
-
         corridor3.draw();
         System.out.println("Corredor woop woop!");
         boolean bool;
@@ -193,9 +192,24 @@ public class Corridor implements MouseHandler {
 
     @Override
     public void mouseMoved(MouseEvent mouseEvent) {
-        if (mouseEvent.getY() > 190 && mouseEvent.getY() < 270 && !stageIsOngoing) {
+
+        if (mouseEvent.getY() > 420 && mouseEvent.getY() < 490 && !copa.isUnlocked() && !stageIsOngoing) {
+            //show copa locked
             highligth.draw();
-        } else {
+        }
+        else if (mouseEvent.getY() > 350 && mouseEvent.getY() < 420 && !varanda.isUnlocked() && !stageIsOngoing) {
+            //show varanda locked
+            highligth.draw();
+        }
+        else if ((mouseEvent.getY() > 490 && mouseEvent.getY() < 560) && !pingPong.isUnlocked() && !stageIsOngoing) {
+            //show pingpong locked
+            highligth.fill();
+        }
+        else if (mouseEvent.getY() > 560 && mouseEvent.getY() < 624 && !base.allCaptured() && !attic.allCaptured() && !stageIsOngoing) {
+            //show unicornios locked
+            highligth.draw();
+        }
+        else {
             highligth.delete();
         }
 
