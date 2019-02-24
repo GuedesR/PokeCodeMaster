@@ -67,34 +67,6 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
         if (playing) {
             System.out.println(playing);
 
-
-            /*
-             * Layout buttons
-             */
-            pokedexBtn = new Ellipse(30, 290, 40,40);
-            pokedexBtn.setColor(Color.LIGHT_GRAY);
-            pokedexBtn.fill();
-
-            remainingBallsBtn = new Ellipse(30, 340, 40,40);
-            remainingBallsBtn.setColor(Color.LIGHT_GRAY);
-            remainingBallsBtn.fill();
-
-            remainingBallsNum = new Text(60, 375, Integer.toString(Pokeball.getCurrentAmount()));
-            remainingBallsNum.setColor(Color.BLACK);
-            remainingBallsNum.grow(5,5);
-            remainingBallsNum.draw();
-
-            beerBtn = new Ellipse(30, 390, 40,40);
-            beerBtn.setColor(Color.LIGHT_GRAY);
-            beerBtn.fill();
-
-            remainingBeersNum = new Text(60, 425, Integer.toString(Beer.getCurrentAmount()));
-            remainingBeersNum.setColor(Color.BLACK);
-            remainingBeersNum.grow(5,5);
-            remainingBeersNum.draw();
-
-
-
             /*
              * Pokemon creation
              */
@@ -110,6 +82,32 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
              * Creation of the Items
              */
             while (!caught && Pokeball.getCurrentAmount() > 0) {
+
+                /*
+                 * Layout buttons
+                 */
+                pokedexBtn = new Ellipse(30, 290, 40,40);
+                pokedexBtn.setColor(Color.LIGHT_GRAY);
+                pokedexBtn.fill();
+
+                remainingBallsBtn = new Ellipse(30, 340, 40,40);
+                remainingBallsBtn.setColor(Color.LIGHT_GRAY);
+                remainingBallsBtn.fill();
+
+                remainingBallsNum = new Text(60, 375, Integer.toString(Pokeball.getCurrentAmount()));
+                remainingBallsNum.setColor(Color.BLACK);
+                remainingBallsNum.grow(5,5);
+                remainingBallsNum.draw();
+
+                beerBtn = new Ellipse(30, 390, 40,40);
+                beerBtn.setColor(Color.LIGHT_GRAY);
+                beerBtn.fill();
+
+                remainingBeersNum = new Text(60, 425, Integer.toString(Beer.getCurrentAmount()));
+                remainingBeersNum.setColor(Color.BLACK);
+                remainingBeersNum.grow(5,5);
+                remainingBeersNum.draw();
+
                 ball = new Pokeball();
                 ball.init();
                 ball.setPos(2);

@@ -6,9 +6,13 @@ import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
+import org.academiadecodigo.simplegraphics.mouse.Mouse;
+import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
+import org.academiadecodigo.simplegraphics.mouse.MouseEventType;
+import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
-public class Menu implements KeyboardHandler {
+public class Menu implements KeyboardHandler, MouseHandler {
 
     private Rectangle backgroung;
     private Picture start;
@@ -33,6 +37,7 @@ public class Menu implements KeyboardHandler {
         rules.draw();
 
         Keyboard keyboard = new Keyboard(this);
+        Mouse mouse = new Mouse(this);
 
         KeyboardEvent sPressed = new KeyboardEvent();
         sPressed.setKey(KeyboardEvent.KEY_S);
@@ -48,6 +53,8 @@ public class Menu implements KeyboardHandler {
         rPressed.setKey(KeyboardEvent.KEY_R);
         rPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
         keyboard.addEventListener(rPressed);
+
+        mouse.addEventListener(MouseEventType.MOUSE_CLICKED);
 
         //menu song show
 
@@ -95,6 +102,17 @@ public class Menu implements KeyboardHandler {
 
     @Override
     public void keyReleased(KeyboardEvent keyboardEvent) {
+
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent mouseEvent) {
+        System.out.println("X: " + mouseEvent.getX() + " Y: " + mouseEvent.getY());
+
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent mouseEvent) {
 
     }
 }
