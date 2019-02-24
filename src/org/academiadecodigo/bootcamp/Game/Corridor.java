@@ -33,6 +33,11 @@ public class Corridor implements MouseHandler {
     private Stages easterEgg = new EasterEgg();
     PlayerScreen playerScreen;
     private GameScreens stages;
+    private Picture varandaLock=new Picture(90,325,"lock.png");
+    private Picture copaLock=new Picture(90,400,"lock.png");
+    private Picture pingpongLock=new Picture(90,475,"lock.png");
+    private Picture unicorniosLock=new Picture(90,550,"lock.png");
+
     Rectangle highligth = new Rectangle(40, 180, 100, 100);
     ;
     private PokeList pokeList = new PokeList();
@@ -209,22 +214,37 @@ public class Corridor implements MouseHandler {
 
         if (mouseEvent.getY() > 420 && mouseEvent.getY() < 490 && !copa.isUnlocked() && !stageIsOngoing) {
             //show copa locked
-            highligth.draw();
+            copaLock.draw();
+            varandaLock.delete();
+            pingpongLock.delete();
+            unicorniosLock.delete();
         }
         else if (mouseEvent.getY() > 350 && mouseEvent.getY() < 420 && !varanda.isUnlocked() && !stageIsOngoing) {
             //show varanda locked
-            highligth.draw();
+            varandaLock.draw();
+            copaLock.delete();
+            pingpongLock.delete();
+            unicorniosLock.delete();
         }
         else if ((mouseEvent.getY() > 490 && mouseEvent.getY() < 560) && !pingPong.isUnlocked() && !stageIsOngoing) {
             //show pingpong locked
-            highligth.fill();
+            pingpongLock.draw();
+            varandaLock.delete();
+            copaLock.delete();
+            unicorniosLock.delete();
         }
         else if (mouseEvent.getY() > 560 && mouseEvent.getY() < 624 && !base.allCaptured() && !attic.allCaptured() && !stageIsOngoing) {
             //show unicornios locked
-            highligth.draw();
+            unicorniosLock.draw();
+            varandaLock.delete();
+            copaLock.delete();
+            pingpongLock.delete();
         }
         else {
-            highligth.delete();
+            varandaLock.delete();
+            copaLock.delete();
+            pingpongLock.delete();
+            unicorniosLock.delete();
         }
 
     }
