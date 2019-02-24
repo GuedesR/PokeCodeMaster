@@ -16,7 +16,7 @@ public class Varanda extends Utilities implements KeyboardHandler {
     Picture varanda = new Picture(10, 10, "bg copy 2.jpg"); // foto do antonio sem nada
     Picture textOne = new Picture(10, 10, "bg2.jpg"); // mesma foto com o balão de fala
 
-    private boolean unlocked = true;
+    private boolean unlocked = false;
     //private boolean spacePressed = false;
 
     @Override

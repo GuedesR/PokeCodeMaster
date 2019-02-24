@@ -46,27 +46,27 @@ public class Pokedex {
         }
 
         if (baseDex[3]){
-            benny.load("pokedexOcupado.png");
+            benny.load("benny.png");
             benny.draw();
         }
 
         if (atticDex[0]){
-            rolo.load("pokedexOcupado.png");
+            rolo.load("rolo.png");
             rolo.draw();
         }
 
         if (atticDex[1]){
-            sara.load("pokedexOcupado.png");
+            sara.load("sara.png");
             sara.draw();
         }
 
         if (atticDex[2]){
-            audrey.load("pokedexOcupado.png");
+            audrey.load("audrey.png");
             audrey.draw();
         }
 
         if (unicorniosDex[0]){
-            ferrao.load("pokedexOcupado.png");
+            ferrao.load("ferrao.png");
             ferrao.draw();
         }
 
