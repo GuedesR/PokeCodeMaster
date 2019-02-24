@@ -38,9 +38,7 @@ public class Corridor implements MouseHandler {
     private PokeList pokeList = new PokeList();
 
 
-    private Picture corridor1 = new Picture(10, 10, "corr1.jpg");
-    private Picture corridor2 = new Picture(10, 10, "corr2.jpg");
-    private Picture corridor3 = new Picture(10, 10, "corr3.jpg");
+    private Picture corridor = new Picture(10, 10, "corridor.png");
     Mouse m = new Mouse(this);
 
     private boolean stageIsOngoing = false;
@@ -51,7 +49,7 @@ public class Corridor implements MouseHandler {
         Music music = new Music();
         //music.musicplay("music");
 
-        corridor3.draw();
+        corridor.draw();
         System.out.println("Corredor woop woop!");
         boolean bool;
 
