@@ -14,7 +14,7 @@ public class Pokeball {
     private static int currentAmount = 5;
 
     public void init(){
-        pokeball = new Picture(192,625,"Pokeball1.png");
+        pokeball = new Picture(192,625, "pokeball1.png");
         pokeball.draw();
     }
 
@@ -122,22 +122,22 @@ public class Pokeball {
 
         while(repeat < repetition){
             pokeball.translate(10,0);
-            pokeball.load("Pokeball2.png");
+            pokeball.load("pokeball2.png");
             pokeball.draw();
             Thread.sleep(ballCatchAnimationDelay+100);
 
             pokeball.translate(-10,0);
-            pokeball.load("Pokeball1.png");
+            pokeball.load("pokeball1.png");
             pokeball.draw();
             Thread.sleep(ballCatchAnimationDelay);
 
             pokeball.translate(-10,0);
-            pokeball.load("Pokeball3.png");
+            pokeball.load("pokeball3.png");
             pokeball.draw();
             Thread.sleep(ballCatchAnimationDelay+100);
 
             pokeball.translate(10,0);
-            pokeball.load("Pokeball1.png");
+            pokeball.load("pokeball1.png");
             pokeball.draw();
             Thread.sleep(ballCatchAnimationDelay);
 
@@ -149,20 +149,29 @@ public class Pokeball {
     public void catchSuccess() throws InterruptedException{
 
         Picture gotcha = new Picture(65,320,"gotcha.png");
-        gotcha.draw();
-        Thread.sleep(ballCatchAnimationDelay+20);
 
+
+        pokeball.grow(30,30);
+        pokeball.translate(-15,-15);
+        pokeball.load("pokebal4.png");
+        pokeball.draw();
+        gotcha.draw();
+
+        Thread.sleep(500);
         pokeball.delete();
-        Thread.sleep(ballCatchAnimationDelay+20);
         gotcha.delete();
 
     }
 
     public void catchFail() throws InterruptedException{
         Picture fail = new Picture(65,320,"fail.png");
+        pokeball.grow(30,30);
+        pokeball.load("pokeball5.png");
+        pokeball.draw();
+        Thread.sleep(300);
         pokeball.delete();
         fail.draw();
-        Thread.sleep(ballCatchAnimationDelay+20);
+        Thread.sleep(500);
         fail.delete();
         pos = 2;
     }

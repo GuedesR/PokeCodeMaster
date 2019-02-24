@@ -27,10 +27,10 @@ public class Pokedex {
     private static boolean[] atticDex = new boolean[3];
     private static boolean[] unicorniosDex = new boolean[2];
 
-    public static void refreshDex(Corridor corridor){
-        baseDex=corridor.getBase().dex();
-        atticDex=corridor.getAttic().dex();
-        unicorniosDex=corridor.getUnicornios().dex();
+    public static void refreshDex(Corridor corridor) {
+        baseDex = corridor.getBase().dex();
+        atticDex = corridor.getAttic().dex();
+        unicorniosDex = corridor.getUnicornios().dex();
 
         if (baseDex[0]){
             sergio.load("sergioP.png");
@@ -74,16 +74,16 @@ public class Pokedex {
 
     }
 
-    public static void putInDex(int dexNum){
-        dex[dexNum]=true;
+    public static void putInDex(int dexNum) {
+        dex[dexNum] = true;
     }
 
-    public static void show(){
-        backGround = new Rectangle(85,100,360,360);
+    public static void show() {
+        backGround = new Rectangle(85, 100, 360, 360);
         backGround.setColor(Color.WHITE);
         backGround.fill();
 
-        for(int i=0; i<baseDex.length; i++){
+        for (int i = 0; i < baseDex.length; i++) {
             System.out.println(baseDex[i]);
         }
 
@@ -113,11 +113,11 @@ public class Pokedex {
         ferrao = new Picture(220, 345, "pokedexVazio.png");
         ferrao.draw();
 
-        opened=true;
+        opened = true;
 
     }
 
-    public static void hide(){
+    public static void hide() {
         backGround.delete();
         sergio.delete();
         mariana.delete();
@@ -131,7 +131,7 @@ public class Pokedex {
         opened = false;
     }
 
-    public static boolean isOpened(){
+    public static boolean isOpened() {
         return opened;
     }
 }
