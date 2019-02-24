@@ -16,12 +16,19 @@ public class Unicornios extends Stages {
     private boolean[] uniDex = new boolean[2];
 
 
+    public Unicornios(){
+        pokes = new Pokes[2];
+        for(int i = 7; i < 9; i++) {
+            for(int j=0;j<2;j++) {
+                pokes[j] = pokeList.getElement(i);
+            }
+        }
+    }
 
     @Override
     public boolean[] dex(){
-        //:TODO:CENAS
-        uniDex[0]=true;//pokes[0].isCaptured();
-        uniDex[1]=true;//pokes[1].isCaptured();
+        uniDex[0]=pokes[0].isCaptured();
+        uniDex[1]=pokes[1].isCaptured();
         return uniDex;
     }
 
@@ -29,7 +36,9 @@ public class Unicornios extends Stages {
     @Override
     public boolean isDevoidOfPPokemon() {
 
-        //TODO:CENAS
+        if((pokes[0].isCaptured() || !pokes[0].isUnlocked()) && (pokes[1].isCaptured() || !pokes[1].isUnlocked())){
+            return true;
+        }
         return false;
     }
 

@@ -18,6 +18,7 @@ public class Pokedex {
     private static Picture rolo;
     private static Picture sara;
     private static Picture audrey;
+    private static Picture catarina;
     private static Picture ferrao;
     private static boolean[] dex = new boolean[9];
     private static boolean[] baseDex = new boolean[4];
