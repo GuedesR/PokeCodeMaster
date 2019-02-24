@@ -89,28 +89,28 @@ public class Pokedex {
 
         System.out.println("pokedex initialized");
 
-        sergio = new Picture(110, 125, "pokedexVazio.png");
+        sergio = new Picture(110, 125, "sergio copy.png");
         sergio.draw();
 
-        mariana = new Picture(220, 125, "pokedexVazio.png");
+        mariana = new Picture(220, 125, "mariana copy.png");
         mariana.draw();
 
-        christina = new Picture(330, 125, "pokedexVazio.png");
+        christina = new Picture(330, 125, "christina copy.png");
         christina.draw();
 
-        benny = new Picture(110, 235, "pokedexVazio.png");
+        benny = new Picture(110, 235, "benny copy.png");
         benny.draw();
 
-        rolo = new Picture(220, 235, "pokedexVazio.png");
+        rolo = new Picture(220, 235, "rolo copy.png");
         rolo.draw();
 
-        sara = new Picture(330, 235, "pokedexVazio.png");
+        sara = new Picture(330, 235, "sara copy.png");
         sara.draw();
 
-        audrey = new Picture(110, 345, "pokedexVazio.png");
+        audrey = new Picture(110, 345, "audrey copy.png");
         audrey.draw();
 
-        ferrao = new Picture(220, 345, "pokedexVazio.png");
+        ferrao = new Picture(220, 345, "ferrao copy.png");
         ferrao.draw();
 
         opened = true;
