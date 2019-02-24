@@ -109,7 +109,7 @@ public class PokeList {
                     return "audrey.png";
 
                 case FERRAO:
-                    return "ferrao.jpg";
+                    return "ferrao.png";
                 case EASTEREGG:
                     return "pikaD.png";
                 case UNKNOWN:
