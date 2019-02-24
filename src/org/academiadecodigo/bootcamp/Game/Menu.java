@@ -44,11 +44,6 @@ public class Menu implements KeyboardHandler, MouseHandler {
         sPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
         keyboard.addEventListener(sPressed);
 
-        KeyboardEvent downPressed = new KeyboardEvent();
-        downPressed.setKey(KeyboardEvent.KEY_DOWN);
-        downPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
-        keyboard.addEventListener(downPressed);
-
         KeyboardEvent rPressed = new KeyboardEvent();
         rPressed.setKey(KeyboardEvent.KEY_R);
         rPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
@@ -67,7 +62,6 @@ public class Menu implements KeyboardHandler, MouseHandler {
                 Corridor corridor = new Corridor();
                 up = false;
                 keyboard.removeEventListener(sPressed);
-                keyboard.removeEventListener(downPressed);
                 keyboard.removeEventListener(sPressed);
             }
 
@@ -85,10 +79,6 @@ public class Menu implements KeyboardHandler, MouseHandler {
             up = true;
             notExit = true;
             //music.stop();
-        }
-        if (keyboardEvent.getKey() == KeyboardEvent.KEY_DOWN && !notExit) {
-            System.out.println("down key");
-            System.exit(1);
         }
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_SPACE) {
             stop = true;

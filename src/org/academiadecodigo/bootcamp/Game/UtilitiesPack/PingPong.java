@@ -18,7 +18,12 @@ public class PingPong extends Utilities {
     @Override
     public boolean action() { //give pokeballs
 
-
+        background.draw();
+        try {
+            Thread.sleep(3000);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         return true;
     }
 

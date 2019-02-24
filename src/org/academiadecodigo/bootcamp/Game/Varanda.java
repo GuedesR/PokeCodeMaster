@@ -44,7 +44,7 @@ public class Varanda extends Utilities implements KeyboardHandler {
     public boolean action() {
 
         try {
-            Thread.sleep(500);
+            Thread.sleep(3000);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

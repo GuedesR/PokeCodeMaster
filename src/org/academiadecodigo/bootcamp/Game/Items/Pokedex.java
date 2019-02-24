@@ -33,42 +33,42 @@ public class Pokedex {
         unicorniosDex=corridor.getUnicornios().dex();
 
         if (baseDex[0]){
-            sergio.load("sergio.png");
+            sergio.load("sergioP.png");
             sergio.draw();
         }
 
         if (baseDex[1]){
-            mariana.load("mariana.png");
+            mariana.load("marianaP.png");
             mariana.draw();
         }
 
         if (baseDex[2]){
-            christina.load("christina.png");
+            christina.load("christinaP.png");
             christina.draw();
         }
 
         if (baseDex[3]){
-            benny.load("benny.png");
+            benny.load("bennyP.png");
             benny.draw();
         }
 
         if (atticDex[0]){
-            rolo.load("rolo.png");
+            rolo.load("roloP.png");
             rolo.draw();
         }
 
         if (atticDex[1]){
-            sara.load("sara.png");
+            sara.load("saraP.png");
             sara.draw();
         }
 
         if (atticDex[2]){
-            audrey.load("audrey.png");
+            audrey.load("audreyP.png");
             audrey.draw();
         }
 
         if (unicorniosDex[0]){
-            ferrao.load("ferrao.png");
+            ferrao.load("ferraoP.png");
             ferrao.draw();
         }
 
