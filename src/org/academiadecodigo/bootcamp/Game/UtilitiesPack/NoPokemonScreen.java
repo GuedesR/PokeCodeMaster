@@ -14,7 +14,7 @@ public class NoPokemonScreen extends Utilities {
 
     private boolean unlocked = true;
 
-    private boolean actionComplete =false;
+    private boolean actionComplete = false;
 
     @Override
     public void drawStage() {
@@ -42,7 +42,7 @@ public class NoPokemonScreen extends Utilities {
 
         try {
             Thread.sleep(200);
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
 
@@ -50,7 +50,7 @@ public class NoPokemonScreen extends Utilities {
 
         try {
             Thread.sleep(200);
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
         return true;
