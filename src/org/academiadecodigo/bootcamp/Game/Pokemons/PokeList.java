@@ -111,7 +111,7 @@ public class PokeList {
                 case FERRAO:
                     return "ferrao.png";
                 case EASTEREGG:
-                    return "pikaD.png";
+                    return "easterEgg.png";
                 case UNKNOWN:
                     return "pika4.png";// empty picture
                 default:

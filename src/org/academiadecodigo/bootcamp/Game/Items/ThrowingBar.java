@@ -7,6 +7,7 @@ import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
+import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 /**
  * Created by codecadet on 16/02/2019.
@@ -15,6 +16,8 @@ public class ThrowingBar implements KeyboardHandler{
 
     private Rectangle background;
     private Rectangle square;
+    private Picture backBar;
+    private Picture squareBar;
     private boolean isGoingDown=true;
     boolean stop=false;
     private int throwNumber;
@@ -24,13 +27,18 @@ public class ThrowingBar implements KeyboardHandler{
 
     public int init() throws InterruptedException{
 
-        background= new Rectangle(barX,barY+20,40,200);
-        background.setColor(Color.WHITE);
-        background.fill();
+        backBar = new Picture(barX,barY+20,"bar.png");
+        backBar.draw();
+        squareBar = new Picture(barX,barY-20,"barBall.png");
+        squareBar.draw();
+
+        //background= new Rectangle(barX,barY+20,40,200);
+        //background.setColor(Color.WHITE);
+        //background.fill();
 
         square = new Rectangle(barX+10,barY-10,20,20);
         square.setColor(Color.BLUE);
-        square.fill();
+        //square.fill();
 
         Keyboard keyboard = new Keyboard(this);
         KeyboardEvent spacePressed = new KeyboardEvent();
@@ -43,8 +51,11 @@ public class ThrowingBar implements KeyboardHandler{
         }
         throwNumber=square.getY()/square.getHeight();
 
-        background.delete();
+        backBar.delete();
+
+        //background.delete();
         square.delete();
+        squareBar.delete();
 
         return pos;
     }
@@ -71,12 +82,14 @@ public class ThrowingBar implements KeyboardHandler{
     }
 
     public void goDown(){
+        squareBar.translate(0,squareBar.getHeight()/2);
         square.translate(0,square.getHeight());
         pos++;
 
     }
 
     public void goUp(){
+        squareBar.translate(0,-squareBar.getHeight()/2);
         square.translate(0,-square.getHeight());
         pos--;
 

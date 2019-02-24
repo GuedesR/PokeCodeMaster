@@ -32,6 +32,10 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
     private Pokeball ball;
     private Corridor corridor;
 
+    private Picture pokedexB;
+    private Picture ballsB;
+    private Picture beerB;
+
 
     private Ellipse pokedexBtn;
     private Ellipse remainingBallsBtn;
@@ -86,13 +90,20 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                 /*
                  * Layout buttons
                  */
+
+                pokedexB = new Picture(30,290,"btnDex.png");
+                pokedexB.draw();
+
                 pokedexBtn = new Ellipse(30, 290, 40,40);
                 pokedexBtn.setColor(Color.LIGHT_GRAY);
-                pokedexBtn.fill();
+                //pokedexBtn.fill();
+
+                ballsB = new Picture(30,340,"btnPoke.png");
+                ballsB.draw();
 
                 remainingBallsBtn = new Ellipse(30, 340, 40,40);
                 remainingBallsBtn.setColor(Color.LIGHT_GRAY);
-                remainingBallsBtn.fill();
+                //remainingBallsBtn.fill();
 
                 remainingBallsNum = new Text(60, 375, Integer.toString(Pokeball.getCurrentAmount()));
                 remainingBallsNum.setColor(Color.BLACK);
@@ -101,7 +112,10 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
 
                 beerBtn = new Ellipse(30, 390, 40,40);
                 beerBtn.setColor(Color.LIGHT_GRAY);
-                beerBtn.fill();
+                //beerBtn.fill();
+
+                beerB = new Picture(30,390,"btnBeer.png");
+                beerB.draw();
 
                 remainingBeersNum = new Text(60, 425, Integer.toString(Beer.getCurrentAmount()));
                 remainingBeersNum.setColor(Color.BLACK);
@@ -178,6 +192,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                         pokePlacement.hidePokemon();
                         ball.hit(2);                                //---Se o pokemon resistir só repete o movimento tilt 2x
                         ball.catchFail();
+                        hideUI();
                         pokePlacement.showPokemon();
                         ball.hidePokeball();
                         keyboard.removeEventListener(leftPressed);
@@ -191,6 +206,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                     System.out.println("____--__FAIL___--____");
                     ball.hidePokeball();
                     caught = false;
+                    hideUI();
                     keyboard.removeEventListener(leftPressed);
                     keyboard.removeEventListener(rightPressed);
                     mouse.removeEventListener(MouseEventType.MOUSE_CLICKED);
@@ -223,6 +239,10 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
      * Hides the options
      */
     public void hideUI(){
+        pokedexB.delete();
+        ballsB.delete();
+        beerB.delete();
+
         pokedexBtn.delete();
         remainingBallsBtn.delete();
         remainingBallsNum.delete();
