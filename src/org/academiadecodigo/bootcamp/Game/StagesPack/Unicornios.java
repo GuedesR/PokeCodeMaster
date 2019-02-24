@@ -23,7 +23,7 @@ public class Unicornios extends Stages {
 
     @Override
     public boolean allCaptured() {
-        return false;
+        return pokes.isCaptured();
     }
 
     @Override

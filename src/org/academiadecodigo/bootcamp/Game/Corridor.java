@@ -190,7 +190,9 @@ public class Corridor implements MouseHandler {
                 m.removeEventListener(MouseEventType.MOUSE_MOVED);
             }
         }
-        if(mouseEvent.getY() > 725 && base.allCaptured() && attic.allCaptured() && unicornios.allCaptured()){
+        if(mouseEvent.getY() > 650 && mouseEvent.getY() < 725 &&
+                mouseEvent.getX() > 325 && mouseEvent.getX() < 430 &&
+                base.allCaptured() && attic.allCaptured() && unicornios.allCaptured()){
             //Go to easter egg
             System.out.println("Easter Egg");
             stages=easterEgg;
