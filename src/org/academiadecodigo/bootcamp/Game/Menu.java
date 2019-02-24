@@ -52,7 +52,7 @@ public class Menu implements KeyboardHandler {
         //menu song show
 
 
-        music.musicplay("menu");
+        //music.musicplay("menu");
 
         do {
             System.out.print("");
@@ -77,7 +77,7 @@ public class Menu implements KeyboardHandler {
             System.out.println("start key");
             up = true;
             notExit = true;
-            music.stop();
+            //music.stop();
         }
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_DOWN && !notExit) {
             System.out.println("down key");

@@ -51,7 +51,7 @@ public class Corridor implements MouseHandler {
 
     public Corridor() throws InterruptedException {
         Music music = new Music();
-        music.musicplay("music");
+        //music.musicplay("music");
 
 
         corridor3.draw();
