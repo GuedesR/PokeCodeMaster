@@ -203,10 +203,6 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                     ball.hidePokeball();
                     caught = false;
                     hideUI();
-                    keyboard.removeEventListener(leftPressed);
-                    keyboard.removeEventListener(rightPressed);
-                    mouse.removeEventListener(MouseEventType.MOUSE_CLICKED);
-                    mouse.removeEventListener(MouseEventType.MOUSE_MOVED);
                 }
 
                 if(Pokeball.getCurrentAmount() == 0){
