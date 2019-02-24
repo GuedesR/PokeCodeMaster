@@ -195,10 +195,6 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                         hideUI();
                         pokePlacement.showPokemon();
                         ball.hidePokeball();
-                        keyboard.removeEventListener(leftPressed);
-                        keyboard.removeEventListener(rightPressed);
-                        mouse.removeEventListener(MouseEventType.MOUSE_CLICKED);
-                        mouse.removeEventListener(MouseEventType.MOUSE_MOVED);
 
                     }
                 } else {
