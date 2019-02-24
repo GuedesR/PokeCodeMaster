@@ -69,9 +69,9 @@ public class PokePlacement {
         return pokemonPicture;
     }
 
-    public void drunkImage(Picture currentPokemon){
-        currentPokemon.load(imageName+"D.png");
-        currentPokemon.draw();
+    public void drunkImage(){
+        pokemonPicture.load(imageName+"D.png");
+        pokemonPicture.draw();
     }
 
     public void caught(){

@@ -4,20 +4,22 @@ import org.academiadecodigo.bootcamp.Game.Corridor;
 import org.academiadecodigo.bootcamp.Game.Pokemons.PokeList;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
+import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Pokedex {
 
     private static Rectangle backGround;
     private static boolean opened = false;
-    private static Rectangle sergio;
-    private static Rectangle mariana;
-    private static Rectangle christina;
-    private static Rectangle benny;
-    private static Rectangle rolo;
-    private static Rectangle sara;
-    private static Rectangle audrey;
-    private static Rectangle catarina;
-    private static Rectangle ferrao;
+
+    private static Picture sergio = new Picture();
+    private static Picture mariana;
+    private static Picture christina;
+    private static Picture benny;
+    private static Picture rolo;
+    private static Picture sara;
+    private static Picture audrey;
+    private static Picture catarina;
+    private static Picture ferrao;
     private static boolean[] dex = new boolean[9];
     private static boolean[] baseDex = new boolean[4];
     private static boolean[] atticDex = new boolean[3];
@@ -27,6 +29,26 @@ public class Pokedex {
         baseDex=corridor.getBase().dex();
         atticDex=corridor.getAttic().dex();
         unicorniosDex=corridor.getUnicornios().dex();
+
+        if (baseDex[0]){
+            sergio.load("pokedexOcupado.png");
+            sergio.draw();
+        }
+
+        if (baseDex[1]){
+            mariana.load("pokedexOcupado.png");
+            mariana.draw();
+        }
+
+        if (baseDex[2]){
+            christina.load("pokedexOcupado.png");
+            christina.draw();
+        }
+
+        if (baseDex[3]){
+            benny.load("pokedexOcupado.png");
+            benny.draw();
+        }
 
     }
 
@@ -43,36 +65,36 @@ public class Pokedex {
             System.out.println(baseDex[i]);
         }
 
-        opened = true;
         System.out.println("pokedex initialized");
 
-        sergio = new Rectangle(110, 125, 90, 90);
-        sergio.setColor(Color.DARK_GRAY);
-        sergio.fill();
+        sergio = new Picture(110, 125, "pokedexVazio.png");
+        sergio.draw();
 
-        mariana = new Rectangle(220, 125, 90, 90);
-        mariana.setColor(Color.DARK_GRAY);
-        mariana.fill();
+        mariana = new Picture(220, 125, "pokedexVazio.png");
+        mariana.draw();
 
-        christina = new Rectangle(330, 125, 90, 90);
-        christina.setColor(Color.DARK_GRAY);
-        christina.fill();
+        christina = new Picture(330, 125, "pokedexVazio.png");
+        christina.draw();
 
-        benny = new Rectangle(110, 235, 90, 90);
-        benny.setColor(Color.DARK_GRAY);
-        benny.fill();
+        benny = new Picture(110, 235, "pokedexVazio.png");
+        benny.draw();
 
-        rolo = new Rectangle(220, 235, 90, 90);
-        rolo.setColor(Color.DARK_GRAY);
-        rolo.fill();
+        rolo = new Picture(220, 235, "pokedexVazio.png");
+        rolo.draw();
 
-        sara = new Rectangle(330, 235, 90, 90);
-        sara.setColor(Color.DARK_GRAY);
-        sara.fill();
+        sara = new Picture(330, 235, "pokedexVazio.png");
+        sara.draw();
 
-        audrey = new Rectangle(110, 345, 90, 90);
-        audrey.setColor(Color.DARK_GRAY);
-        audrey.fill();
+        audrey = new Picture(110, 345, "pokedexVazio.png");
+        audrey.draw();
+
+        catarina = new Picture(220, 345, "pokedexVazio.png");
+        catarina.draw();
+
+        ferrao = new Picture(330, 345, "pokedexVazio.png");
+        ferrao.draw();
+
+        opened=true;
 
     }
 
