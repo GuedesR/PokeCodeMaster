@@ -18,6 +18,7 @@ public class Unicornios extends Stages {
 
     public Unicornios(){
         pokes = pokeList.getElement(7);
+        pokes.unlock();
     }
 
     @Override

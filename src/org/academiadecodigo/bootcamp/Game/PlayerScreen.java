@@ -280,6 +280,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
         } else if (mouseX > 30 && mouseX < 70 && mouseY > 415 && mouseY < 455){
             if(Beer.getCurrentAmount() > 0){
                 pokePlacement.drunkImage();
+                currentPokemon.giveBeer();
                 Beer.show();
                 remainingBeersNum.setText(Integer.toString(Beer.getCurrentAmount()));
             }

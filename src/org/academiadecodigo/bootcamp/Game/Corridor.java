@@ -179,11 +179,18 @@ public class Corridor implements MouseHandler {
         if (mouseEvent.getY() > 560 && mouseEvent.getY() < 624 && Pokeball.getCurrentAmount()>0 && base.allCaptured() && attic.allCaptured()) {
             //Go to unicornios
             System.out.println("Unicornios");
-            stages=unicornios;
-            currentStage = unicornios;
-            stageIsOngoing=true;
-            m.removeEventListener(MouseEventType.MOUSE_CLICKED);
-            m.removeEventListener(MouseEventType.MOUSE_MOVED);
+            if(!unicornios.isDevoidOfPPokemon()) {
+                stages = unicornios;
+                currentStage = unicornios;
+                stageIsOngoing = true;
+                m.removeEventListener(MouseEventType.MOUSE_CLICKED);
+                m.removeEventListener(MouseEventType.MOUSE_MOVED);
+            }else{
+                stages = nopokemon;
+                stageIsOngoing = true;
+                m.removeEventListener(MouseEventType.MOUSE_CLICKED);
+                m.removeEventListener(MouseEventType.MOUSE_MOVED);
+            }
         }
         if(mouseEvent.getY() > 725 && base.allCaptured() && attic.allCaptured() && unicornios.allCaptured()){
             //Go to easter egg

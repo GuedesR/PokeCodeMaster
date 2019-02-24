@@ -124,19 +124,19 @@ public class PokeList {
             switch (name) {
                 case SERGIO:
                 case AUDREY:
-                    return 50;
+                    return 5;
                 case MARIANA:
                 case CHRISTINA:
-                    return 80;
+                    return 8;
                 case BENNY:
                 case ROLO:
                 case SARA:
-                    return 60;
+                    return 6;
                 case FERRAO:
                 case EASTEREGG:
-                    return 20;
+                    return 2;
                 default:
-                    return 100;
+                    return 10;
             }
         }
 
