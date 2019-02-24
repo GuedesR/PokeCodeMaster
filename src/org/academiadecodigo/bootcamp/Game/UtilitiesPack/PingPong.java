@@ -9,7 +9,7 @@ public class PingPong extends Utilities {
 
     private Picture background = new Picture(10,10,"bg.jpg");
 
-    private boolean unlocked=true;
+    private boolean unlocked=false;
 
     public boolean isUnlocked() {
         return unlocked;

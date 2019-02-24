@@ -24,6 +24,15 @@ public class Base extends Stages {
         }
     }
 
+
+    @Override
+    public boolean allCaptured() {
+        if(pokes[0].isCaptured() && pokes[1].isCaptured() && pokes[2].isCaptured() && pokes[3].isCaptured()){
+            return true;
+        }
+        return false;
+    }
+
     @Override
     public boolean[] dex(){
         baseDex[0]=pokes[0].isCaptured();

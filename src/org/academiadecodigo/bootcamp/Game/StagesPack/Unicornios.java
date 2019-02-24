@@ -26,6 +26,11 @@ public class Unicornios extends Stages {
     }
 
     @Override
+    public boolean allCaptured() {
+        return false;
+    }
+
+    @Override
     public boolean[] dex(){
         uniDex[0]=pokes[0].isCaptured();
         uniDex[1]=pokes[1].isCaptured();

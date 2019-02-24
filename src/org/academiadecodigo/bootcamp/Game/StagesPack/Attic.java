@@ -17,11 +17,20 @@ public class Attic extends Stages {
 
     public Attic(){
         pokes = new Pokes[3];
-        for(int i = 4; i < 7; i++) {
+        //for(int i = 4; i < 7; i++) {
+        int i = 4;
             for(int j=0;j<3;j++) {
                 pokes[j] = pokeList.getElement(i + j);
             }
+        //}
+    }
+
+    @Override
+    public boolean allCaptured() {
+        if(pokes[0].isCaptured() && pokes[1].isCaptured() && pokes[2].isCaptured()){
+            return true;
         }
+        return false;
     }
 
     @Override

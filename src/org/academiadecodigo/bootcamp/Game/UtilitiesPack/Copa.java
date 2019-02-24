@@ -20,7 +20,7 @@ public class Copa extends Utilities implements KeyboardHandler {
 
     Picture copaCheia = new Picture(10, 10, "bg3.jpg");
 
-    private boolean unlocked = true;
+    private boolean unlocked = false;
 
     private boolean actionComplete = false;
 
