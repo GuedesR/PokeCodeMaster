@@ -12,17 +12,12 @@ public class Unicornios extends Stages {
     private Picture background = new Picture(10, 10, "bg3.jpg");
     private boolean isUnlocked = false;
     private PokeList pokeList = new PokeList();
-    private Pokes[] pokes;
-    private boolean[] uniDex = new boolean[2];
+    private Pokes pokes;
+    private boolean[]uniDex = new boolean[1];
 
 
     public Unicornios(){
-        pokes = new Pokes[2];
-        for(int i = 7; i < 9; i++) {
-            for(int j=0;j<2;j++) {
-                pokes[j] = pokeList.getElement(i);
-            }
-        }
+        pokes = pokeList.getElement(7);
     }
 
     @Override
@@ -32,8 +27,7 @@ public class Unicornios extends Stages {
 
     @Override
     public boolean[] dex(){
-        uniDex[0]=pokes[0].isCaptured();
-        uniDex[1]=pokes[1].isCaptured();
+        uniDex[0]=pokes.isCaptured();
         return uniDex;
     }
 
@@ -41,7 +35,7 @@ public class Unicornios extends Stages {
     @Override
     public boolean isDevoidOfPPokemon() {
 
-        if((pokes[0].isCaptured() || !pokes[0].isUnlocked()) && (pokes[1].isCaptured() || !pokes[1].isUnlocked())){
+        if(pokes.isCaptured() || !pokes.isUnlocked()){
             return true;
         }
         return false;
@@ -84,12 +78,11 @@ public class Unicornios extends Stages {
     @Override
     public Pokes startPokemon() {
         int count = 0;
-        if (count < 2) {
+        if (count < 1) {
             while (true) {
-                int random = (int) Math.floor(Math.random() * 2) + 7;
-
-                if (!pokes[random].isCaptured()) {
-                    Pokes poke = pokes[random];
+                if (!pokes.isCaptured()) {
+                    Pokes poke = pokes;
+                    count++;
                     return poke;
                 }
             }

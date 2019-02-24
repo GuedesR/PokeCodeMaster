@@ -9,8 +9,6 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Base extends Stages {
 
-    private Corridor corridor;
-
     private Picture background = new Picture(10,10,"bg.jpg");
     private boolean isUnlocked=true;
     private PokeList pokeList = new PokeList();
@@ -108,7 +106,7 @@ public class Base extends Stages {
                 }
                 if((pokes[0].isCaptured() || !pokes[0].isUnlocked()) && (pokes[1].isCaptured() || !pokes[1].isUnlocked()) &&
                         (pokes[2].isCaptured()|| !pokes[2].isUnlocked()) && (pokes[3].isCaptured()|| !pokes[3].isUnlocked())){
-                    Pokes poke = pokeList.getElement(9);//invisible pokemon
+                    Pokes poke = pokeList.getElement(9); // invisible pokemon
                     return poke;
                 }
             }

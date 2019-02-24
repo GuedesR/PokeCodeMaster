@@ -2,8 +2,10 @@ package org.academiadecodigo.bootcamp.Game.Items;
 
 import org.academiadecodigo.bootcamp.Game.Corridor;
 import org.academiadecodigo.bootcamp.Game.Pokemons.PokeList;
+import org.academiadecodigo.bootcamp.Game.Pokemons.Pokes;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
+import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Pokedex {
