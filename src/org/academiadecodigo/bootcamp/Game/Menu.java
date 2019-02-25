@@ -28,7 +28,6 @@ public class Menu implements KeyboardHandler, MouseHandler {
     public void init() throws InterruptedException {
 
 
-
         back = new Picture(10,10,"menu.png");
         back.draw();
 
