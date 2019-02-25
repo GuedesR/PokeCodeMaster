@@ -22,11 +22,11 @@ public class Background {
 
         switch (stage){
             //Base
-            case 0: background= new Picture(10,10,"bg.jpg");
+            case 0: background= new Picture(10,10,"base.jpg");
                 break;
-            case 1: background= new Picture(10,10,"bg2.jpg");
+            case 1: background= new Picture(10,10,"attic.jpg");
                 break;
-            case 2: background= new Picture(10,10,"bg3.jpg");
+            case 2: background= new Picture(10,10,"uni.jpg");
                 break;
             default: // Victory Screen
         }

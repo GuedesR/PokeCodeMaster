@@ -6,7 +6,7 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class EasterEgg extends Stages {
 
-    private Picture background = new Picture(10,10,"bg.jpg");
+    private Picture background = new Picture(10,10,"base.jpg");
     private boolean isUnlocked=false;
     private PokeList pokeList = new PokeList();
     private Pokes pokes;

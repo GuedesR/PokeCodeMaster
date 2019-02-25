@@ -19,6 +19,7 @@ public class Music {
     private String caught= "res/success.wav";
     private String fail="res/fail.wav";
     private String music="res/sound.wav";
+    private String e="res/e.wav";
     //Variable to switch songs
     String playNow;
 
@@ -48,6 +49,9 @@ public class Music {
         }
         if(song=="music"){
             playNow = music;
+        }
+        if(song =="e"){
+            playNow = e;
         }
 
         AudioPlayer MGP = AudioPlayer.player;

@@ -51,6 +51,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
         this.corridor=corridor;
         int yPokeCoord=100;
         currentPokemon = pokemon;
+        Music music = new Music();
 
 
         this.currentPokemon = pokemon;
@@ -162,6 +163,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                  */
                 System.out.println(barStrength);
                 int pos = ball.throwP(barStrength);
+                music.musicplay("ball");
 
 
 
@@ -177,6 +179,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                     pokePlacement.hidePokemon();
                     hideUI();
                     if(((int)(Math.random()*10)+1)<pokePlacement.getCatchRate()) {
+                        music.musicplay("success");
                         ball.hit(3);                                //---Se conseguir apanhar, vai repetir o movimento tilt 3x
                         ball.catchSuccess();
                         pokePlacement.caught();
@@ -189,6 +192,7 @@ public class PlayerScreen implements KeyboardHandler, MouseHandler {
                         mouse.removeEventListener(MouseEventType.MOUSE_MOVED);
                         return true;
                     } else {
+                        music.musicplay("fail");
                         pokePlacement.hidePokemon();
                         ball.hit(2);                                //---Se o pokemon resistir só repete o movimento tilt 2x
                         ball.catchFail();

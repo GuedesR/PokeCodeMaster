@@ -9,7 +9,7 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
  */
 public class Unicornios extends Stages {
 
-    private Picture background = new Picture(10, 10, "bg3.jpg");
+    private Picture background = new Picture(10, 10, "uni.jpg");
     private boolean isUnlocked = false;
     private PokeList pokeList = new PokeList();
     private Pokes pokes;

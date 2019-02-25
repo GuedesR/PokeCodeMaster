@@ -7,7 +7,7 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
  */
 public class PingPong extends Utilities {
 
-    private Picture background = new Picture(10,10,"bg.jpg");
+    private Picture background = new Picture(10,10,"pingPong.jpg");
 
     private boolean unlocked=false;
 

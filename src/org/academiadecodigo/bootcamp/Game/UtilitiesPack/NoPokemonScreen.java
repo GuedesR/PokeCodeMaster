@@ -8,9 +8,9 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
  */
 public class NoPokemonScreen extends Utilities {
 
-    Picture copaVazia = new Picture(10, 10, "noPokes.jpg");
+    Picture copaVazia = new Picture(10, 10, "noPokemon.png");
 
-    Picture copaCheia = new Picture(10, 10, "noPokes.jpg");
+    Picture copaCheia = new Picture(10, 10, "noPokemon.png");
 
     private boolean unlocked = true;
 

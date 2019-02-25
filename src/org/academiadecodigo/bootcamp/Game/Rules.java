@@ -12,7 +12,7 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Rules {
 
-    Picture rulesOne = new Picture(10, 10, "bg3.jpg");
+    Picture rulesOne = new Picture(10, 10, "regras.jpg");
 
     public void showRules() {
 

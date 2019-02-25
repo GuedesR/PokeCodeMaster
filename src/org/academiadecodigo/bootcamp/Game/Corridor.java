@@ -31,6 +31,7 @@ public class Corridor implements MouseHandler {
     private Utilities copa = new Copa();
     private Utilities varanda = new Varanda();
     private Stages easterEgg = new EasterEgg();
+    Music music;
     PlayerScreen playerScreen;
     private GameScreens stages;
     private Picture varandaLock=new Picture(90,325,"lock.png");
@@ -51,8 +52,8 @@ public class Corridor implements MouseHandler {
     //chooses witch corridor to show
 
     public Corridor() throws InterruptedException {
-        Music music = new Music();
-        //music.musicplay("music");
+        music = new Music();
+        music.musicplay("music");
 
         corridor.draw();
         System.out.println("Corredor woop woop!");
@@ -112,8 +113,8 @@ public class Corridor implements MouseHandler {
 
     @Override
     public void mouseClicked(MouseEvent mouseEvent) {
-        System.out.println(mouseEvent.getY() + " : Y");
-        System.out.println(mouseEvent.getX() + " : X");
+        System.out.println(mouseEvent.getY() + " : Y corr");
+        System.out.println(mouseEvent.getX() + " : X corr");
 
         if (mouseEvent.getY() > 190 && mouseEvent.getY() < 270 && Pokeball.getCurrentAmount()>0) {
             //Go to base
@@ -198,6 +199,8 @@ public class Corridor implements MouseHandler {
         if(mouseEvent.getY() > 650 && mouseEvent.getY() < 725 &&
                 mouseEvent.getX() > 325 && mouseEvent.getX() < 430 &&
                 base.allCaptured() && attic.allCaptured() && unicornios.allCaptured()){
+            music.stop();
+            music.musicplay("e");
             //Go to easter egg
             System.out.println("Easter Egg");
             stages=easterEgg;

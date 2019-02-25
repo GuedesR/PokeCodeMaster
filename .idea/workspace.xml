@@ -1,8 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6e6554a-9a73-49d4-a03b-5dc2c6def1a0" name="Default" comment="">
+    <list default="true" id="ce3c8a66-81b7-4bef-9fbd-cb752f094116" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/audrey copy.png" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/audrey copy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/benny copy.png" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/benny copy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/christina copy.png" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/christina copy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/ferrao copy.png" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/ferrao copy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/mariana copy.png" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/mariana copy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/Background.class" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/Background.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/Corridor.class" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/Corridor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/Items/Pokedex.class" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/Items/Pokedex.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/Menu.class" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/Menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/Music.class" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/Music.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/PlayerScreen.class" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/PlayerScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/Rules.class" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/Rules.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/UtilitiesPack/NoPokemonScreen.class" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/UtilitiesPack/NoPokemonScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/UtilitiesPack/PingPong.class" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/UtilitiesPack/PingPong.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/Varanda.class" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/org/academiadecodigo/bootcamp/Game/Varanda.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/rolo copy.png" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/rolo copy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/sara copy.png" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/sara copy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/sergio copy.png" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/sergio copy.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Background.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Background.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Corridor.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Corridor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Menu.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Menu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Music.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Music.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/PlayerScreen.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/PlayerScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Rules.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Rules.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Attic.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Attic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Base.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Base.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/EasterEgg.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/EasterEgg.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Unicornios.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Unicornios.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/Copa.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/Copa.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/NoPokemonScreen.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/NoPokemonScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/PingPong.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/PingPong.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Varanda.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Varanda.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,32 +50,11 @@
       <file leaf-file-name="Corridor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Corridor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="141" column="22" lean-forward="false" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
+            <state relative-caret-position="2025">
+              <caret line="143" column="25" lean-forward="false" selection-start-line="143" selection-start-column="25" selection-end-line="143" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1551042075321" expanded="true" signature="9439:9466" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stages.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Stages.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pokeball.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Items/Pokeball.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="169" column="24" lean-forward="true" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="24" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -51,15 +62,44 @@
       <file leaf-file-name="PlayerScreen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/PlayerScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1863">
-              <caret line="78" column="16" lean-forward="false" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+            <state relative-caret-position="2475">
+              <caret line="165" column="37" lean-forward="false" selection-start-line="165" selection-start-column="37" selection-end-line="165" selection-end-column="37" />
               <folding>
-                <marker date="1551048562205" expanded="true" signature="8396:8643" ph="{...}" />
-                <marker date="1551048562205" expanded="true" signature="8773:9222" ph="{...}" />
-                <marker date="1551048562205" expanded="true" signature="9297:9305" ph="{...}" />
-                <marker date="1551048562205" expanded="true" signature="9373:10175" ph="{...}" />
-                <marker date="1551048562205" expanded="true" signature="10058:10175" ph="{...}" />
-                <marker date="1551048562205" expanded="true" signature="10241:10249" ph="{...}" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-190">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Music.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Music.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Base.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Base.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+              <folding>
+                <marker date="1551046802667" expanded="true" signature="2747:2866" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -68,81 +108,29 @@
       <file leaf-file-name="Attic.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Attic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="55" column="21" lean-forward="false" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-              <folding>
-                <element signature="e#1527#1528#0" expanded="true" />
-                <element signature="e#1555#1556#0" expanded="true" />
-                <element signature="e#1749#1750#0" expanded="true" />
-                <element signature="e#1782#1783#0" expanded="true" />
-                <marker date="1551034821152" expanded="true" signature="2376:2479" ph="{...}" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="11" column="57" lean-forward="false" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="audrey.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/audrey.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Beer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Items/Beer.java">
+      <file leaf-file-name="Background.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Background.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="390">
+              <caret line="26" column="51" lean-forward="false" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pokes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Pokemons/Pokes.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-              <folding>
-                <element signature="e#274#275#0" expanded="true" />
-                <element signature="e#307#308#0" expanded="true" />
-                <element signature="e#1192#1193#0" expanded="true" />
-                <marker date="1551042075325" expanded="true" signature="1140:1159" ph="{...}" />
-                <marker date="1551042075325" expanded="true" signature="1218:1224" ph=" }" />
-                <marker date="1551042075325" expanded="false" signature="1251:1261" ph=" { " />
-                <marker date="1551042075325" expanded="false" signature="1277:1283" ph=" }" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Varanda.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Varanda.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-              <folding>
-                <marker date="1551047374206" expanded="true" signature="2181:2187" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pokedex.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Items/Pokedex.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2216#2217#0" expanded="true" />
-                <element signature="e#2250#2251#0" expanded="true" />
-                <marker date="1551049763932" expanded="true" signature="3290:3550" ph="{...}" />
-                <marker date="1551049763932" expanded="false" signature="3588:3599" ph=" { " />
-                <marker date="1551049763932" expanded="false" signature="3613:3619" ph=" }" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -186,10 +174,8 @@
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/PokeList.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Unicornios.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/PokeList.java" />
-        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Varanda.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Main.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/GameScreens.java" />
-        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Menu.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Pokedex.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Pokeball.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Pokemons/Pokes.java" />
@@ -198,18 +184,22 @@
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UI/ThrowingBar.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Items/ThrowingBar.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Base.java" />
-        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Corridor.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Items/Beer.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Pokemons/PokePlacement.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Pokemons/PokeList.java" />
-        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/PlayerScreen.java" />
-        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Music.java" />
-        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/NoPokemonScreen.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/Copa.java" />
-        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/PingPong.java" />
-        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Attic.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Items/Pokedex.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Items/Pokeball.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Rules.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Varanda.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/PingPong.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/NoPokemonScreen.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Menu.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Corridor.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Music.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/PlayerScreen.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Attic.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Background.java" />
       </list>
     </option>
   </component>
@@ -220,10 +210,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="5" />
+    <option name="x" value="78" />
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1018" />
+    <option name="width" value="1842" />
+    <option name="height" value="977" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -240,6 +230,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,8 +241,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+              <option name="myItemId" value="PokeCodeMaster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -259,6 +252,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PokeCodeMaster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -406,11 +403,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PokeCodeMaster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PokeCodeMaster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PokeCodeMaster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PokeCodeMaster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -421,124 +443,6 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/audrey copy.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/benny copy.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/christina copy.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/ferrao copy.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/mariana copy.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/rolo copy.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/sara copy.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/sergio copy.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Items/Pokedex.java</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -552,7 +456,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JAR Application.PokeCodeMaster.jar">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -570,6 +474,12 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="PokeCodeMaster" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="PokeCodeMaster.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/build/PokeCodeMaster.jar" />
       <envs />
       <method />
     </configuration>
@@ -960,13 +870,15 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="JAR Application.PokeCodeMaster.jar" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JAR Application.PokeCodeMaster.jar" />
         <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -975,7 +887,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a6e6554a-9a73-49d4-a03b-5dc2c6def1a0" name="Default" comment="" />
+      <changelist id="ce3c8a66-81b7-4bef-9fbd-cb752f094116" name="Default" comment="" />
       <created>1550695391962</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -986,6 +898,7 @@
       <workItem from="1550932435148" duration="64000" />
       <workItem from="1550932968282" duration="27298000" />
       <workItem from="1551020029750" duration="14971000" />
+      <workItem from="1551086695688" duration="1772000" />
     </task>
     <task id="LOCAL-00001" summary="Bora lá">
       <created>1550695471078</created>
@@ -1096,27 +1009,27 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51470000" />
+    <option name="totallyTimeSpent" value="55548000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="5" y="23" width="1920" height="1018" extended-state="0" />
+    <frame x="78" y="23" width="1842" height="977" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13258786" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13388889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1128,8 +1041,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.49555555" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1194,45 +1108,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Items/Pokeball.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2130">
-          <caret line="148" column="1" lean-forward="false" selection-start-line="148" selection-start-column="1" selection-end-line="148" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Items/ThrowingBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="102" column="1" lean-forward="false" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Corridor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="31" column="36" lean-forward="false" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1551042075321" expanded="true" signature="9439:9466" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Copa.java" />
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Varanda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/PingPong.java" />
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Pokemons/PokeList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1249,8 +1124,13 @@
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Base.java" />
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Unicornios.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="165">
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+            <marker date="1551047192792" expanded="true" signature="1720:1823" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1276,14 +1156,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Items.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1296,7 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="140" column="6" lean-forward="false" selection-start-line="140" selection-start-column="6" selection-end-line="140" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1304,7 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1339,64 +1209,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Base.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/NoPokemonScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Background.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/GameScreens.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <marker date="1551047374203" expanded="true" signature="2602:3062" ph="{...}" />
-            <marker date="1551047374203" expanded="true" signature="3282:3290" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Music.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1410,45 +1226,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/PingPong.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <marker date="1551047374206" expanded="true" signature="342:353" ph=" { " />
-            <marker date="1551047374206" expanded="true" signature="369:375" ph=" }" />
-            <marker date="1551047374206" expanded="true" signature="419:628" ph="{...}" />
-            <marker date="1551047374206" expanded="true" signature="659:670" ph=" { " />
-            <marker date="1551047374206" expanded="true" signature="686:692" ph=" }" />
-            <marker date="1551047374206" expanded="true" signature="735:746" ph=" { " />
-            <marker date="1551047374206" expanded="true" signature="764:770" ph=" }" />
-            <marker date="1551047374206" expanded="true" signature="814:825" ph=" { " />
-            <marker date="1551047374206" expanded="true" signature="845:851" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Varanda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          <folding>
-            <marker date="1551047374206" expanded="true" signature="2181:2187" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Corridor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="141" column="22" lean-forward="false" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1551042075321" expanded="true" signature="9439:9466" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Pokemons/Pokes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1457,10 +1234,6 @@
             <element signature="e#274#275#0" expanded="true" />
             <element signature="e#307#308#0" expanded="true" />
             <element signature="e#1192#1193#0" expanded="true" />
-            <marker date="1551042075325" expanded="true" signature="1140:1159" ph="{...}" />
-            <marker date="1551042075325" expanded="true" signature="1218:1224" ph=" }" />
-            <marker date="1551042075325" expanded="false" signature="1251:1261" ph=" { " />
-            <marker date="1551042075325" expanded="false" signature="1277:1283" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -1479,28 +1252,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/bg.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/Copa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <marker date="1551034821157" expanded="false" signature="1040:1051" ph=" { " />
-            <marker date="1551034821157" expanded="false" signature="1068:1074" ph=" }" />
-            <marker date="1551034821157" expanded="false" signature="1226:1237" ph=" { " />
-            <marker date="1551034821157" expanded="false" signature="1253:1259" ph=" }" />
-            <marker date="1551034821157" expanded="false" signature="1306:1317" ph=" { " />
-            <marker date="1551034821157" expanded="false" signature="1333:1339" ph=" }" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Items/Pokedex.java">
@@ -1511,24 +1268,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2216#2217#0" expanded="true" />
             <element signature="e#2250#2251#0" expanded="true" />
-            <marker date="1551049763932" expanded="true" signature="3290:3550" ph="{...}" />
-            <marker date="1551049763932" expanded="false" signature="3588:3599" ph=" { " />
-            <marker date="1551049763932" expanded="false" signature="3613:3619" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/PlayerScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1863">
-          <caret line="78" column="16" lean-forward="false" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
-          <folding>
-            <marker date="1551048562205" expanded="true" signature="8396:8643" ph="{...}" />
-            <marker date="1551048562205" expanded="true" signature="8773:9222" ph="{...}" />
-            <marker date="1551048562205" expanded="true" signature="9297:9305" ph="{...}" />
-            <marker date="1551048562205" expanded="true" signature="9373:10175" ph="{...}" />
-            <marker date="1551048562205" expanded="true" signature="10058:10175" ph="{...}" />
-            <marker date="1551048562205" expanded="true" signature="10241:10249" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1543,24 +1282,164 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Attic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="55" column="21" lean-forward="false" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-          <folding>
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1555#1556#0" expanded="true" />
-            <element signature="e#1749#1750#0" expanded="true" />
-            <element signature="e#1782#1783#0" expanded="true" />
-            <marker date="1551034821152" expanded="true" signature="2376:2479" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Items/Pokeball.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
           <caret line="169" column="24" lean-forward="true" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Rules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Varanda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/Utilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/PingPong.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="9" column="67" lean-forward="true" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/Copa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/EasterEgg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/NoPokemonScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="87" column="12" lean-forward="false" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Base.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding>
+            <marker date="1551046802667" expanded="true" signature="2747:2866" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/attic.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Attic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="57" lean-forward="false" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Background.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="51" lean-forward="false" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Corridor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="143" column="25" lean-forward="false" selection-start-line="143" selection-start-column="25" selection-end-line="143" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/PlayerScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2475">
+          <caret line="165" column="37" lean-forward="false" selection-start-line="165" selection-start-column="37" selection-end-line="165" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Music.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

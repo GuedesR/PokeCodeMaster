@@ -16,9 +16,9 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
  */
 public class Copa extends Utilities implements KeyboardHandler {
 
-    Picture copaVazia = new Picture(10, 10, "bg.jpg");
+    Picture copaVazia = new Picture(10, 10, "kitchen.png");
 
-    Picture copaCheia = new Picture(10, 10, "bg3.jpg");
+    Picture copaCheia = new Picture(10, 10, "kitchen.png");
 
     private boolean unlocked = false;
 
@@ -49,7 +49,7 @@ public class Copa extends Utilities implements KeyboardHandler {
     public boolean action() { // mete as cervejas no máximo
 
         try {
-            Thread.sleep(200);
+            Thread.sleep(1500);
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -59,7 +59,7 @@ public class Copa extends Utilities implements KeyboardHandler {
         Beer.addBeer(5);
 
         try {
-            Thread.sleep(200);
+            Thread.sleep(1000);
 
         } catch (Exception e) {
             System.out.println(e.getMessage());

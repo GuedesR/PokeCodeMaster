@@ -7,7 +7,7 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Base extends Stages {
 
-    private Picture background = new Picture(10,10,"bg.jpg");
+    private Picture background = new Picture(10,10,"base.jpg");
     private boolean isUnlocked=true;
     private PokeList pokeList = new PokeList();
     private Pokes[] pokes;

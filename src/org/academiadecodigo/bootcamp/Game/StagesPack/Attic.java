@@ -9,7 +9,7 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
  */
 public class Attic extends Stages {
 
-    private Picture background = new Picture(10,10,"bg2.jpg");
+    private Picture background = new Picture(10,10,"attic.jpg");
     private boolean isUnlocked=true;
     private PokeList pokeList = new PokeList();
     private Pokes[] pokes;
