@@ -21,20 +21,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/sara copy.png" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/sara copy.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PokeCodeMaster/sergio copy.png" afterPath="$PROJECT_DIR$/out/production/PokeCodeMaster/sergio copy.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Background.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Background.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Corridor.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Corridor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Menu.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Menu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Music.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Music.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/PlayerScreen.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/PlayerScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Rules.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Rules.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Attic.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Attic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Base.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Base.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/EasterEgg.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/EasterEgg.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Unicornios.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/StagesPack/Unicornios.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/Copa.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/Copa.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/NoPokemonScreen.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/NoPokemonScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/PingPong.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/UtilitiesPack/PingPong.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Varanda.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Game/Varanda.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -99,6 +85,13 @@
             <state relative-caret-position="135">
               <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
               <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1650#1651#0" expanded="false" />
+                <element signature="e#1678#1679#0" expanded="false" />
+                <element signature="e#1727#1728#0" expanded="false" />
+                <element signature="e#1760#1761#0" expanded="false" />
+                <element signature="e#2910#2911#0" expanded="false" />
+                <element signature="e#2941#2942#0" expanded="false" />
                 <marker date="1551046802667" expanded="true" signature="2747:2866" ph="{...}" />
               </folding>
             </state>
@@ -110,7 +103,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="11" column="57" lean-forward="false" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1529#1530#0" expanded="false" />
+                <element signature="e#1557#1558#0" expanded="false" />
+                <element signature="e#1751#1752#0" expanded="false" />
+                <element signature="e#1784#1785#0" expanded="false" />
+                <element signature="e#2526#2527#0" expanded="false" />
+                <element signature="e#2557#2558#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,7 +131,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -898,7 +901,7 @@
       <workItem from="1550932435148" duration="64000" />
       <workItem from="1550932968282" duration="27298000" />
       <workItem from="1551020029750" duration="14971000" />
-      <workItem from="1551086695688" duration="1772000" />
+      <workItem from="1551086695688" duration="1816000" />
     </task>
     <task id="LOCAL-00001" summary="Bora lá">
       <created>1550695471078</created>
@@ -1005,11 +1008,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551048541355</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="final sem musica">
+      <created>1551090492458</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1551090492458</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55548000" />
+    <option name="totallyTimeSpent" value="55592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="23" width="1842" height="977" extended-state="0" />
@@ -1095,7 +1105,8 @@
     <MESSAGE value="Pokedex atualizado" />
     <MESSAGE value="Pokedex já atualiza e cerveja já só dá cerveja a um pokemon(Finalmente!!!!)" />
     <MESSAGE value="Fotografias de pokemons e pokedex atualizados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fotografias de pokemons e pokedex atualizados" />
+    <MESSAGE value="final sem musica" />
+    <option name="LAST_COMMIT_MESSAGE" value="final sem musica" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1127,8 +1138,8 @@
         <state relative-caret-position="165">
           <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="false" />
+            <element signature="e#736#737#0" expanded="false" />
             <marker date="1551047192792" expanded="true" signature="1720:1823" ph="{...}" />
           </folding>
         </state>
@@ -1231,9 +1242,9 @@
         <state relative-caret-position="465">
           <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
           <folding>
-            <element signature="e#274#275#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="false" />
+            <element signature="e#307#308#0" expanded="false" />
+            <element signature="e#1192#1193#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1265,9 +1276,9 @@
         <state relative-caret-position="542">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2216#2217#0" expanded="true" />
-            <element signature="e#2250#2251#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2216#2217#0" expanded="false" />
+            <element signature="e#2250#2251#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1277,7 +1288,7 @@
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1364,6 +1375,13 @@
         <state relative-caret-position="135">
           <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1650#1651#0" expanded="false" />
+            <element signature="e#1678#1679#0" expanded="false" />
+            <element signature="e#1727#1728#0" expanded="false" />
+            <element signature="e#1760#1761#0" expanded="false" />
+            <element signature="e#2910#2911#0" expanded="false" />
+            <element signature="e#2941#2942#0" expanded="false" />
             <marker date="1551046802667" expanded="true" signature="2747:2866" ph="{...}" />
           </folding>
         </state>
@@ -1378,7 +1396,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="11" column="57" lean-forward="false" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1529#1530#0" expanded="false" />
+            <element signature="e#1557#1558#0" expanded="false" />
+            <element signature="e#1751#1752#0" expanded="false" />
+            <element signature="e#1784#1785#0" expanded="false" />
+            <element signature="e#2526#2527#0" expanded="false" />
+            <element signature="e#2557#2558#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1386,7 +1412,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
